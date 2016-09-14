@@ -1,0 +1,25 @@
+footer {
+    border: 1px solid black;
+    /*margin: auto;*/
+}
+footer h1 {
+    text-align: center;
+    /*color: white;*/
+
+}
+.team {
+
+}
+.team figure {
+    display: inline;
+    width: 20%;
+    float: left;
+    margin: 15px;
+}
+.team figcaption {
+    text-align: center;
+}
+/*.team img {*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+/*}*/
