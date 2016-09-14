@@ -1,7 +1,10 @@
-footer {
-    border: 1px solid black;
-    /*margin: auto;*/
+.funkcje-produktu {
+    width: 560px;
+    padding: 30px;
+    line-height: 1.5;
 }
+
+
 footer h1 {
     text-align: center;
     /*color: white;*/
