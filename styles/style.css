@@ -35,3 +35,12 @@ footer h1 {
 }
 
 /* KONIEC Style sekcji formularz */
+
+
+#pet-header {
+    font-size:300px;
+    font-family: "Lohit Bengali";
+    text-align: center;
+    color:darkblue;
+
+}
