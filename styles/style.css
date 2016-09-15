@@ -18,3 +18,16 @@ footer figure {
 footer figcaption {
     display: inline;
 }
+/*.team img {*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+/*}*/
+
+
+/* Style sekcji formularz */
+#sc-form-submit {
+    background-color: chartreuse;
+    text-align: center;
+}
+
+/* KONIEC Style sekcji formularz */
