@@ -53,8 +53,45 @@ footer img {
 
 /* Style sekcji formularz */
 #sc-form-submit {
-    background-color: chartreuse;
+    background-color: rgba(211, 211, 211, 0.3);
     text-align: center;
+    padding: 50px;
+    margin: 10px;
+    background-image: url('../images/send-email.png');
+    background-repeat: no-repeat;
+}
+
+.email-input {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.button-submit {
+    background-color: chartreuse;
+    font-size: 50px;
+    padding: 25px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: background-color linear;
+    transform: padding;
+    transform: font-weight;
+    transform: cursor;
+    border: none;
+}
+
+.button-submit:hover {
+    background-color: darkgrey;
+    padding: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.article-styles {
+    color: darkgrey;
+}
+
+#header-rotate {
+    /*transform: rotate(-90deg);*/
 }
 
 /* KONIEC Style sekcji formularz */
