@@ -1,29 +1,44 @@
+
+.funkcje-produktu {
+    width: 560px;
+    padding: 30px;
+    line-height: 1.5;
+}
+/*Footer style*/
 footer {
     border: 1px solid black;
-    /*margin: auto;*/
+    width: 100%;
 }
 footer h1 {
-    text-align: center;
-    /*color: white;*/
-
-}
-.team {
-
-}
-.team figure {
-    display: inline;
     width: 20%;
-    float: left;
-    margin: 15px;
-}
-.team figcaption {
+    height: 20%;
+    position: relative;
+    left: 39%;
     text-align: center;
+    border: 10px solid transparent;
+    border-image: url(../images/paw.jpg) 100% round;
 }
-/*.team img {*/
-    /*width: 50%;*/
-    /*height: 50%;*/
-/*}*/
+footer div {
+    display: flex;
+    justify-content: center;
+}
+.teammate {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 
+}
+footer figcaption {
+    text-align: center;
+    margin: auto;
+}
+footer img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin: auto;
+}
+/*Koniec style footer*/
 
 /* Style sekcji formularz */
 #sc-form-submit {
