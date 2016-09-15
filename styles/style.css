@@ -1,14 +1,21 @@
+
+.funkcje-produktu {
+    width: 560px;
+    padding: 30px;
+    line-height: 1.5;
+}
 footer {
     border: 1px solid black;
     margin: auto;
 }
+
 footer h1 {
     text-align: center;
     /*color: white;*/
 
 }
-/*.team figure {*/
-footer figure {
+
+.team figure {
     display: inline;
     float: left;
     /*margin: 15px;*/
@@ -18,10 +25,7 @@ footer figure {
 footer figcaption {
     display: inline;
 }
-/*.team img {*/
-    /*width: 50%;*/
-    /*height: 50%;*/
-/*}*/
+
 
 
 /* Style sekcji formularz */
@@ -31,3 +35,13 @@ footer figcaption {
 }
 
 /* KONIEC Style sekcji formularz */
+
+
+
+#pet-header {
+    font-size:300px;
+    font-family: "Lohit Bengali";
+    text-align: center;
+    color:darkblue;
+
+}
