@@ -4,29 +4,42 @@
     padding: 30px;
     line-height: 1.5;
 }
+/*Footer style*/
 footer {
     border: 1px solid black;
-    margin: auto;
+    width: 100%;
 }
 
 footer h1 {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 39%;
     text-align: center;
-    /*color: white;*/
-
+    border: 10px solid transparent;
+    border-image: url(../images/paw.jpg) 100% round;
 }
+footer div {
+    display: flex;
+    justify-content: center;
+}
+.teammate {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 
-.team figure {
-    display: inline;
-    float: left;
-    /*margin: 15px;*/
-    border: 1px solid black;
-    /*width: auto;*/
 }
 footer figcaption {
-    display: inline;
+    text-align: center;
+    margin: auto;
 }
-
-
+footer img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin: auto;
+}
+/*Koniec style footer*/
 
 /* Style sekcji formularz */
 #sc-form-submit {
