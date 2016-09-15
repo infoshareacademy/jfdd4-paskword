@@ -34,10 +34,42 @@ footer h1 {
 /* KONIEC Style sekcji formularz */
 
 
-#pet-header {
-    font-size:300px;
+#pet-header{
+    font-size:250px;
     font-family: "Lohit Bengali";
     text-align: center;
     color:darkblue;
+    background-image: url(../images/happy-pet.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:inherit;
 
+}
+
+.page-description
+{
+    display:block;
+    background-color:mediumaquamarine;
+    margin:inherit;
+    border: solid;
+    border-color: black;
+    text-align: center;
+    margin:inherit;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 10px 5px 10px 5px #333 inset;
+
+}
+
+#info-button {
+    color: black;
+    background-color: yellow;
+    border-width: medium;
+    border-color: darkblue;
+    width:170px;
+    height: 80px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 1s linear 0.05s;
 }
