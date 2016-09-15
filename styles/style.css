@@ -1,8 +1,3 @@
-.funkcje-produktu {
-    width: 560px;
-    padding: 30px;
-    line-height: 1.5;
-}
 /*Footer style*/
 footer {
     width: 100%;
@@ -51,8 +46,21 @@ footer img {
 
 /*Koniec style footer*/
 
+/* Style sekcji funkcje-produktu */
+
+.funkcje-produktu {
+    background-color: rgba(211, 211, 211, 0.3);
+    padding: 50px;
+    margin: 10px;
+    width: 1215px;
+    color: darkgray;
+    line-height: 1.5;
+}
+
+/* Koniec Style sekcji funkcje-produktu */
+
 /* Style sekcji formularz */
-#sc-form-submit {
+#sc-form-submit{
     background-color: rgba(211, 211, 211, 0.3);
     text-align: center;
     padding: 50px;
@@ -73,9 +81,9 @@ footer img {
     color: whitesmoke;
     text-transform: uppercase;
     transition: background-color linear;
-    transform: padding;
+   /* transform: padding;
     transform: font-weight;
-    transform: cursor;
+    transform: cursor;*/
     border: none;
 }
 
