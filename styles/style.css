@@ -3,18 +3,21 @@
     padding: 30px;
     line-height: 1.5;
 }
+
 /*Footer style*/
 footer {
     width: 100%;
     margin: 20px 0;
     padding: 0;
 }
+
 footer h1 {
     margin: 20px 40%;
     text-align: center;
     border: 10px solid transparent;
     border-image: url(../images/paw.jpg) 100% round;
 }
+
 footer div {
     display: flex;
     justify-content: center;
@@ -22,14 +25,17 @@ footer div {
     background-color: chartreuse;
     color: black;
 }
+
 footer figure {
     padding: 10px;
     margin: 10px 0;
 
 }
+
 footer figcaption {
     text-align: center;
 }
+
 footer img {
     max-width: 100%;
     max-height: 100%;
@@ -96,27 +102,26 @@ footer img {
 
 /* KONIEC Style sekcji formularz */
 
-
-#pet-header{
-    font-size:250px;
+#pet-header {
+    font-size: 250px;
     font-family: "Lohit Bengali", serif;
     text-align: center;
-    color:darkblue;
+    color: darkblue;
     background-image: url(../images/happy-pet.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin:inherit;
+    margin: inherit;
 }
 
 .page-description {
-    display:block;
-    background-color:mediumaquamarine;
-    margin:inherit;
+    display: block;
+    background-color: aliceblue;
+    margin: inherit;
     border: solid;
     border-color: black;
     text-align: center;
-    margin:inherit;
+    margin: inherit;
     padding-top: 30px;
     padding-bottom: 30px;
     box-shadow: 10px 5px 10px 5px #333 inset;
@@ -128,9 +133,23 @@ footer img {
     background-color: yellow;
     border-width: medium;
     border-color: darkblue;
-    width:170px;
+    width: 170px;
     height: 80px;
     font-size: 16px;
     text-align: center;
     transition: background-color 1s linear 0.05s;
+}
+
+.pet-text {
+    text-align: justify;
+    color:dimgray;
+    text-indent: 5%;
+    background-color: rgba(211, 211, 211, 0.3);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+
+
+
+
 }
