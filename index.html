@@ -2,6 +2,11 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="description" content="Wet Visit Planer">
+    <meta name="keywords" content="pet, pets, wet, wet visits, dog,cat, ">
+    <meta name="author" content="PASKword">
+
     <title>Futrzak Wizytówka</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -13,9 +18,20 @@
 <main>
     <!-- Zajawka: zdjęcie, hasło, button-->
     <section>
-        <img src="images/happy-pet.jpg" style="width: 100%" alt="happy pet">
-    <h1 id="pet-header">Futrzak</h1>
 
+        <h1 id="pet-header">Futrzak</h1>
+        <h2 class=page-description>You dont have to waste your time, to plan your pet wet's visit.<br>
+            Save your money and register visit in easiest way as possible </h2>
+        <h3 class="page-description">Healthy pet will give you reason to smile</h3>
+
+
+
+        <button id="info-button" onClick="document.getElementById('sc-form-submit').scrollIntoView();" >Click to register your visit now!</>
+
+
+
+
+        <p></p>
     </section>
     <!-- Koniec zajawki -->
 
@@ -61,25 +77,31 @@
 
 <!-- Informacje o twórcach: zdjęcia, nazwiska -->
 <footer>
-    <h1>O NAS</h1><br/>
+    <h1>O NAS</h1>
     <!--TODO dodac linki do linkedina-->
        <div>
-           <div class="teammate"><figure>
-                <img src="images/iconmonstr-user-5-96.png" alt="teammate #1"/></br>
-                <figcaption>Agata <br/> Kulbicka</figcaption>
-            </figure></div>
-            <div class="teammate"><figure>
-                <img src="images/iconmonstr-user-5-96.png" alt="teammate #2"/></br>
-                <figcaption>Katarzyna <br/> Kałduńska</figcaption>
-            </figure></div>
-            <div class="teammate"><figure>
-                <img src="images/iconmonstr-user-5-96.png" alt="teammate #3"/></br>
+           <figure id="t1">
+                <img src="images/iconmonstr-user-5-96.png" alt="teammate #1"/><br>
+                <figcaption>Agata <br/> Kulbicka <br/>
+                <a href="https://www.linkedin.com/in/agata-kulbicka-3b6778b5" target="_blank">
+                <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                </figcaption>
+            </figure>
+            <figure id="t2">
+                <img src="images/iconmonstr-user-5-96.png" alt="teammate #2"/><br>
+                <figcaption>Katarzyna <br/> Kałduńska <br/>
+                    <a href="https://www.linkedin.com/in/katarzyna-kałduńska-43aa90127" target="_blank">
+                    <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                </figcaption>
+            </figure>
+            <figure id="t3">
+                <img src="images/iconmonstr-user-5-96.png" alt="teammate #3"/><br>
                 <figcaption>Sandra <br/> Kowalska</figcaption>
-            </figure></div>
-            <div class="teammate"><figure>
-                <img src="images/iconmonstr-user-5-96.png" alt="teammate #4"/><br/>
+            </figure>
+            <figure id="t4">
+                <img src="images/iconmonstr-user-5-96.png" alt="teammate #4"/><br>
                 <figcaption>Paweł <br/> Grycz</figcaption>
-            </figure></div>
+            </figure>
        </div>
 
 </footer>
