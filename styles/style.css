@@ -95,7 +95,7 @@ footer img {
 }
 
 .button-submit {
-    background-color: chartreuse;
+    background-color: rgba(59, 32, 16, 0.7);
     font-size: 50px;
     padding: 25px;
     color: whitesmoke;
@@ -104,7 +104,8 @@ footer img {
     transform: padding;
     transform: font-weight;
     transform: cursor;
-    border: none;
+    border-width: medium;
+    border-color: rgb(69,87,99);
 }
 
 .button-submit:hover {
@@ -159,7 +160,6 @@ footer img {
 #info-button {
     color: white;
     background-color: rgb(11,203,204);
-    text-shadow: 0px 2px 10px #000;
     border-width: medium;
     border-color: rgb(69,87,99);
     width: 170px;
@@ -191,7 +191,7 @@ footer img {
     text-shadow: 0px 2px 10px #000;
 }
 
-#motto{
+#motto {
     text-align: justify;
     color:rgb(11,203,204);
     font-size:50px;
@@ -202,6 +202,9 @@ footer img {
     margin: inherit;
 }
 
-button{
+button {
     -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: 0px 2px 10px #000;
 }
