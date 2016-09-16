@@ -112,6 +112,9 @@ footer img {
     background-repeat: no-repeat;
     background-position: center;
     margin: inherit;
+    z-index:1;
+    display: block;
+    position: relative;
 }
 
 .page-description {
@@ -138,6 +141,16 @@ footer img {
     font-size: 16px;
     text-align: center;
     transition: background-color 1s linear 0.05s;
+    z-index:9999;
+    position: fixed;
+    display: block;
+}
+
+#info-button:hover {
+    background-color: darkgrey;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
 }
 
 .pet-text {
@@ -148,8 +161,4 @@ footer img {
     text-align: center;
     padding: 50px;
     margin: 10px;
-
-
-
-
 }
