@@ -201,3 +201,7 @@ footer img {
     position:relative;
     margin: inherit;
 }
+
+button{
+    -webkit-border-radius: 15px;
+}
