@@ -136,7 +136,9 @@ footer img {
     margin: inherit;
     z-index:1;
     display: block;
-    position: relative;
+    position: static;
+    padding-top:60px;
+    padding-bottom:1px;
 }
 
 .page-description {
@@ -183,4 +185,15 @@ footer img {
     text-align: center;
     padding: 50px;
     margin: 10px;
+}
+
+#motto{
+    text-align: justify;
+    color:cornflowerblue;
+    font-size:50px;
+    text-align: center;
+    padding-bottom:200px;
+    padding-top:2px;
+    position:relative;
+    margin: inherit;
 }
