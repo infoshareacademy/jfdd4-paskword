@@ -30,11 +30,6 @@ h2 {
 #first-section-photo h1 p {
     color: white;
 }
-.funkcje-produktu {
-    width: 560px;
-    padding: 30px;
-    line-height: 1.5;
-}
 
 /*Style func-list*/
 .func-list {
@@ -44,8 +39,13 @@ h2 {
     letter-spacing: 4px;
     word-spacing: 4px;
 }
+
 .func-list div {
     margin: 10px;
+}
+
+.func-list2 {
+
 }
 
 .list1 {
