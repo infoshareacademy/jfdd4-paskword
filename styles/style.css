@@ -6,19 +6,27 @@
 
 /*Footer style*/
 footer {
-
-    width: 100%;
-    margin: 20px 0;
-    padding: 20px 0;
-    color: rgb(69, 87, 99);
+    background-color: rgb(11,203,204);
+    border: 5px solid rgb(69, 87, 99);
+    border-radius: 10px;
+    width: auto;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    color: white;
 }
 
 footer h1 {
-    background-color: white;
     margin: 20px 40%;
     text-align: center;
     border: 10px solid transparent;
-    border-image: url(../images/paw.jpg) 100% round;
+    border-image: url(../images/paw.png) 100% round;
+}
+
+footer p {
+    text-align: center;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-size: larger;
 }
 
 footer div {
@@ -26,13 +34,12 @@ footer div {
     display: flex;
     justify-content: center;
     margin: auto;
-    color: black;
 }
 
 footer figure {
-    padding: 10px;
+    padding: 5px 10px;
     margin: 10px 0;
-
+    color: black;
 }
 
 footer figcaption {
@@ -40,7 +47,6 @@ footer figcaption {
 }
 
 footer img {
-
     max-width: 100%;
     max-height: 100%;
     height: auto;
@@ -55,11 +61,11 @@ footer img {
 
 #t1:hover, #t2:hover, #t3:hover, #t4:hover {
     background-color: white;
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 .media {
-    margin: 10px 0px;
+    margin: 10px 0;
     background-color: rgb(11,203,204);
 
 }
@@ -68,7 +74,7 @@ footer img {
     transition: all 0.5s ease;
 }
 .media img:hover {
-    transform: rotate(-20deg);
+    transform: rotate(-30deg);
 }
 
 /*Koniec style footer*/
