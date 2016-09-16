@@ -1,8 +1,17 @@
+/* Styl sekcji .funkcje-produktu */
 .funkcje-produktu {
-    width: 560px;
-    padding: 30px;
-    line-height: 1.5;
+    display: flex;
+    padding: 50px;
+    margin: 10px;
+    background-color: rgba(211, 211, 211, 0.3);
 }
+
+ul {
+    color: dimgray;
+    line-height: 1.5;
+    padding-left: 90px;
+}
+/* Koniec sekcji .funkcje-produktu */
 
 /*Footer style*/
 footer {
