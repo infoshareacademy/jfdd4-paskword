@@ -1,8 +1,46 @@
-.funkcje-produktu {
-    width: 560px;
-    padding: 30px;
-    line-height: 1.5;
+/*Style func-list*/
+.func-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 4px;
+    word-spacing: 4px;
 }
+.func-list div {
+    margin: 10px;
+}
+
+.list1 {
+    flex: 1 100%;
+    height: 359px;
+    background: white url("../images/func-list/cat_teddy.jpg");
+    background-size: cover;
+}
+.list1 h1, .list3 h1 {
+    margin: 10%;
+    font-weight: 900;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+}
+.list2 {
+    flex: 2 100%;
+    height: 359px;
+    background: white url("../images/func-list/fox.jpg");
+    background-size: cover;
+}
+.list2 h1 {
+    margin: 60% 10% 0;
+    font-weight: 900;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+}
+.list3 {
+    flex: 3 100%;
+    background: white url("../images/func-list/pupper.jpg");
+    background-size: cover;
+}
+
+/*Koniec styli func-list*/
 
 /*Footer style*/
 footer {
@@ -60,7 +98,8 @@ footer img {
 }
 
 #t1:hover, #t2:hover, #t3:hover, #t4:hover {
-    background-color: white;
+    background-color: rgba(11,203,204,0.8);
+    border: 1px solid rgb(69, 87, 99);
     transform: scale(1.4);
 }
 
