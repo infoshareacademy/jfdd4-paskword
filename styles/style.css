@@ -122,7 +122,7 @@ footer img {
     font-size: 250px;
     font-family: "Lohit Bengali", serif;
     text-align: center;
-    color: darkblue;
+    color: rgb(69,87,99);
     background-image: url(../images/happy-pet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,11 +133,12 @@ footer img {
     position: static;
     padding-top:60px;
     padding-bottom:1px;
+    text-shadow: 0px 7px 10px #000;
 }
 
 .page-description {
     display: block;
-    background-color: aliceblue;
+    background-color: rgba(69, 87, 99, 0.1);
     margin: inherit;
     border: solid;
     border-color: black;
@@ -146,14 +147,15 @@ footer img {
     padding-top: 30px;
     padding-bottom: 30px;
     box-shadow: 10px 5px 10px 5px #333 inset;
-
+    color:rgb(69,87,99);
 }
 
 #info-button {
-    color: black;
-    background-color: yellow;
+    color: white;
+    background-color: rgb(11,203,204);
+    text-shadow: 0px 2px 10px #000;
     border-width: medium;
-    border-color: darkblue;
+    border-color: rgb(69,87,99);
     width: 170px;
     height: 80px;
     font-size: 16px;
@@ -173,17 +175,19 @@ footer img {
 
 .pet-text {
     text-align: justify;
-    color:dimgray;
+    font-size:20px;
+    color:white;
     text-indent: 5%;
-    background-color: rgba(211, 211, 211, 0.3);
+    background-color: rgba(59,32,16, 0.4);
     text-align: center;
     padding: 50px;
     margin: 10px;
+    text-shadow: 0px 2px 10px #000;
 }
 
 #motto{
     text-align: justify;
-    color:cornflowerblue;
+    color:rgb(11,203,204);
     font-size:50px;
     text-align: center;
     padding-bottom:200px;
