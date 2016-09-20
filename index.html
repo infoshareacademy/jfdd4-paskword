@@ -19,10 +19,14 @@
 </button>
 <!-- navbar: menu + logo-->
 <header>
-    <input class="button-section1" type="button" name="Zajawka" placeholder="first-section-photo">
-    <input class="button-section2" type="button" name="Spis_panowanych_funkcji" placeholder="func-list">
-    <input class="button-section3" type="button" name="Formularz" placeholder="sc-form-submit">
-    <input class="button-section4" type="button" name="O nas" placeholder="footer">
+  <nav>
+      <ul>
+        <li><a href="#about">Oferta</a></li>
+        <li><a href="#pr_options">Opis funkcji</a></li>
+        <li><a href="#sc-form-submit">Kontakt</a></li>
+        <li><a href="#team">O nas</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
@@ -30,9 +34,9 @@
         <section class="main-photo">
             <h1>Futrzak </h1>
             <p>-Dbamy o zdrowie naszych futrzastych przyjaciół-</p>
-        </section>
+        </section><hr>
         <h2 class="page-description">Nie musisz tracić czasu, by zaplanowac wizyte u weterynarza.<br>
-            Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!</h2>
+            Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!</h2><hr>
         <h2 class="page-description">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
         <p class="pet-text">Ta strona pozwoli Ci na zlokalizowanie najbliższego weternarza w Twojej okolicy i
             zasięgnięcia o nim opinii.<br>
@@ -45,7 +49,7 @@
 
     <!-- Spis planowanych funkcji -->
 
-    <section class="func-list">
+    <section class="func-list" id="about">
         <div class="list1">
             <h1>Zaplanuj najbliższą wizytę u weterynarza</h1>
             <ul class="text">
@@ -65,7 +69,7 @@
         </div>
     </section>
 
-    <section class="func-list2">
+    <section class="func-list2" id="pr_options">
         <ul>
             <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
             <li>Komentarze, polecenia i opinie o weterynarzach</li>
@@ -106,7 +110,7 @@
 
 
 <!-- Informacje o twórcach: zdjęcia, nazwiska -->
-<footer>
+<footer id="team">
     <h1>O nas</h1>
     <div>
         <figure id="t1">
