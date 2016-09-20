@@ -1,408 +1,342 @@
 body {
-    font-family: "Scope One", sans-serif;
-    background-color: white;
-    color: #698799;
-}
+  font-family: "Scope One", sans-serif;
+  background-color: white;
+  color: #698799; }
 
 h1 {
-    color: #698799;
-    font-family: "Arima Madurai", serif;
-}
+  color: #698799;
+  font-family: "Arima Madurai", serif; }
 
 h2 {
-    color: rgb(11, 203, 204);
-}
+  color: #0bcbcc; }
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
-    font-family: "Arima Madurai", serif;
-    background-image: url(../images/happy-pet.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 220px;
-    text-align: center;
-
-    z-index: 1;
-    display: block;
-    position: static;
-    text-shadow: 0 7px 10px #000;
-}
+  font-family: "Arima Madurai", serif;
+  background-image: url(../images/happy-pet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 220px;
+  text-align: center;
+  z-index: 1;
+  display: block;
+  position: static;
+  text-shadow: 0 7px 10px #000; }
 
 .main-photo h1 {
-    color: rgb(11, 203, 204);
-    margin: inherit;
-}
+  color: #0bcbcc;
+  margin: inherit; }
 
 .main-photo p {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 200px;
-    padding-top: 2px;
-    position: relative;
-    margin: inherit;
-}
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 2px;
+  position: relative;
+  margin: inherit; }
 
 #pet-header {
-    font-size: 250px;
-    font-family: "Lohit Bengali", serif;
-    text-align: center;
-    color: rgb(69, 87, 99);
-    background-image: url(../images/happy-pet.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: inherit;
-    z-index: 1;
-    display: block;
-    position: static;
-    padding-top: 60px;
-    padding-bottom: 1px;
-    text-shadow: 0 7px 10px #000;
-}
+  font-size: 250px;
+  font-family: "Lohit Bengali", serif;
+  text-align: center;
+  color: #455763;
+  background-image: url(../images/happy-pet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: inherit;
+  z-index: 1;
+  display: block;
+  position: static;
+  padding-top: 60px;
+  padding-bottom: 1px;
+  text-shadow: 0 7px 10px #000; }
 
 .page-description {
-    display: block;
-    background-color: rgba(69, 87, 99, 0.1);
-    margin: inherit;
-    border: solid;
-    border-color: black;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    box-shadow: 10px 5px 10px 5px #333 inset;
-    color: rgb(69, 87, 99);
-}
+  display: block;
+  background-color: rgba(69, 87, 99, 0.1);
+  margin: inherit;
+  border: solid;
+  border-color: black;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 10px 5px 10px 5px #333 inset;
+  color: #455763; }
 
 #info-button {
-    color: white;
-    background-color: rgb(11, 203, 204);
-    text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69, 87, 99);
-    width: 170px;
-    height: 80px;
-    font-size: 16px;
-    text-align: center;
-    transition: background-color 1s linear 0.05s;
-    z-index: 9999;
-    position: fixed;
-    display: block;
-}
+  color: white;
+  background-color: #0bcbcc;
+  text-shadow: 0 2px 10px #000;
+  border-width: medium;
+  border-color: #455763;
+  width: 170px;
+  height: 80px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 1s linear 0.05s;
+  z-index: 9999;
+  position: fixed;
+  display: block; }
 
 #info-button:hover {
-    background-color: darkgrey;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-}
+  background-color: darkgrey;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center; }
 
 .pet-text {
-    font-size: 20px;
-    color: white;
-    text-indent: 5%;
-    background-color: rgba(59, 32, 16, 0.4);
-    text-align: center;
-    padding: 50px;
-    margin: 10px;
-    text-shadow: 0 2px 10px #000;
-}
+  font-size: 20px;
+  color: white;
+  text-indent: 5%;
+  background-color: rgba(59, 32, 16, 0.4);
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 2px 10px #000; }
 
 button {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    text-shadow: 0 2px 10px #000;
-}
-/*END: main photo + FUTRZAK*/
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 2px 10px #000; }
 
+/*END: main photo + FUTRZAK*/
 /*START func-list*/
 .func-list {
-    width: 100%;
-    height: 359px;
-    display: flex;
-    justify-content: space-around;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-}
-
-.func-list div {
+  width: 100%;
+  height: 359px;
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 4px;
+  word-spacing: 4px; }
+  .func-list div {
     margin: 10px;
     background-size: cover;
     position: relative;
-    transition: all 1s;
-}
-
-.func-list div:hover {
-    transform: scale(1.2);
-    z-index: 1;
-}
-
-.func-list h1 {
+    transition: all 1s; }
+    .func-list div:hover {
+      transform: scale(1.2);
+      z-index: 1; }
+      .func-list div:hover .text {
+        visibility: visible; }
+  .func-list h1 {
     font-weight: 900;
     color: white;
-    background: rgba(0, 0, 0, 0.75);
-}
+    background: rgba(0, 0, 0, 0.75); }
 
 .text {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.75);
-    color: black;
-    visibility: hidden;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-}
-
-.func-list div:hover .text {
-    visibility: visible;
-}
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  visibility: hidden;
+  bottom: 30px;
+  left: 30px;
+  right: 30px; }
 
 #text2 {
-    top: 30px;
-    left: 30px;
-    right: 30px;
-    bottom: 100px;
-}
-
-.list1:hover {
-    transform-origin: left 2px;
-}
-
-.list2:hover {
-    transform-origin: center 0;
-}
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 100px; }
 
 .list3:hover {
-    transform-origin: right 2px;
-}
+  transform-origin: right 2px; }
 
 .list1 {
-    flex: 1 100%;
-    background: white url("../images/func-list/cat_teddy.jpg");
+  flex: 1 100%;
+  background: white url("../images/func-list/cat_teddy.jpg"); }
+  .list1:hover {
+    transform-origin: left 2px; }
 
-}
 .list2 {
-    flex: 2 100%;
-    background: white url("../images/func-list/fox.jpg");
-}
+  flex: 2 100%;
+  background: white url("../images/func-list/fox.jpg"); }
+  .list2:hover {
+    transform-origin: center 0; }
 
 .list3 {
-    flex: 3 100%;
-    background: white url("../images/func-list/pupper.jpg");
-}
+  flex: 3 100%;
+  background: white url("../images/func-list/pupper.jpg"); }
+
 .list1 h1, .list3 h1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-}
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px; }
 
 .list2 h1 {
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    right:10px;
-}
-
-.func-list2 {
-
-}
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  right: 10px; }
 
 /*END: styli func-list*/
-
 /* START: Style sekcji formularz */
 #sc-form-submit {
-    background-color: rgba(211, 211, 211, 0.3);
-    text-align: center;
-    padding: 50px;
-    margin: 10px;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-position-x: 25px;
-}
+  background-color: rgba(211, 211, 211, 0.3);
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-position-x: 25px; }
 
 .email-input {
-    font-size: 30px;
-    margin: 20px;
-}
+  font-size: 30px;
+  margin: 20px; }
 
 .button-submit {
-    background-color: rgba(59, 32, 16, 0.7);
-    font-size: 50px;
-    padding: 25px;
-    color: whitesmoke;
-    text-transform: uppercase;
-    transition: background-color linear;
-    border-width: medium;
-    border-color: rgb(69, 87, 99);
-}
+  background-color: rgba(59, 32, 16, 0.7);
+  font-size: 50px;
+  padding: 25px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  transition: background-color linear;
+  border-width: medium;
+  border-color: #455763; }
 
 .button-submit:hover {
-    background-color: darkgrey;
-    font-weight: bold;
-    cursor: pointer;
-}
+  background-color: darkgrey;
+  font-weight: bold;
+  cursor: pointer; }
 
 .article-styles {
-    color: darkgrey;
-}
+  color: darkgrey; }
 
 /* KONIEC Style sekcji formularz */
-
 /* START: Footer style*/
 footer {
-    background-color: rgb(11, 203, 204);
-    border: 5px solid rgb(69, 87, 99);
-    border-radius: 10px;
-    width: auto;
-    margin: 20px 20px;
-    padding: 20px 20px;
-    color: white;
-}
+  background-color: #0bcbcc;
+  border: 5px solid #455763;
+  border-radius: 10px;
+  width: auto;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  color: white; }
 
 footer h1 {
-    margin: 20px 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round;
-}
+  margin: 20px 40%;
+  text-align: center;
+  border: 10px solid transparent;
+  border-image: url(../images/paw.png) 100% round; }
 
 footer p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger;
-}
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  font-size: larger; }
 
 footer div {
-    background-color: rgb(11, 203, 204);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
+  background-color: #0bcbcc;
+  display: flex;
+  justify-content: center;
+  margin: auto; }
 
 footer figure {
-    padding: 10px;
-    margin: 10px;
-    color: black;
-}
+  padding: 10px;
+  margin: 10px;
+  color: black; }
 
 footer figcaption {
-    text-align: center;
-}
+  text-align: center; }
 
 footer img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-}
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto; }
 
 .user {
-    height: 96px;
-    width: 96px;
-    transition: all .2s ease-out;
-}
+  height: 96px;
+  width: 96px;
+  transition: all .2s ease-out; }
 
 #t1:hover, #t2:hover, #t3:hover, #t4:hover {
-    background-color: white;
-}
+  background-color: white; }
 
 .media {
-    margin: 10px 0;
-    background-color: rgb(11, 203, 204);
-}
+  margin: 10px 0;
+  background-color: #0bcbcc; }
 
 .media img {
-    margin: 20px 20px;
-    transition: all 0.5s ease;
-}
+  margin: 20px 20px;
+  transition: all 0.5s ease; }
 
 .media img:hover {
-    transform: rotate(-30deg);
-}
+  transform: rotate(-30deg); }
 
 /*END: style footer*/
-
-
 button {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    text-shadow: 0 2px 10px #000;
-}
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 2px 10px #000; }
 
-.button-section1
-{
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
-    text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
-    width: 120px;
-    height: 30px;
-    position:relative;
-    font-size: 16px;
-    color: white;
-    float: right;
-}
+.button-section1 {
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  background-color: #0bcbcc;
+  text-shadow: 0 2px 10px #000;
+  border-width: medium;
+  border-color: #455763;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  float: right; }
 
-.button-section2
-{
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
-    text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
-    width: 120px;
-    height: 30px;
-    position:relative;
-    font-size: 16px;
-    color: white;
-    float: right;
-}
+.button-section2 {
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  background-color: #0bcbcc;
+  text-shadow: 0 2px 10px #000;
+  border-width: medium;
+  border-color: #455763;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  float: right; }
 
-.button-section3
-{
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
-    text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
-    width: 120px;
-    height: 30px;
-    position:relative;
-    font-size: 16px;
-    color: white;
-    float: right;
-}
+.button-section3 {
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  background-color: #0bcbcc;
+  text-shadow: 0 2px 10px #000;
+  border-width: medium;
+  border-color: #455763;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  float: right; }
 
-.button-section4
-{
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
-    text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
-    width: 120px;
-    height: 30px;
-    position:relative;
-    font-size: 16px;
-    color: white;
-    float: right;
-}
+.button-section4 {
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  background-color: #0bcbcc;
+  text-shadow: 0 2px 10px #000;
+  border-width: medium;
+  border-color: #455763;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  float: right; }
 
+/*# sourceMappingURL=style.css.map */
