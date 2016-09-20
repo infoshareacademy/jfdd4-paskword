@@ -18,8 +18,9 @@ h2 {
     font-family: "Arima Madurai", serif;
     background-image: url(../images/happy-pet.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     font-size: 220px;
     text-align: center;
 
@@ -206,11 +207,26 @@ button {
     right:10px;
 }
 
-.func-list2 {
+/*END: styli func-list*/
 
+/* START: product list */
+
+.product-list {
+    font-size: 18px;
+    font-family: "Arima Madurai", serif;
+    font-weight: bold;
+    color: #698799;
+    background-color: rgba(211, 211, 211, 0.3);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
 }
 
-/*END: styli func-list*/
+ul {
+    list-style-type: none;
+}
+
+/* END: product list */
 
 /* START: Style sekcji formularz */
 #sc-form-submit {
