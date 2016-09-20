@@ -13,6 +13,33 @@ h2 {
     color: rgb(11, 203, 204);
 }
 
+/*START navbar*/
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(59, 32, 16, 0.6);
+}
+
+nav ul a {
+    float: right;
+    clear: right;
+    color: white;
+}
+
+nav a::selection {
+    background-color: rgb(11, 203, 204);
+    color: white;
+}
+
+nav ul img {
+    /*TODO*/
+    /*background-image: url("");*/
+    float: left;
+    clear: left;
+}
+/*END navbar*/
+
 /*START: main-photo + FUTRZAK*/
 .main-photo {
     font-family: "Arima Madurai", serif;
@@ -115,6 +142,7 @@ button {
     border-radius: 15px;
     text-shadow: 0 2px 10px #000;
 }
+
 /*END: main photo + FUTRZAK*/
 
 /*START func-list*/
@@ -183,6 +211,7 @@ button {
     background: white url("../images/func-list/cat_teddy.jpg");
 
 }
+
 .list2 {
     flex: 2 100%;
     background: white url("../images/func-list/fox.jpg");
@@ -192,6 +221,7 @@ button {
     flex: 3 100%;
     background: white url("../images/func-list/pupper.jpg");
 }
+
 .list1 h1, .list3 h1 {
     position: absolute;
     top: 10px;
@@ -203,7 +233,7 @@ button {
     position: absolute;
     bottom: 5px;
     left: 10px;
-    right:10px;
+    right: 10px;
 }
 
 .func-list2 {
@@ -329,7 +359,6 @@ footer img {
 
 /*END: style footer*/
 
-
 button {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -337,73 +366,69 @@ button {
     text-shadow: 0 2px 10px #000;
 }
 
-.button-section1
-{
+.button-section1 {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
+    display: inline-block;
+    background-color: rgb(11, 203, 204);
     text-shadow: 0 2px 10px #000;
     border-width: medium;
-    border-color: rgb(69,87,99);
+    border-color: rgb(69, 87, 99);
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
     color: white;
     float: right;
 }
 
-.button-section2
-{
+.button-section2 {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
+    display: inline-block;
+    background-color: rgb(11, 203, 204);
     text-shadow: 0 2px 10px #000;
     border-width: medium;
-    border-color: rgb(69,87,99);
+    border-color: rgb(69, 87, 99);
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
     color: white;
     float: right;
 }
 
-.button-section3
-{
+.button-section3 {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
+    display: inline-block;
+    background-color: rgb(11, 203, 204);
     text-shadow: 0 2px 10px #000;
     border-width: medium;
-    border-color: rgb(69,87,99);
+    border-color: rgb(69, 87, 99);
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
     color: white;
     float: right;
 }
 
-.button-section4
-{
+.button-section4 {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
+    display: inline-block;
+    background-color: rgb(11, 203, 204);
     text-shadow: 0 2px 10px #000;
     border-width: medium;
-    border-color: rgb(69,87,99);
+    border-color: rgb(69, 87, 99);
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
     color: white;
     float: right;
