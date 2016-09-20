@@ -116,36 +116,25 @@ button {
     justify-content: space-around;
     letter-spacing: 4px;
     word-spacing: 4px;
-    position: relative;
 }
 
 .func-list div {
     margin: 10px;
     background-size: cover;
     position: relative;
-    transition: all 300ms;
+    transition: all 1s;
 }
 
-.func-list2 {
-
+.func-list div:hover {
+    transform: scale(1.2);
+    z-index: 1;
 }
 
-.list1 {
-    flex: 1 100%;
-    height: 359px;
-    background: white url("../images/func-list/cat_teddy.jpg");
-
-}
-
-.list1 h1, .list3 h1 {
-    margin: 10%;
-}
 .func-list h1 {
     font-weight: 900;
     color: white;
     background: rgba(0, 0, 0, 0.75);
 }
-
 
 .text {
     position: absolute;
@@ -157,29 +146,27 @@ button {
     right: 30px;
 }
 
+.func-list div:hover .text {
+    visibility: visible;
+}
+
 #text2 {
-    position: absolute;
     top: 30px;
     left: 30px;
     right: 30px;
     bottom: 100px;
 }
 
-.func-list div:hover {
-    transform: scale(1.4);
-    z-index: 1;
-}
 .list1:hover {
     transform-origin: left 2px;
 }
+
 .list2:hover {
     transform-origin: center 0;
 }
+
 .list3:hover {
     transform-origin: right 2px;
-}
-.func-list div:hover .text {
-    visibility: visible;
 }
 
 .list1 {
@@ -190,13 +177,6 @@ button {
 .list2 {
     flex: 2 100%;
     background: white url("../images/func-list/fox.jpg");
-}
-
-.list2 h1 {
-    margin: 50% 10% 0;
-    font-weight: 900;
-    color: white;
-    background: rgba(0, 0, 0, 0.75);
 }
 
 .list3 {
@@ -229,7 +209,6 @@ button {
     text-align: center;
     padding: 50px;
     margin: 10px;
-    /*background-image: url('../images/send-email.png');*/
     background-position: left bottom;
     background-repeat: no-repeat;
     background-position-x: 25px;
@@ -253,7 +232,6 @@ button {
 
 .button-submit:hover {
     background-color: darkgrey;
-    padding: 30px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -297,8 +275,8 @@ footer div {
 }
 
 footer figure {
-    padding: 5px 10px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 10px;
     color: black;
 }
 
@@ -316,19 +294,16 @@ footer img {
 .user {
     height: 96px;
     width: 96px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-out;
 }
 
 #t1:hover, #t2:hover, #t3:hover, #t4:hover {
     background-color: white;
-    border: 1px solid rgb(69, 87, 99);
-    transform: scale(1.4);
 }
 
 .media {
     margin: 10px 0;
     background-color: rgb(11, 203, 204);
-
 }
 
 .media img {
