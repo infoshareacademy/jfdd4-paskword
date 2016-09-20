@@ -218,7 +218,6 @@ button {
     text-align: center;
     padding: 50px;
     margin: 10px;
-    /*background-image: url('../images/send-email.png');*/
     background-position: left bottom;
     background-repeat: no-repeat;
     background-position-x: 25px;
@@ -242,7 +241,6 @@ button {
 
 .button-submit:hover {
     background-color: darkgrey;
-    padding: 30px;
     font-weight: bold;
     cursor: pointer;
 }
