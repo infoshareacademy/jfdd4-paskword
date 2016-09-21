@@ -18,15 +18,15 @@ body {
     font-family: $norm-font;
     background-color: #fff;
     color: $grey;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
 }
 
-h1 {
-    color: $grey;
-    font-family: $head-font;
-}
-
-h2 {
-    color: $cyan;
+.header {
+    text-align: center;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-size: 2em;
 }
 
 /*START: main-photo + FUTRZAK*/
@@ -214,11 +214,9 @@ button {
 
 /* START: Style sekcji formularz */
 #sc-form-submit {
+    color: $brown;
     text-align: center;
-    padding: 50px;
-    margin: 10px;
-    background: $white no-repeat left bottom;
-    background-position-x: 25px;
+    background: $white;
 }
 
 .email-input {
@@ -241,15 +239,11 @@ button {
     }
 }
 
-.article-styles {
-    color: $brown;
-}
-
 /* KONIEC Style sekcji formularz */
 
 /* START: Footer style*/
 footer {
-    background-color: $brown;
+    background-color: lighten($brown, 20%) ;
     width: auto;
     margin: 20px 20px;
     padding: 20px 20px;
@@ -362,4 +356,3 @@ button {
     color: $white;
     float: right;
 }
-
