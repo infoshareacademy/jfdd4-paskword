@@ -176,7 +176,8 @@ button {
   font-family: "Arima Madurai", serif;
   font-weight: bold;
   color: #698799;
-  background-color: rgba(69, 87, 99, 0.1);
+ ;
+  /*background-color: rgba(69, 87, 99, 0.1);*/
   text-align: center;
   padding: 50px;
   margin: 10px; }
@@ -194,7 +195,18 @@ button {
 
 .email-input {
   font-size: 30px;
-  margin: 20px; }
+  margin: 20px;
+  position: relative;
+  left: 12px;
+  background-color: rgba(202, 228, 239, 0.13);
+}
+
+input[type="submit"] {
+    font-size: 30px;
+    margin: 20px;
+    position: relative;
+    left: -12px;
+}
 
 .button-submit {
   background-color: rgba(59, 32, 16, 0.7);
