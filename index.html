@@ -106,8 +106,12 @@
             <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
                 premierze!</h3>
         </article>
-        <form >
-            <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email..."><br>
+
+        <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
+            <input class="email-input" type="text" name="email-submit" placeholder="Podaj swój adres email...">
+            <!-- kolejne pola -->
+            <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
+            <input type="submit" value="Send"><br>
             <button class="button-submit">Powiadom mnie!</button>
         </form>
     </section>
