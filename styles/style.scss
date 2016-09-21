@@ -1,61 +1,65 @@
 $head-font: "Arima Madurai", serif;
 $norm-font: "Scope One", sans-serif;
+$grey: #698799;
+$white: #fff;
+$cyan: rgb(11, 203, 204);
+$brown: rgba(59, 32, 16, 0.4);
+
+@mixin func-header ($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
 
 body {
     font-family: $norm-font;
-    background-color: white;
-    color: #698799;
+    background-color: #fff;
+    color: $grey;
 }
 
 h1 {
-    color: #698799;
+    color: $grey;
     font-family: $head-font;
 }
 
 h2 {
-    color: rgb(11, 203, 204);
+    color: $cyan;
 }
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
-    font-family: "Arima Madurai", serif;
-    background-image: url(../images/happy-pet.jpg);
+    font-family: $head-font;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../images/happy-pet.jpg) no-repeat center;
     font-size: 220px;
     text-align: center;
-
     z-index: 1;
     display: block;
     position: static;
     text-shadow: 0 7px 10px #000;
-}
-
-.main-photo h1 {
-    color: rgb(11, 203, 204);
-    margin: inherit;
-}
-
-.main-photo p {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 200px;
-    padding-top: 2px;
-    position: relative;
-    margin: inherit;
+    h1 {
+        color: $cyan;
+        margin: inherit;
+    }
+    p {
+        color: $white;
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 200px;
+        padding-top: 2px;
+        position: relative;
+        margin: inherit;
+    }
 }
 
 #pet-header {
     font-size: 250px;
-    font-family: "Lohit Bengali", serif;
     text-align: center;
     color: rgb(69, 87, 99);
-    background-image: url(../images/happy-pet.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../images/happy-pet.jpg) no-repeat center;
     margin: inherit;
     z-index: 1;
     display: block;
@@ -69,21 +73,19 @@ h2 {
     display: block;
     background-color: rgba(69, 87, 99, 0.1);
     margin: inherit;
-    border: solid;
-    border-color: black;
+    border: solid black;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
     box-shadow: 10px 5px 10px 5px #333 inset;
-    color: rgb(69, 87, 99);
+    color: $grey;
 }
 
 #info-button {
     color: white;
-    background-color: rgb(11, 203, 204);
+    background-color: $cyan;
     text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69, 87, 99);
+    border: medium $grey;
     width: 170px;
     height: 80px;
     font-size: 16px;
@@ -92,20 +94,19 @@ h2 {
     z-index: 9999;
     position: fixed;
     display: block;
-}
-
-#info-button:hover {
-    background-color: darkgrey;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
+    &:hover {
+        background-color: darkgrey;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+    }
 }
 
 .pet-text {
     font-size: 20px;
-    color: white;
+    color: $white;
     text-indent: 5%;
-    background-color: rgba(59, 32, 16, 0.4);
+    background-color: $brown;
     text-align: center;
     padding: 50px;
     margin: 10px;
@@ -113,8 +114,6 @@ h2 {
 }
 
 button {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     text-shadow: 0 2px 10px #000;
 }
@@ -149,24 +148,14 @@ button {
 }
 
 .text {
-    position: absolute;
     background: rgba(255, 255, 255, 0.75);
     color: black;
     visibility: hidden;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
+    @include func-header(auto, 30px, 30px, 30px);
 }
 
 #text2 {
-    top: 30px;
-    left: 30px;
-    right: 30px;
-    bottom: 100px;
-}
-
-.list3:hover {
-    transform-origin: right 2px;
+    @include func-header(30px, 30px, 100px, 30px);
 }
 
 .list1 {
@@ -175,32 +164,31 @@ button {
     &:hover {
         transform-origin: left 2px;
     }
-
+    h1 {
+        @include func-header(10px, 10px, auto, 10px);
+    }
 }
+
 .list2 {
     flex: 2 100%;
     background: white url("../images/func-list/fox.jpg");
     &:hover {
         transform-origin: center 0;
     }
+    h1 {
+        @include func-header(auto, 10px, 5px, 10px);
+    }
 }
 
 .list3 {
     flex: 3 100%;
     background: white url("../images/func-list/pupper.jpg");
-}
-.list1 h1, .list3 h1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-}
-
-.list2 h1 {
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    right:10px;
+    &:hover {
+        transform-origin: right 2px;
+    }
+    h1 {
+        @include func-header(10px, 10px, auto, 10px);
+    }
 }
 
 .func-list2 {
@@ -211,12 +199,10 @@ button {
 
 /* START: Style sekcji formularz */
 #sc-form-submit {
-    background-color: rgba(211, 211, 211, 0.3);
     text-align: center;
     padding: 50px;
     margin: 10px;
-    background-position: left bottom;
-    background-repeat: no-repeat;
+    background: rgba(211, 211, 211, 0.3) no-repeat left bottom;
     background-position-x: 25px;
 }
 
@@ -229,11 +215,10 @@ button {
     background-color: rgba(59, 32, 16, 0.7);
     font-size: 50px;
     padding: 25px;
-    color: whitesmoke;
+    color: $white;
     text-transform: uppercase;
     transition: background-color linear;
-    border-width: medium;
-    border-color: rgb(69, 87, 99);
+    border: medium $grey;
 }
 
 .button-submit:hover {
@@ -250,51 +235,44 @@ button {
 
 /* START: Footer style*/
 footer {
-    background-color: rgb(11, 203, 204);
-    border: 5px solid rgb(69, 87, 99);
+    background-color: $cyan;
+    border: 5px solid $grey;
     border-radius: 10px;
     width: auto;
     margin: 20px 20px;
     padding: 20px 20px;
-    color: white;
-}
-
-footer h1 {
-    margin: 20px 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round;
-}
-
-footer p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger;
-}
-
-footer div {
-    background-color: rgb(11, 203, 204);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-footer figure {
-    padding: 10px;
-    margin: 10px;
-    color: black;
-}
-
-footer figcaption {
-    text-align: center;
-}
-
-footer img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
+    color: $white;
+    h1 {
+        margin: 20px 40%;
+        text-align: center;
+        border: 10px solid transparent;
+        border-image: url(../images/paw.png) 100% round;
+    }
+    p {
+        text-align: center;
+        letter-spacing: 4px;
+        word-spacing: 4px;
+        font-size: larger;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    figure {
+        padding: 10px;
+        margin: 10px;
+        color: black;
+    }
+    figcaption {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+    }
 }
 
 .user {
@@ -309,24 +287,19 @@ footer img {
 
 .media {
     margin: 10px 0;
-    background-color: rgb(11, 203, 204);
-}
-
-.media img {
-    margin: 20px 20px;
-    transition: all 0.5s ease;
-}
-
-.media img:hover {
-    transform: rotate(-30deg);
+    background-color: $cyan;
+    img {
+        margin: 20px 20px;
+        transition: all 0.5s ease;
+        &:hover {
+            transform: rotate(-30deg);
+        }
+    }
 }
 
 /*END: style footer*/
 
-
 button {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     text-shadow: 0 2px 10px #000;
 }
@@ -336,14 +309,13 @@ button {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
+    display: inline-block;
+    background-color: $cyan;
     text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
+    border: medium $grey;
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
     color: white;
     float: right;
@@ -354,16 +326,15 @@ button {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
-    background-color: rgb(11,203,204);
+    display: inline-block;
+    background-color: $cyan;
     text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
+    border: medium $grey;
     width: 120px;
     height: 30px;
     position:relative;
     font-size: 16px;
-    color: white;
+    color: $white;
     float: right;
 }
 
@@ -372,16 +343,15 @@ button {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
     background-color: rgb(11,203,204);
     text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
+    border: medium $grey;
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
-    color: white;
+    color: $white;
     float: right;
 }
 
@@ -391,15 +361,14 @@ button {
     cursor: pointer;
     text-align: center;
     display:inline-block;
-    background-color: rgb(11,203,204);
+    background-color: $cyan;
     text-shadow: 0 2px 10px #000;
-    border-width: medium;
-    border-color: rgb(69,87,99);
+    border: medium rgb(69, 87, 99);
     width: 120px;
     height: 30px;
-    position:relative;
+    position: relative;
     font-size: 16px;
-    color: white;
+    color: $white;
     float: right;
 }
 
