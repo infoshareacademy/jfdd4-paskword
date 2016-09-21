@@ -3,7 +3,8 @@ $norm-font: "Scope One", sans-serif;
 $grey: #698799;
 $white: #fff;
 $cyan: rgb(11, 203, 204);
-$brown: rgba(59, 32, 16, 0.4);
+$brown: rgba(59, 32, 16, 0.7);
+$light: rgba(69, 87, 99, 0.1);
 
 @mixin func-header ($top, $right, $bottom, $left) {
     position: absolute;
@@ -60,7 +61,7 @@ h2 {
 #pet-header {
     font-size: 250px;
     text-align: center;
-    color: rgb(69, 87, 99);
+    color: $light;
     background-size: cover;
     background: url(../images/happy-pet.jpg) no-repeat center;
     margin: inherit;
@@ -74,18 +75,16 @@ h2 {
 
 .page-description {
     display: block;
-    background-color: rgba(69, 87, 99, 0.1);
+    background-color: $light;
     margin: inherit;
-    border: solid black;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    box-shadow: 10px 5px 10px 5px #333 inset;
     color: $grey;
 }
 
 #info-button {
-    color: white;
+    color: $white;
     background-color: $cyan;
     text-shadow: 0 2px 10px #000;
     border: medium $grey;
@@ -98,7 +97,7 @@ h2 {
     position: fixed;
     display: block;
     &:hover {
-        background-color: darkgrey;
+        background-color: $light;
         font-weight: bold;
         cursor: pointer;
         text-align: center;
@@ -145,7 +144,7 @@ button {
     }
     h1 {
         font-weight: 900;
-        color: white;
+        color: $white;
         background: rgba(0, 0, 0, 0.75);
     }
 }
@@ -163,7 +162,7 @@ button {
 
 .list1 {
     flex: 1 100%;
-    background: white url("../images/func-list/cat_teddy.jpg");
+    background: $white url("../images/func-list/cat_teddy.jpg");
     &:hover {
         transform-origin: left 2px;
     }
@@ -174,7 +173,7 @@ button {
 
 .list2 {
     flex: 2 100%;
-    background: white url("../images/func-list/fox.jpg");
+    background: $white url("../images/func-list/fox.jpg");
     &:hover {
         transform-origin: center 0;
     }
@@ -185,7 +184,7 @@ button {
 
 .list3 {
     flex: 3 100%;
-    background: white url("../images/func-list/pupper.jpg");
+    background: $white url("../images/func-list/pupper.jpg");
     &:hover {
         transform-origin: right 2px;
     }
@@ -194,29 +193,23 @@ button {
     }
 }
 
-.func-list2 {
-
-}
-
 /*END: styli func-list*/
 
 /* START: product list */
 
 .product-list {
     font-size: 18px;
-    font-family: "Arima Madurai", serif;
+    font-family: $head-font;
     font-weight: bold;
-    color: #698799;
-    background-color: rgba(211, 211, 211, 0.3);
+    color: $grey;
+    background-color: $light;
     text-align: center;
     padding: 50px;
     margin: 10px;
+    ul {
+        list-style-type: none;
+    }
 }
-
-ul {
-    list-style-type: none;
-}
-
 /* END: product list */
 
 /* START: Style sekcji formularz */
@@ -224,7 +217,7 @@ ul {
     text-align: center;
     padding: 50px;
     margin: 10px;
-    background: rgba(211, 211, 211, 0.3) no-repeat left bottom;
+    background: $white no-repeat left bottom;
     background-position-x: 25px;
 }
 
@@ -234,30 +227,29 @@ ul {
 }
 
 .button-submit {
-    background-color: rgba(59, 32, 16, 0.7);
+    background-color: $brown;
     font-size: 50px;
     padding: 25px;
     color: $white;
     text-transform: uppercase;
     transition: background-color linear;
     border: medium $grey;
-}
-
-.button-submit:hover {
-    background-color: darkgrey;
-    font-weight: bold;
-    cursor: pointer;
+    &:hover {
+        background-color: lighten( $brown, 20% );
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
 
 .article-styles {
-    color: darkgrey;
+    color: $brown;
 }
 
 /* KONIEC Style sekcji formularz */
 
 /* START: Footer style*/
 footer {
-    background-color: $cyan;
+    background-color: $brown;
     width: auto;
     margin: 20px 20px;
     padding: 20px 20px;
@@ -316,32 +308,28 @@ footer {
 button {
     border-radius: 15px;
     text-shadow: 0 2px 10px #000;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    display:inline-block;
+    background-color: $cyan;
+
 }
 
 .button-section1
 {
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-    background-color: $cyan;
     text-shadow: 0 2px 10px #000;
     border: medium $grey;
     width: 120px;
     height: 30px;
     position: relative;
     font-size: 16px;
-    color: white;
+    color: $white;
     float: right;
 }
 
 .button-section2
 {
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-    background-color: $cyan;
     text-shadow: 0 2px 10px #000;
     border: medium $grey;
     width: 120px;
@@ -354,11 +342,6 @@ button {
 
 .button-section3
 {
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-    background-color: rgb(11,203,204);
     text-shadow: 0 2px 10px #000;
     border: medium $grey;
     width: 120px;
@@ -371,12 +354,6 @@ button {
 
 .button-section4
 {
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display:inline-block;
-    background-color: $cyan;
-    text-shadow: 0 2px 10px #000;
     border: medium rgb(69, 87, 99);
     width: 120px;
     height: 30px;
