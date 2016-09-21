@@ -30,9 +30,12 @@ h2 {
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
-    font-family: $head-font;
+    font-family: "Arima Madurai", serif;
+    background-image: url(../images/happy-pet.jpg);
     background-size: cover;
-    background: url(../images/happy-pet.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     font-size: 220px;
     text-align: center;
     z-index: 1;
@@ -197,6 +200,25 @@ button {
 
 /*END: styli func-list*/
 
+/* START: product list */
+
+.product-list {
+    font-size: 18px;
+    font-family: "Arima Madurai", serif;
+    font-weight: bold;
+    color: #698799;
+    background-color: rgba(211, 211, 211, 0.3);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* END: product list */
+
 /* START: Style sekcji formularz */
 #sc-form-submit {
     text-align: center;
@@ -236,13 +258,12 @@ button {
 /* START: Footer style*/
 footer {
     background-color: $cyan;
-    border: 5px solid $grey;
-    border-radius: 10px;
     width: auto;
     margin: 20px 20px;
     padding: 20px 20px;
     color: $white;
     h1 {
+        color: $white;
         margin: 20px 40%;
         text-align: center;
         border: 10px solid transparent;
@@ -262,7 +283,6 @@ footer {
     figure {
         padding: 10px;
         margin: 10px;
-        color: black;
     }
     figcaption {
         text-align: center;
@@ -278,16 +298,10 @@ footer {
 .user {
     height: 96px;
     width: 96px;
-    transition: all .2s ease-out;
-}
-
-#t1:hover, #t2:hover, #t3:hover, #t4:hover {
-    background-color: white;
 }
 
 .media {
     margin: 10px 0;
-    background-color: $cyan;
     img {
         margin: 20px 20px;
         transition: all 0.5s ease;
