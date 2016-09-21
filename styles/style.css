@@ -6,9 +6,13 @@ body {
 h1 {
   color: #698799;
   font-family: "Arima Madurai", serif; }
+    font-family: "Scope One", sans-serif;
+    background-color: white;
+}
 
-h2 {
-  color: #0bcbcc; }
+h1 {
+    font-family: "Arima Madurai", serif;
+}
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
@@ -37,29 +41,31 @@ h2 {
     margin: inherit; }
 
 #pet-header {
-  font-size: 250px;
-  text-align: center;
-  color: #455763;
-  background-size: cover;
-  background: url(../images/happy-pet.jpg) no-repeat center;
-  margin: inherit;
-  z-index: 1;
-  display: block;
-  position: static;
-  padding-top: 60px;
-  padding-bottom: 1px;
-  text-shadow: 0 7px 10px #000; }
+    font-size: 250px;
+    font-family: "Lohit Bengali", serif;
+    text-align: center;
+    color: rgb(69, 87, 99);
+    background-image: url(../images/happy-pet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: inherit;
+    z-index: 1;
+    display: block;
+    position: static;
+    padding-top: 60px;
+    padding-bottom: 1px;
+    text-shadow: 0 7px 10px #000;
+}
 
 .page-description {
   display: block;
   background-color: rgba(69, 87, 99, 0.1);
   margin: inherit;
-  border: solid black;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 10px 5px 10px 5px #333 inset;
-  color: #698799; }
+  color: rgb(69, 87, 99); }
 
 #info-button {
   color: white;
@@ -81,20 +87,22 @@ h2 {
     text-align: center; }
 
 .pet-text {
-  font-size: 20px;
-  color: #fff;
-  text-indent: 5%;
-  background-color: rgba(59, 32, 16, 0.4);
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  text-shadow: 0 2px 10px #000; }
+    font-size: 20px;
+    color: white;
+    text-indent: 5%;
+    background-color: rgba(59, 32, 16, 0.4);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    text-shadow: 0 2px 10px #000;
+}
 
 button {
   border-radius: 15px;
   text-shadow: 0 2px 10px #000; }
 
 /*END: main photo + FUTRZAK*/
+
 /*START func-list*/
 .func-list {
   width: 100%;
@@ -172,7 +180,9 @@ button {
     left: 10px; }
 
 /*END: styli func-list*/
+
 /* START: product list */
+
 .product-list {
   font-size: 18px;
   font-family: "Arima Madurai", serif;
@@ -187,26 +197,32 @@ ul {
   list-style-type: none; }
 
 /* END: product list */
+
 /* START: Style sekcji formularz */
 #sc-form-submit {
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  background: rgba(211, 211, 211, 0.3) no-repeat left bottom;
-  background-position-x: 25px; }
+    background-color: rgba(211, 211, 211, 0.3);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+}
 
 .email-input {
   font-size: 30px;
   margin: 20px; }
 
 .button-submit {
-  background-color: rgba(59, 32, 16, 0.7);
-  font-size: 50px;
-  padding: 25px;
-  color: #fff;
-  text-transform: uppercase;
-  transition: background-color linear;
-  border: medium #698799; }
+    background-color: rgba(59, 32, 16, 0.7);
+    font-size: 50px;
+    padding: 25px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: background-color linear;
+    border-width: medium;
+    border-color: rgb(69, 87, 99);
+}
 
 .button-submit:hover {
   background-color: darkgrey;
@@ -217,6 +233,7 @@ ul {
   color: darkgrey; }
 
 /* KONIEC Style sekcji formularz */
+
 /* START: Footer style*/
 footer {
   background-color: #0bcbcc;
@@ -263,68 +280,70 @@ footer {
       transform: rotate(-30deg); }
 
 /*END: style footer*/
+
+
 button {
   border-radius: 15px;
   text-shadow: 0 2px 10px #000; }
 
 .button-section1 {
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  background-color: #0bcbcc;
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: white;
-  float: right; }
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: #0bcbcc;
+    text-shadow: 0 2px 10px #000;
+    border: medium #698799;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    float: right; }
 
 .button-section2 {
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  background-color: #0bcbcc;
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: #0bcbcc;
+    text-shadow: 0 2px 10px #000;
+    border: medium #698799;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    float: right; }
 
 .button-section3 {
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  background-color: #0bcbcc;
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: #0bcbcc;
+    text-shadow: 0 2px 10px #000;
+    border: medium #698799;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    float: right; }
 
 .button-section4 {
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  background-color: #0bcbcc;
-  text-shadow: 0 2px 10px #000;
-  border: medium #455763;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: #0bcbcc;
+    text-shadow: 0 2px 10px #000;
+    border: medium #455763;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
