@@ -1,15 +1,14 @@
 body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
-  color: #698799;
-  margin-left: 25px !important;
-  margin-right: 25px !important; }
+  color: #698799; }
 
-.header {
-  text-align: center;
-  letter-spacing: 4px;
-  word-spacing: 4px;
-  font-size: 2em; }
+h1 {
+  color: #698799;
+  font-family: "Arima Madurai", serif; }
+
+h2 {
+  color: #0bcbcc; }
 
 nav {
   background-color: #3b2010;
@@ -218,9 +217,11 @@ button {
 /* END: product list */
 /* START: Style sekcji formularz */
 #sc-form-submit {
-  color: rgba(59, 32, 16, 0.7);
   text-align: center;
-  background: #fff; }
+  padding: 50px;
+  margin: 10px;
+  background: #fff no-repeat left bottom;
+  background-position-x: 25px; }
 
 .email-input {
   font-size: 30px;
@@ -250,10 +251,13 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer; }
 
+.article-styles {
+  color: rgba(59, 32, 16, 0.7); }
+
 /* KONIEC Style sekcji formularz */
 /* START: Footer style*/
 footer {
-  background-color: rgba(139, 76, 38, 0.7);
+  background-color: rgba(59, 32, 16, 0.7);
   width: auto;
   margin: 20px 20px;
   padding: 20px 20px;
