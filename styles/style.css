@@ -1,3 +1,33 @@
+/* to sa buttony */
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  text-shadow: 0 2px 10px #000;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #0bcbcc;
+  transition: background-color linear;
+  color: #fff;
+  border: medium #698799;
+  text-decoration: none; }
+  .button:hover {
+    font-weight: bold; }
+
+.button-submit {
+  background-color: rgba(59, 32, 16, 0.7);
+  font-size: 50px;
+  padding: 25px;
+  text-transform: uppercase; }
+  .button-submit:hover {
+    background-color: rgba(139, 76, 38, 0.7); }
+
+.button-info {
+  font-size: 16px;
+  padding: 10px 40px; }
+  .button-info:hover {
+    background-color: rgba(69, 87, 99, 0.1); }
+
 body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
@@ -48,18 +78,18 @@ nav {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  font-size: 220px;
   text-align: center;
   z-index: 1;
   display: block;
   position: static;
   text-shadow: 0 7px 10px #000; }
   .main-photo h1 {
+    font-size: 220px;
     color: #0bcbcc;
     margin: inherit; }
   .main-photo p {
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 2px;
@@ -89,25 +119,6 @@ nav {
   padding-bottom: 30px;
   color: #698799; }
 
-#info-button {
-  color: #fff;
-  background-color: #0bcbcc;
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 170px;
-  height: 80px;
-  font-size: 16px;
-  text-align: center;
-  transition: background-color 1s linear 0.05s;
-  z-index: 9999;
-  position: fixed;
-  display: block; }
-  #info-button:hover {
-    background-color: rgba(69, 87, 99, 0.1);
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center; }
-
 .pet-text {
   font-size: 20px;
   color: #fff;
@@ -116,10 +127,6 @@ nav {
   text-align: center;
   padding: 50px;
   margin: 10px;
-  text-shadow: 0 2px 10px #000; }
-
-button {
-  border-radius: 15px;
   text-shadow: 0 2px 10px #000; }
 
 /*END: main photo + FUTRZAK*/
@@ -226,19 +233,6 @@ button {
   font-size: 30px;
   margin: 20px; }
 
-.button-submit {
-  background-color: rgba(59, 32, 16, 0.7);
-  font-size: 50px;
-  padding: 25px;
-  color: #fff;
-  text-transform: uppercase;
-  transition: background-color linear;
-  border: medium #698799; }
-  .button-submit:hover {
-    background-color: rgba(139, 76, 38, 0.7);
-    font-weight: bold;
-    cursor: pointer; }
-
 .article-styles {
   color: rgba(59, 32, 16, 0.7); }
 
@@ -289,52 +283,5 @@ footer {
       transform: rotate(-30deg); }
 
 /*END: style footer*/
-button {
-  border-radius: 15px;
-  text-shadow: 0 2px 10px #000;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  background-color: #0bcbcc; }
-
-.button-section1 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section2 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section3 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section4 {
-  border: medium #455763;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
 
 /*# sourceMappingURL=style.css.map */

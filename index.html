@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="description" content="Wet Visit Planer">    <meta name="keywords" content="pet, pets, wet, wet visits, dog,cat, ">
+    <meta name="description" content="Wet Visit Planer">
+    <meta name="keywords" content="pet, pets, wet, wet visits, dog,cat, ">
     <meta name="author" content="PASKword">
 
     <title>Futrzak Wizytówka</title>
@@ -13,36 +14,31 @@
     <link href="http://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" type="text/css">
 </head>
 <body>
-<button id="info-button" onClick="document.getElementById('sc-form-submit').scrollIntoView();">Kliknij tutaj by się
-    zarejestrować!
-</button>
+
 <!-- navbar: menu + logo-->
 <header>
-  <nav>
-      <ul>
-          <img src="images/paw-64-white.png">
-          <li><a href="#team">O NAS</a></li>
-          <li><a href="#sc-form-submit">KONTAKT</a></li>
-          <li><a href="#pr_options">OPIS FUNKCJI</a></li>
-          <li><a href="#about">OFERTA</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li><a href="#about">Oferta</a></li>
+            <li><a href="#pr_options">Opis funkcji</a></li>
+            <li><a href="#sc-form-submit">Kontakt</a></li>
+            <li><a href="#team">O nas</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
     <section id="first-section-photo">
         <section class="main-photo">
             <h1>Futrzak </h1>
-            <p>-Dbamy o zdrowie naszych futrzastych przyjaciół-</p>
-        </section><hr>
-        <h2 class="page-description">Nie musisz tracić czasu, by zaplanowac wizyte u weterynarza.<br>
-            Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!</h2><hr>
+            <p>-Nie musisz tracić czasu, by zaplanowac wizyte u weterynarza.<br>
+                Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
+
+            <a class="button button-info" href="#sc-form-submit">Klinkij tutaj po szczegółowe info!</a>
+        </section>
+
         <h2 class="page-description">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
-        <p class="pet-text">Ta strona pozwoli Ci na zlokalizowanie najbliższego weternarza w Twojej okolicy i
-            zasięgnięcia o nim opinii.<br>
-            W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
-            Twojego domowego pupila.
-        </p>
+
     </section>
 
     <!-- Koniec zajawki -->
@@ -76,6 +72,15 @@
     </section>
 
     <section class="product-list" id="pr_options">
+
+        <p class="pet-text">Ta strona pozwoli Ci na zlokalizowanie najbliższego weternarza w Twojej okolicy i
+            zasięgnięcia o nim opinii.<br>
+            W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
+            Twojego domowego pupila.
+        </p>
+
+
+
         <ul>
             <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
             <li>Komentarze, polecenia i opinie o weterynarzach</li>
@@ -111,8 +116,8 @@
             <input class="email-input" type="text" name="email-submit" placeholder="Podaj swój adres email...">
             <!-- kolejne pola -->
             <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
-            <input type="submit" value="Send"><br>
-            <button class="button-submit">Powiadom mnie!</button>
+            <input type="submit" class="button button-submit" value="Send"><br>
+            <!--<button class="button-submit">Powiadom mnie!</button>-->
         </form>
     </section>
     <!-- Koniec formularza z powiadomieniem o premierze: pole do adresu e-mail i button -->
@@ -122,7 +127,7 @@
 
 <!-- Informacje o twórcach: zdjęcia, nazwiska -->
 <footer id="team">
-    <h1 class="header">O nas</h1>
+    <h1>O nas</h1>
     <div>
         <figure id="t1">
             <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #1"/><br>
