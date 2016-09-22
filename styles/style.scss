@@ -1,5 +1,9 @@
 @import "variables";
 @import "mixins-styles";
+@import "foo-style";
+@import "funclist-style.scss";
+@import "nav-style";
+
 
 body {
   font-family: $norm-font;
@@ -65,13 +69,13 @@ nav {
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
-  font-family: "Arima Madurai", serif;
+  font-family: $head-font;
   background-image: url(../images/happy-pet.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  font-size: 220px;
+  font-size: 150px;
   text-align: center;
   z-index: 1;
   display: block;
@@ -156,80 +160,6 @@ button {
 
 /*END: main photo + FUTRZAK*/
 
-/*START func-list*/
-.func-list {
-  width: 100%;
-  height: 359px;
-  display: flex;
-  justify-content: space-around;
-  letter-spacing: 4px;
-  word-spacing: 4px;
-  div {
-    margin: 10px;
-    background-size: cover;
-    position: relative;
-    transition: all 1s;
-    &:hover {
-      transform: scale(1.2);
-      z-index: 1;
-      .text {
-        visibility: visible;
-      }
-    }
-  }
-  h1 {
-    font-weight: 900;
-    color: $white;
-    background: rgba(0, 0, 0, 0.75);
-  }
-}
-
-.text {
-  background: rgba(255, 255, 255, 0.75);
-  color: black;
-  visibility: hidden;
-  @include func-header(auto, 30px, 30px, 30px);
-}
-
-#text2 {
-  @include func-header(30px, 30px, 100px, 30px);
-}
-
-.list1 {
-  flex: 1 100%;
-  background: $white url("../images/func-list/cat_teddy.jpg");
-  &:hover {
-    transform-origin: left 2px;
-  }
-  h1 {
-    @include func-header(10px, 10px, auto, 10px);
-  }
-}
-
-.list2 {
-  flex: 2 100%;
-  background: $white url("../images/func-list/fox.jpg");
-  &:hover {
-    transform-origin: center 0;
-  }
-  h1 {
-    @include func-header(auto, 10px, 5px, 10px);
-  }
-}
-
-.list3 {
-  flex: 3 100%;
-  background: $white url("../images/func-list/pupper.jpg");
-  &:hover {
-    transform-origin: right 2px;
-  }
-  h1 {
-    @include func-header(10px, 10px, auto, 10px);
-  }
-}
-
-/*END: styli func-list*/
-
 /* START: product list */
 
 .product-list {
@@ -282,64 +212,6 @@ button {
 }
 
 /* KONIEC Style sekcji formularz */
-
-/* START: Footer style*/
-footer {
-  background-color: $brown;
-  width: auto;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  color: $white;
-  h1 {
-    color: $white;
-    margin: 20px 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round;
-  }
-  p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger;
-  }
-  div {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  figure {
-    padding: 10px;
-    margin: 10px;
-  }
-  figcaption {
-    text-align: center;
-  }
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-  }
-}
-
-.user {
-  height: 96px;
-  width: 96px;
-}
-
-.media {
-  margin: 10px 0;
-  img {
-    margin: 20px 20px;
-    transition: all 0.5s ease;
-    &:hover {
-      transform: rotate(-30deg);
-    }
-  }
-}
-
-/*END: style footer*/
 
 button {
   border-radius: 15px;
@@ -395,3 +267,8 @@ button {
   float: right;
 }
 
+@media screen and (min-width: 1201px) {
+  .main-photo {
+    font-size: 220px;
+  }
+}
