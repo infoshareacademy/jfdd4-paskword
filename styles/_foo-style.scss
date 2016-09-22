@@ -10,7 +10,7 @@ footer {
   color: $white;
   h1 {
     color: $white;
-    margin: 1% 40%;
+    margin: 2% 40%;
     text-align: center;
     border: 10px solid transparent;
     border-image: url(../images/paw.png) 100% round;
@@ -49,7 +49,7 @@ footer {
 .media {
   margin: 1% 0;
   img {
-    margin: 20px 20px;
+    margin: 1% 1%;
     transition: all 0.5s ease;
     &:hover {
       transform: rotate(-30deg);

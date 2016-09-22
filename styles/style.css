@@ -7,7 +7,7 @@ footer {
   color: #fff; }
   footer h1 {
     color: #fff;
-    margin: 1% 40%;
+    margin: 2% 40%;
     text-align: center;
     border: 10px solid transparent;
     border-image: url(../images/paw.png) 100% round; }
@@ -38,7 +38,7 @@ footer {
 .media {
   margin: 1% 0; }
   .media img {
-    margin: 20px 20px;
+    margin: 1% 1%;
     transition: all 0.5s ease; }
     .media img:hover {
       transform: rotate(-30deg); }
