@@ -1,352 +1,70 @@
-body {
-  font-family: "Scope One", sans-serif;
-  background-color: #fff;
-  color: #698799; }
+/*
+Error: Undefined variable: "$norm-font".
+        on line 12 of style.scss
 
-h1 {
-  color: #698799;
-  font-family: "Arima Madurai", serif; }
+7:   bottom: $bottom;
+8:   left: $left;
+9: }
+10: 
+11: body {
+12:   font-family: $norm-font;
+13:   background-color: #fff;
+14:   color: $grey;
+15: }
+16: 
+17: h1 {
 
-h2 {
-  color: #0bcbcc; }
-
-nav {
-  background-color: #3b2010;
-  color: #fff;
-  clear: right; }
-  nav ul {
-    z-index: 9999999;
-    color: #fff;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(59, 32, 16, 0.7);
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    nav ul li {
-      float: right; }
-      nav ul li a {
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 30px 16px;
-        text-decoration: none;
-        transition: all 0.5s ease-out;
-        font-size: 20px; }
-      nav ul li a:hover:not(.active) {
-        background-color: rgba(139, 76, 38, 0.7); }
-    nav ul img {
-      padding: 10px 0 0 10px; }
-
-/*START: main-photo + FUTRZAK*/
-.main-photo {
-  font-family: "Arima Madurai", serif;
-  background-image: url(../images/happy-pet.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  font-size: 220px;
-  text-align: center;
-  z-index: 1;
-  display: block;
-  position: static;
-  text-shadow: 0 7px 10px #000; }
-  .main-photo h1 {
-    color: #0bcbcc;
-    margin: inherit; }
-  .main-photo p {
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 200px;
-    padding-top: 2px;
-    position: relative;
-    margin: inherit; }
-
-#pet-header {
-  font-size: 250px;
-  text-align: center;
-  color: rgba(69, 87, 99, 0.1);
-  background-size: cover;
-  background: url(../images/happy-pet.jpg) no-repeat center;
-  margin: inherit;
-  z-index: 1;
-  display: block;
-  position: static;
-  padding-top: 60px;
-  padding-bottom: 1px;
-  text-shadow: 0 7px 10px #000; }
-
-.page-description {
-  display: block;
-  background-color: rgba(69, 87, 99, 0.1);
-  margin: inherit;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #698799; }
-
-#info-button {
-  color: #fff;
-  background-color: #0bcbcc;
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 170px;
-  height: 80px;
-  font-size: 16px;
-  text-align: center;
-  transition: background-color 1s linear 0.05s;
-  z-index: 9999;
-  position: fixed;
-  display: block; }
-  #info-button:hover {
-    background-color: rgba(69, 87, 99, 0.1);
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center; }
-
-.pet-text {
-  font-size: 20px;
-  color: #fff;
-  text-indent: 5%;
-  background-color: rgba(59, 32, 16, 0.7);
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  text-shadow: 0 2px 10px #000; }
-
-button {
-  border-radius: 15px;
-  text-shadow: 0 2px 10px #000; }
-
-/*END: main photo + FUTRZAK*/
-/*START func-list*/
-.func-list {
-  width: 100%;
-  height: 359px;
-  display: flex;
-  justify-content: space-around;
-  letter-spacing: 4px;
-  word-spacing: 4px; }
-  .func-list div {
-    margin: 10px;
-    background-size: cover;
-    position: relative;
-    transition: all 1s; }
-    .func-list div:hover {
-      transform: scale(1.2);
-      z-index: 1; }
-      .func-list div:hover .text {
-        visibility: visible; }
-  .func-list h1 {
-    font-weight: 900;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.75); }
-
-.text {
-  background: rgba(255, 255, 255, 0.75);
-  color: black;
-  visibility: hidden;
-  position: absolute;
-  top: auto;
-  right: 30px;
-  bottom: 30px;
-  left: 30px; }
-
-#text2 {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 100px;
-  left: 30px; }
-
-.list1 {
-  flex: 1 100%;
-  background: #fff url("../images/func-list/cat_teddy.jpg"); }
-  .list1:hover {
-    transform-origin: left 2px; }
-  .list1 h1 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: auto;
-    left: 10px; }
-
-.list2 {
-  flex: 2 100%;
-  background: #fff url("../images/func-list/fox.jpg"); }
-  .list2:hover {
-    transform-origin: center 0; }
-  .list2 h1 {
-    position: absolute;
-    top: auto;
-    right: 10px;
-    bottom: 5px;
-    left: 10px; }
-
-.list3 {
-  flex: 3 100%;
-  background: #fff url("../images/func-list/pupper.jpg"); }
-  .list3:hover {
-    transform-origin: right 2px; }
-  .list3 h1 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: auto;
-    left: 10px; }
-
-/*END: styli func-list*/
-/* START: product list */
-.product-list {
-  font-size: 18px;
-  font-family: "Arima Madurai", serif;
-  font-weight: bold;
-  color: #698799;
- ;
-  /*background-color: rgba(69, 87, 99, 0.1);*/
-  text-align: center;
-  padding: 50px;
-  margin: 10px; }
-  .product-list ul {
-    list-style-type: none; }
-
-/* END: product list */
-/* START: Style sekcji formularz */
-#sc-form-submit {
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  background: #fff no-repeat left bottom;
-  background-position-x: 25px; }
-
-.email-input {
-  font-size: 30px;
-  margin: 20px;
-  position: relative;
-  left: 12px;
-  background-color: rgba(202, 228, 239, 0.13);
-}
-
-input[type="submit"] {
-    font-size: 30px;
-    margin: 20px;
-    position: relative;
-    left: -12px;
-}
-
-.button-submit {
-  background-color: rgba(59, 32, 16, 0.7);
-  font-size: 50px;
-  padding: 25px;
-  color: #fff;
-  text-transform: uppercase;
-  transition: background-color linear;
-  border: medium #698799; }
-  .button-submit:hover {
-    background-color: rgba(139, 76, 38, 0.7);
-    font-weight: bold;
-    cursor: pointer; }
-
-.article-styles {
-  color: rgba(59, 32, 16, 0.7); }
-
-/* KONIEC Style sekcji formularz */
-/* START: Footer style*/
-footer {
-  background-color: rgba(59, 32, 16, 0.7);
-  width: auto;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  color: #fff; }
-  footer h1 {
-    color: #fff;
-    margin: 20px 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round; }
-  footer p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger; }
-  footer div {
-    display: flex;
-    justify-content: center;
-    margin: auto; }
-  footer figure {
-    padding: 10px;
-    margin: 10px; }
-  footer figcaption {
-    text-align: center; }
-  footer img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto; }
-
-.user {
-  height: 96px;
-  width: 96px; }
-
-.media {
-  margin: 10px 0; }
-  .media img {
-    margin: 20px 20px;
-    transition: all 0.5s ease; }
-    .media img:hover {
-      transform: rotate(-30deg); }
-
-/*END: style footer*/
-button {
-  border-radius: 15px;
-  text-shadow: 0 2px 10px #000;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  background-color: #0bcbcc; }
-
-.button-section1 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section2 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section3 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section4 {
-  border: medium #455763;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:12
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:363:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.4.21/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$norm-font\".\A         on line 12 of style.scss\A \A 7:   bottom: $bottom;\A 8:   left: $left;\A 9: }\A 10: \A 11: body {\A 12:   font-family: $norm-font;\A 13:   background-color: #fff;\A 14:   color: $grey;\A 15: }\A 16: \A 17: h1 {"; }

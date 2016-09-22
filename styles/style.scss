@@ -1,10 +1,4 @@
-$head-font: "Arima Madurai", serif;
-$norm-font: "Scope One", sans-serif;
-$grey: #698799;
-$white: #fff;
-$cyan: rgb(11, 203, 204);
-$brown: rgba(59, 32, 16, 0.7);
-$light: rgba(69, 87, 99, 0.1);
+
 
 @mixin func-header($top, $right, $bottom, $left) {
   position: absolute;
