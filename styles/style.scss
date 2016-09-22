@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins-styles";
+@import '_nav-style.scss';
 
 body {
   font-family: $norm-font;
@@ -17,49 +18,49 @@ h2 {
 }
 
 //START navbar
-nav {
-  background-color: rgb(59, 32, 16);
-  color: $white;
-
-  ul {
-    z-index: 9999999;
-    color: $white;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $brown;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    li {
-      float: right;
-      a {
-        display: block;
-        color: $white;
-        text-align: center;
-        padding: 30px 16px;
-        text-decoration: none;
-        transition: all 0.5s ease-out;
-        font-size: 20px;
-      }
-
-      a:hover:not(.active) {
-        background-color: lighten($brown, 20%);
-      }
-
-      //TODO - podświetlenie przewijanych sekcji
-      //a:active {
-      //  background-color: $white;
-      //}
-    }
-    img {
-      padding: 10px 0 0 10px;
-    }
-
-  }
-  clear: right;
-}
+//nav {
+//  background-color: rgb(59, 32, 16);
+//  color: $white;
+//
+//  ul {
+//    z-index: 9999999;
+//    color: $white;
+//    list-style-type: none;
+//    margin: 0;
+//    padding: 0;
+//    overflow: hidden;
+//    background-color: $brown;
+//    position: fixed;
+//    top: 0;
+//    width: 100%;
+//    li {
+//      float: right;
+//      a {
+//        display: block;
+//        color: $white;
+//        text-align: center;
+//        padding: 30px 16px;
+//        text-decoration: none;
+//        transition: all 0.5s ease-out;
+//        font-size: 20px;
+//      }
+//
+//      a:hover:not(.active) {
+//        background-color: lighten($brown, 20%);
+//      }
+//
+//      //TODO - podświetlenie przewijanych sekcji
+//      //a:active {
+//      //  background-color: $white;
+//      //}
+//    }
+//    img {
+//      padding: 10px 0 0 10px;
+//    }
+//
+//  }
+//  clear: right;
+//}
 
 //END navbar
 

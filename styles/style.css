@@ -1,3 +1,22 @@
+nav ul {
+  background: rgba(59, 32, 16, 0.7);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%; }
+  nav ul a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out; }
+  nav ul a:hover {
+    background-color: rgba(139, 76, 38, 0.7); }
+
 body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
@@ -9,36 +28,6 @@ h1 {
 
 h2 {
   color: #0bcbcc; }
-
-nav {
-  background-color: #3b2010;
-  color: #fff;
-  clear: right; }
-  nav ul {
-    z-index: 9999999;
-    color: #fff;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(59, 32, 16, 0.7);
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    nav ul li {
-      float: right; }
-      nav ul li a {
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 30px 16px;
-        text-decoration: none;
-        transition: all 0.5s ease-out;
-        font-size: 20px; }
-      nav ul li a:hover:not(.active) {
-        background-color: rgba(139, 76, 38, 0.7); }
-    nav ul img {
-      padding: 10px 0 0 10px; }
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
