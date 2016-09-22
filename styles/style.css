@@ -1,21 +1,29 @@
 nav ul {
+  z-index: 9999999;
   background: rgba(59, 32, 16, 0.7);
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
   position: fixed;
   width: 100%; }
-  nav ul a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    transition: all 0.5s ease-in-out; }
-  nav ul a:hover {
-    background-color: rgba(139, 76, 38, 0.7); }
+  nav ul li {
+    display: inline-block;
+    list-style-type: none; }
+    nav ul li a {
+      color: #fff;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem;
+      transition: all 0.5s ease-in-out; }
+    nav ul li a:hover {
+      background-color: rgba(139, 76, 38, 0.7); }
+    nav ul li li:first-child {
+      margin-right: auto; }
+  nav ul img {
+    display: flex;
+    justify-content: flex-start; }
 
 body {
   font-family: "Scope One", sans-serif;
