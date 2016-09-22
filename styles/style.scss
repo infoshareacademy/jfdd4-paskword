@@ -1,12 +1,5 @@
 @import "variables";
-
-@mixin func-header($top, $right, $bottom, $left) {
-  position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
+@import "mixins-styles";
 
 body {
   font-family: $norm-font;
