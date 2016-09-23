@@ -183,6 +183,45 @@ footer {
     .list3:hover {
       transform-origin: right 2px; } }
 /*END: styli func-list*/
+nav {
+  margin: 0;
+  width: 100%; }
+  nav ul {
+    font-size: 20px;
+    background-color: rgba(59, 32, 16, 0.7);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999999; }
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      justify-content: flex-end;
+      padding: 10px; }
+      nav ul li a {
+        color: #fff;
+        background-color: transparent;
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none; }
+        nav ul li a img {
+          max-width: 60px;
+          min-width: 30px;
+          width: 100%; }
+      nav ul li a:hover {
+        background-color: #fff;
+        color: rgba(59, 32, 16, 0.7); }
+    nav ul li:first-child {
+      margin-right: auto; }
+
+.active {
+  font-weight: bold; }
+
+.logo:hover {
+  background-color: transparent; }
+
 body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
@@ -194,36 +233,6 @@ h1 {
 
 h2 {
   color: #0bcbcc; }
-
-nav {
-  background-color: #3b2010;
-  color: #fff;
-  clear: right; }
-  nav ul {
-    z-index: 9999999;
-    color: #fff;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(59, 32, 16, 0.7);
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    nav ul li {
-      float: right; }
-      nav ul li a {
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 30px 16px;
-        text-decoration: none;
-        transition: all 0.5s ease-out;
-        font-size: 20px; }
-      nav ul li a:hover:not(.active) {
-        background-color: rgba(139, 76, 38, 0.7); }
-    nav ul img {
-      padding: 10px 0 0 10px; }
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
@@ -315,54 +324,6 @@ nav {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
-button {
-  border-radius: 15px;
-  text-shadow: 0 2px 10px #000;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  background-color: #0bcbcc; }
-
-.button-section1 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section2 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section3 {
-  text-shadow: 0 2px 10px #000;
-  border: medium #698799;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
-.button-section4 {
-  border: medium #455763;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  float: right; }
-
 @media screen and (min-width: 1201px) {
   .main-photo {
     font-size: 220px; } }
