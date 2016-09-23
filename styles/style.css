@@ -1,29 +1,41 @@
-nav ul {
-  z-index: 9999999;
-  background: rgba(59, 32, 16, 0.7);
-  list-style: none;
+nav {
   margin: 0;
-  padding: 0;
-  display: flex;
-  position: fixed;
   width: 100%; }
-  nav ul li {
-    display: inline-block;
-    list-style-type: none; }
-    nav ul li a {
-      color: #fff;
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      padding: 1rem;
-      transition: all 0.5s ease-in-out; }
-    nav ul li a:hover {
-      background-color: rgba(139, 76, 38, 0.7); }
-    nav ul li li:first-child {
-      margin-right: auto; }
-  nav ul img {
+  nav ul {
+    font-size: 20px;
+    background-color: rgba(59, 32, 16, 0.7);
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: flex-start; }
+    position: fixed;
+    width: 100%;
+    z-index: 999999; }
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      justify-content: flex-end;
+      padding: 10px; }
+      nav ul li a {
+        color: #fff;
+        background-color: transparent;
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none; }
+        nav ul li a img {
+          max-width: 60px;
+          min-width: 30px;
+          width: 100%; }
+      nav ul li a:hover {
+        background-color: #fff;
+        color: rgba(59, 32, 16, 0.7); }
+    nav ul li:first-child {
+      margin-right: auto; }
+
+.active {
+  font-weight: bold; }
+
+.logo:hover {
+  background-color: transparent; }
 
 body {
   font-family: "Scope One", sans-serif;
