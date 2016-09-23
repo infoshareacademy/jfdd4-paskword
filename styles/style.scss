@@ -2,9 +2,8 @@
 @import "button";
 @import "mixins-styles";
 @import "foo-style";
-@import "funclist-style.scss";
-@import "nav-style";
-
+@import "funclist-style";
+@import 'nav-style';
 
 body {
   font-family: $norm-font;
@@ -20,53 +19,6 @@ h1 {
 h2 {
   color: $cyan;
 }
-
-///START navbar
- nav {
-   background-color: rgb(59, 32, 16);
-   color: $white;
-
-   ul {
-     z-index: 9999999;
-     color: $white;
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
-     background-color: $brown;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     li {
-       float: right;
-       a {
-         display: block;
-         color: $white;
-         text-align: center;
-         padding: 30px 16px;
-         text-decoration: none;
-         transition: all 0.5s ease-out;
-         font-size: 20px;
-       }
-
-       a:hover:not(.active) {
-         background-color: lighten($brown, 20%);
-       }
-
-       //TODO - podświetlenie przewijanych sekcji
-       //a:active {
-       //  background-color: $white;
-       //}
-     }
-     img {
-       padding: 10px 0 0 10px;
-     }
-
-   }
-   clear: right;
- }
-
-//END navbar
 
 /*START: main-photo + FUTRZAK*/
 .main-photo {
@@ -171,67 +123,12 @@ h2 {
   margin: 20px;
 }
 
-
-
 .article-styles {
   color: $brown;
 }
 
 /* KONIEC Style sekcji formularz */
 
-button {
-  border-radius: 15px;
-  text-shadow: 0 2px 10px #000;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  background-color: $cyan;
-
-}
-
-.button-section1 {
-  text-shadow: 0 2px 10px #000;
-  border: medium $grey;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: $white;
-  float: right;
-}
-
-.button-section2 {
-  text-shadow: 0 2px 10px #000;
-  border: medium $grey;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: $white;
-  float: right;
-}
-
-.button-section3 {
-  text-shadow: 0 2px 10px #000;
-  border: medium $grey;
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: $white;
-  float: right;
-}
-
-.button-section4 {
-  border: medium rgb(69, 87, 99);
-  width: 120px;
-  height: 30px;
-  position: relative;
-  font-size: 16px;
-  color: $white;
-  float: right;
-}
 
 @media screen and (min-width: 1201px) {
   .main-photo {

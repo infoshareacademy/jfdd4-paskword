@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixins-styles";
+
+nav {
+  margin: 0;
+  width: 100%;
+
+  ul {
+    font-size: 20px;
+    background-color: $brown;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      justify-content: flex-end;
+      padding: 10px;
+
+      a {
+        color: $white;
+        background-color: transparent;
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+
+        img {
+          max-width: 60px;
+          min-width: 30px;
+          width: 100%;
+        }
+      }
+
+      a:hover {
+        background-color: $white;
+        color: $brown;
+      }
+    }
+
+    li:first-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.logo:hover {
+background-color: transparent;
+}
