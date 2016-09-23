@@ -1,3 +1,33 @@
+/* to sa buttony */
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  text-shadow: 0 2px 10px #000;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #0bcbcc;
+  transition: background-color linear;
+  color: #fff;
+  border: medium #698799;
+  text-decoration: none; }
+  .button:hover {
+    font-weight: bold; }
+
+.button-submit {
+  background-color: rgba(59, 32, 16, 0.7);
+  font-size: 50px;
+  padding: 25px;
+  text-transform: uppercase; }
+  .button-submit:hover {
+    background-color: rgba(139, 76, 38, 0.7); }
+
+.button-info {
+  font-size: 16px;
+  padding: 10px 40px; }
+  .button-info:hover {
+    background-color: rgba(69, 87, 99, 0.1); }
+
 /* START: Footer style*/
 footer {
   background-color: rgba(59, 32, 16, 0.7);
@@ -38,7 +68,8 @@ footer {
 .media {
   margin: 1% 0; }
   .media img {
-    margin: 1% 1%;
+    margin: 5% 5%;
+    padding: 0 15%;
     transition: all 0.5s ease; }
     .media img:hover {
       transform: rotate(-30deg); }
@@ -253,10 +284,6 @@ nav {
   margin: 10px;
   text-shadow: 0 2px 10px #000; }
 
-button {
-  border-radius: 15px;
-  text-shadow: 0 2px 10px #000; }
-
 /*END: main photo + FUTRZAK*/
 /* START: product list */
 .product-list {
@@ -288,52 +315,53 @@ button {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
-/* START: Footer style*/
-footer {
-  background-color: rgba(59, 32, 16, 0.7);
-  width: auto;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  color: #fff; }
-  footer h1 {
-    color: #fff;
-    margin: 20px 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round; }
-  footer p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger; }
-  footer div {
-    display: flex;
-    justify-content: center;
-    margin: auto; }
-  footer figure {
-    padding: 10px;
-    margin: 10px; }
-  footer figcaption {
-    text-align: center; }
-  footer img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto; }
+button {
+  border-radius: 15px;
+  text-shadow: 0 2px 10px #000;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #0bcbcc; }
 
-.user {
-  height: 96px;
-  width: 96px; }
+.button-section1 {
+  text-shadow: 0 2px 10px #000;
+  border: medium #698799;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  float: right; }
 
-.media {
-  margin: 10px 0; }
-  .media img {
-    margin: 20px 20px;
-    transition: all 0.5s ease; }
-    .media img:hover {
-      transform: rotate(-30deg); }
+.button-section2 {
+  text-shadow: 0 2px 10px #000;
+  border: medium #698799;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  float: right; }
 
-/*END: style footer*/
+.button-section3 {
+  text-shadow: 0 2px 10px #000;
+  border: medium #698799;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  float: right; }
+
+.button-section4 {
+  border: medium #455763;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  float: right; }
 
 @media screen and (min-width: 1201px) {
   .main-photo {
