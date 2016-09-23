@@ -2,185 +2,166 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Wet Visit Planer">
-    <meta name="keywords" content="pet, pets, wet, wet visits, dog,cat, ">
+    <meta name="keywords" content="pet, pets, wet, wet visits, dog, cat">
     <meta name="author" content="PASKword">
     <title>Futrzak Wizytówka</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.ico" sizes="16x16">
     <link href="http://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-<!-- navbar: menu + logo-->
-<header>
-  <nav>
-      <ul>
-          <li><a class="logo" href="#first-section-photo"><img src="images/paw-64-white.png"></a></li>
-          <li><a class="active" href="#first-section-photo">HOME</a></li>
-          <li><a href="#about">OFERTA</a></li>
-          <li><a href="#pr_options">OPIS FUNKCJI</a></li>
-          <li><a href="#sc-form-submit">KONTAKT</a></li>
-          <li><a href="#team">O NAS</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-    <section id="first-section-photo">
-        <section class="main-photo">
-            <h1>Futrzak </h1>
-            <p>-Nie musisz tracić czasu, by zaplanowac wizyte u weterynarza.<br>
-                Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
-
-            <a class="button button-info" href="#sc-form-submit">Klinkij tutaj po szczegółowe info!</a>
-        </section>
-
-        <h2 class="page-description">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
-
-    </section>
-
-    <!-- Koniec zajawki -->
-
-    <!-- Spis planowanych funkcji -->
-
-    <section class="func-list" id="about">
-        <div class="list1">
-            <h1>Zaplanuj najbliższą wizytę u weterynarza</h1>
-            <ul class="text">
-                <li>znajdź najbliższą przychodnię</li>
-                <li>sprawdź wolne terminy</li>
-                <li>darmowa rejestracja</li>
-
-            </ul>
-        </div>
-        <div class="list2">
-            <h1>Sprawdź naszych zaufanych lekarzy</h1>
-            <ul class="text" id="text2">
-                <li>umów swojego ulubieńca do jego ulubionego lekarza</li>
-                <li>zobacz oceny i opinie o wybranych lekarzach</li>
-                <li>sprawdź czy jest w Twojej okolicy hotel dla zwierząt</li>
-            </ul>
-        </div>
-        <div class="list3">
-            <h1>Zapoznaj się z naszą poradą dnia</h1>
-            <ul class="text">
-                <li>Koty żyjące z nami, nie przeznaczone do rozrodu powinny zostać poddane zabiegowi sterylizacji/kastracji.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="product-list" id="pr_options">
-
-        <p class="pet-text">Ta strona pozwoli Ci na zlokalizowanie najbliższego weternarza w Twojej okolicy i
-            zasięgnięcia o nim opinii.<br>
-            W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
-            Twojego domowego pupila.
-        </p>
-
-
-
-        <ul>
-            <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
-            <li>Komentarze, polecenia i opinie o weterynarzach</li>
-            <li>Szybkie porady i wstępna diagnoza</li>
-            <li>Możliwość rejestracji na wizytę</li>
-            <li>Spis domów tymczasowych i hoteli dla zwierząt</li>
-            <li>Randomowa porada dnia</li>
-            <li>Baza linków (wizytówek lekarzy)</li>
-            <li>Powiadomienia mailowe (przypomnienia, potwierdzenie rejestracji, itp.)</li>
-            <li>Podlinkowanie do mediów społecznościowych</li>
-            <li>I inne (?) - będziesz zaskoczony itp.</li>
+<!--START navbar: menu + logo-->
+    <header>
+      <nav>
+          <ul>
+              <li><a class="logo" href="#first-section-photo">
+                  <img src="images/paw-64-white.png">
+              </a></li>
+              <li><a class="active" href="#first-section-photo">HOME</a></li>
+              <li><a href="#about">OFERTA</a></li>
+              <li><a href="#pr_options">OPIS FUNKCJI</a></li>
+              <li><a href="#sc-form-submit">KONTAKT</a></li>
+              <li><a href="#team">O NAS</a></li>
         </ul>
-    </section>
+      </nav>
+    </header>
+<!--END navbar-->
 
-    <!-- Koniec spisu planowanych funkcji -->
+<!--START zajawka-->
+    <main>
+        <section id="first-section-photo">
+            <section class="main-photo">
+                <h1 id="pet-header">Futrzak </h1>
+                <p>-Nie musisz tracić czasu, by zaplanować wizytę u weterynarza.
+                    <br/>Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
+                <a class="button button-info" href="#sc-form-submit">Kliknij tutaj po szczegółowe info!</a>
+            </section>
+            <h2 class="page-description">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
+        </section>
+<!--END zajawka -->
 
-    <!-- Formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
-    <section id="sc-form-submit">
-        <article>
-            <h1 class="header">Zapis na powiadomienie o premierze produktu</h1>
-            <h3>Pragniemy poinformować, że Twój e-mail potrzebny jest nam <strong>wyłącznie</strong> w celu
-                poinformowania Cię o dostępności naszego produktu.</h3>
-            <h3>Podając swój adres e-mail wyrażasz zgodę na wysłanie takiej informacji. Jednocześnie informujemy, że nie
-            zamierzamy wykorzystywać Twojego adresu do
-            przesyłania żadnych niepożądanych przez Ciebie treści.</h3>
-            <h2>Dziękujemy za zainteresowanie naszym produktem!</h2>
-            <img src="images/paw.png" alt="paw">
-            <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
-                premierze!</h3>
-        </article>
+<!--START product's functions list-->
+        <section class="func-list" id="about">
+            <div class="list1">
+                <h1>Zaplanuj najbliższą wizytę u weterynarza</h1>
+                <ul class="text">
+                    <li>znajdź najbliższą przychodnię</li>
+                    <li>sprawdź wolne terminy</li>
+                    <li>darmowa rejestracja</li>
+                </ul>
+            </div>
+            <div class="list2">
+                <h1>Sprawdź naszych zaufanych lekarzy</h1>
+                <ul class="text" id="text2">
+                    <li>umów swojego ulubieńca do jego ulubionego lekarza</li>
+                    <li>zobacz oceny i opinie o wybranych lekarzach</li>
+                    <li>sprawdź czy jest w Twojej okolicy hotel dla zwierząt</li>
+                </ul>
+            </div>
+            <div class="list3">
+                <h1>Zapoznaj się z naszą poradą dnia</h1>
+                <ul class="text">
+                    <li>Koty żyjące z nami, nie przeznaczone do rozrodu powinny zostać poddane zabiegowi sterylizacji/kastracji.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="product-list" id="pr_options">
+            <p class="pet-text">Ta strona pozwoli Ci na zlokalizowanie najbliższego weterynarza w Twojej okolicy i
+                zasięgnięcia o nim opinii.</p>
+            <p>W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
+                Twojego domowego pupila.</p>
+            <ul>
+                <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
+                <li>Komentarze, polecenia i opinie o weterynarzach</li>
+                <li>Szybkie porady i wstępna diagnoza</li>
+                <li>Możliwość rejestracji na wizytę</li>
+                <li>Spis domów tymczasowych i hoteli dla zwierząt</li>
+                <li>Losowa porada dnia</li>
+                <li>Baza linków (wizytówek lekarzy)</li>
+                <li>Powiadomienia mailowe (przypomnienia, potwierdzenie rejestracji, itp.)</li>
+                <li>I inne - będziesz zaskoczony!</li>
+            </ul>
+        </section>
+<!--END product's functions list-->
 
-        <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
-            <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
-            <!-- kolejne pola -->
-            <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
-            <input type="submit" class="button button-submit" value="Send"><br>
-            <!--<button class="button-submit">Powiadom mnie!</button>-->
-        </form>
-    </section>
-    <!-- Koniec formularza z powiadomieniem o premierze: pole do adresu e-mail i button -->
+<!--START formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
+        <section id="sc-form-submit">
+            <article>
+                <h1 class="header">Zapis na powiadomienie o premierze produktu</h1>
+                <h3>Pragniemy poinformować, że Twój e-mail potrzebny jest nam wyłącznie w celu
+                    poinformowania Cię o dostępności naszego produktu.</h3>
+                <h3>Podając swój adres e-mail wyrażasz zgodę na wysłanie takiej informacji. Jednocześnie informujemy, że nie
+                zamierzamy wykorzystywać Twojego adresu do przesyłania żadnych niepożądanych przez Ciebie treści.</h3>
+                <h2>Dziękujemy za zainteresowanie naszym produktem!</h2>
+                <img src="images/paw.png" alt="paw">
+                <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
+                    premierze!</h3>
+            </article>
+            <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
+                <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
+                <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
+                <input type="submit" class="button button-submit" value="Send"><br>
+            </form>
+        </section>
+<!--END formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
+    </main>
 
-</main>
+<!--START team info-->
+    <footer id="team">
+        <h1 class="header">O nas</h1>
+        <div>
+            <figure id="t1">
+                <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #1"/>
+                <figcaption>Agata <br/> Kulbicka <br/>
+                    <a href="https://www.linkedin.com/in/agata-kulbicka-3b6778b5" target="_blank">
+                        <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                </figcaption>
+            </figure>
+            <figure id="t2">
+                <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #2"/>
+                <figcaption>Katarzyna <br/> Kałduńska <br/>
+                    <a href="https://www.linkedin.com/in/katarzyna-kałduńska-43aa90127" target="_blank">
+                        <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                </figcaption>
+            </figure>
+            <figure id="t3">
+                <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #3"/>
+                <figcaption>Sandra <br/> Kowalska <br>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                </figcaption>
+            </figure>
+            <figure id="t4">
+                <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #4">
+                <figcaption>Paweł <br/> Grycz <br/>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                </figcaption>
+            </figure>
+        </div>
+        <hr>
+        <p> Bądź na bieżąco z Futrzakiem</p>
+        <div class="media">
+            <a href="http://facebook.com" target="_blank">
+                <img src="images/media/face.png" alt="facebook">
+            </a>
+            <a href="http://twitter.com" target="_blank">
+                <img src="images/media/twitter.png" alt="twitter">
+            </a>
+            <a href="http://instagram.com" target="_blank">
+                <img src="images/media/insta.png" alt="instagram">
+            </a>
+            <a href="http://pinterest.com" target="_blank">
+                <img src="images/media/pint.png" alt="pinterest">
+            </a>
+            <a href="http://tumblr.com" target="_blank">
+                <img src="images/media/tumblr.png" alt="tumblr">
+            </a>
+        </div>
+    </footer>
+<!--END team info -->
 
-
-<!-- Informacje o twórcach: zdjęcia, nazwiska -->
-<footer id="team">
-    <h1 class="header">O nas</h1>
-    <div>
-        <figure id="t1">
-            <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #1"/><br>
-            <figcaption>Agata <br/> Kulbicka <br/>
-                <a href="https://www.linkedin.com/in/agata-kulbicka-3b6778b5" target="_blank">
-                    <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
-            </figcaption>
-        </figure>
-        <figure id="t2">
-            <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #2"/><br>
-            <figcaption>Katarzyna <br/> Kałduńska <br/>
-                <a href="https://www.linkedin.com/in/katarzyna-kałduńska-43aa90127" target="_blank">
-                    <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
-            </figcaption>
-        </figure>
-        <figure id="t3">
-            <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #3"/><br>
-            <figcaption>Sandra <br/> Kowalska <br>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
-            </figcaption>
-        </figure>
-        <figure id="t4">
-            <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #4"><br>
-            <figcaption>Paweł <br/> Grycz <br/>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
-            </figcaption>
-        </figure>
-    </div>
-    <hr>
-    <p> Bądź na bieżąco z Futrzakiem</p>
-    <div class="media">
-        <a href="http://facebook.com" target="_blank">
-            <img src="images/media/face.png" alt="facebook">
-        </a>
-        <a href="http://twitter.com" target="_blank">
-            <img src="images/media/twitter.png" alt="twitter">
-        </a>
-        <a href="http://instagram.com" target="_blank">
-            <img src="images/media/insta.png" alt="instagram">
-        </a>
-        <a href="http://pinterest.com" target="_blank">
-            <img src="images/media/pint.png" alt="pinterest">
-        </a>
-        <a href="http://tumblr.com" target="_blank">
-            <img src="images/media/tumblr.png" alt="tumblr">
-        </a>
-    </div>
-
-</footer>
-<!-- Koniec informacji o twórcach: zdjęcia, nazwiska -->
-
-</body>
+    </body>
 </html>

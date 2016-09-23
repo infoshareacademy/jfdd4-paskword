@@ -261,18 +261,9 @@ h2 {
     margin: inherit; }
 
 #pet-header {
-  font-size: 250px;
   text-align: center;
-  color: rgba(69, 87, 99, 0.1);
-  background-size: cover;
-  background: url(../images/happy-pet.jpg) no-repeat center;
   margin: inherit;
-  z-index: 1;
-  display: block;
-  position: static;
-  padding-top: 60px;
-  padding-bottom: 1px;
-  text-shadow: 0 7px 10px #000; }
+  padding-top: 15%; }
 
 .page-description {
   display: block;
