@@ -2,11 +2,10 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Wet Visit Planer">
     <meta name="keywords" content="pet, pets, wet, wet visits, dog,cat, ">
     <meta name="author" content="PASKword">
-
     <title>Futrzak Wizytówka</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico" sizes="16x16">
@@ -17,14 +16,16 @@
 
 <!-- navbar: menu + logo-->
 <header>
-    <nav>
-        <ul>
-            <li><a href="#about">Oferta</a></li>
-            <li><a href="#pr_options">Opis funkcji</a></li>
-            <li><a href="#sc-form-submit">Kontakt</a></li>
-            <li><a href="#team">O nas</a></li>
-        </ul>
-    </nav>
+  <nav>
+      <ul>
+          <li><a class="logo" href="#first-section-photo"><img src="images/paw-64-white.png"></a></li>
+          <li><a class="active" href="#first-section-photo">HOME</a></li>
+          <li><a href="#about">OFERTA</a></li>
+          <li><a href="#pr_options">OPIS FUNKCJI</a></li>
+          <li><a href="#sc-form-submit">KONTAKT</a></li>
+          <li><a href="#team">O NAS</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
@@ -113,7 +114,7 @@
         </article>
 
         <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
-            <input class="email-input" type="text" name="email-submit" placeholder="Podaj swój adres email...">
+            <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
             <!-- kolejne pola -->
             <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
             <input type="submit" class="button button-submit" value="Send"><br>
@@ -127,7 +128,7 @@
 
 <!-- Informacje o twórcach: zdjęcia, nazwiska -->
 <footer id="team">
-    <h1>O nas</h1>
+    <h1 class="header">O nas</h1>
     <div>
         <figure id="t1">
             <img class="user" src="images/iconmonstr-user-5-96.png" alt="teammate #1"/><br>
