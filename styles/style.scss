@@ -5,19 +5,12 @@
 @import "funclist-style";
 @import "nav-style";
 
-/*START reset ustawień przeglądarek www - initial propose*/
-/*html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}*/
-/*END reset ustawień przeglądarek www*/
-
-body {
+html, body {
   font-family: $norm-font;
   background-color: #fff;
   color: $grey;
   margin: 0;
+  padding:0;
 }
 
 h1 {
