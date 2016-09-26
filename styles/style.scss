@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables-styles";
 @import "button";
 @import "mixins-styles";
 @import "foo-style";
@@ -9,6 +9,7 @@ body {
   font-family: $norm-font;
   background-color: #fff;
   color: $grey;
+  margin: 0;
 }
 
 h1 {
@@ -35,6 +36,7 @@ h2 {
   position: static;
   text-shadow: 0 7px 10px #000;
 
+
   h1 {
     color: $cyan;
     margin: inherit;
@@ -52,18 +54,9 @@ h2 {
 }
 
 #pet-header {
-  font-size: 250px;
   text-align: center;
-  color: $light;
-  background-size: cover;
-  background: url(../images/happy-pet.jpg) no-repeat center;
   margin: inherit;
-  z-index: 1;
-  display: block;
-  position: static;
-  padding-top: 60px;
-  padding-bottom: 1px;
-  text-shadow: 0 7px 10px #000;
+  padding-top: 15%;
 }
 
 .page-description {
@@ -110,7 +103,7 @@ h2 {
 /* END: product list */
 
 /* START: Style sekcji formularz */
-#sc-form-submit {
+#form-submit {
   text-align: center;
   padding: 50px;
   margin: 10px;
