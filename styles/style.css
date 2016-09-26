@@ -1,4 +1,3 @@
-/* to sa buttony */
 .button {
   display: inline-block;
   border-radius: 15px;
@@ -92,7 +91,7 @@ footer {
     color: #fff;
     background: rgba(0, 0, 0, 0.75); }
 
-.text {
+.text-list {
   background: rgba(255, 255, 255, 0.75);
   color: black;
   position: absolute;
@@ -101,7 +100,7 @@ footer {
   bottom: 5%;
   left: 5%; }
 
-#text2 {
+#text-list2 {
   position: absolute;
   top: 10%;
   right: 10%;
@@ -162,10 +161,10 @@ footer {
       .func-list div:hover {
         transform: scale(1.2);
         z-index: 1; }
-        .func-list div:hover .text {
+        .func-list div:hover .text-list {
           visibility: visible; }
 
-  .text {
+  .text-list {
     visibility: hidden; }
 
   .list1 {
@@ -239,14 +238,10 @@ h2 {
 /*START: main-photo + FUTRZAK*/
 .main-photo {
   font-family: "Arima Madurai", serif;
-  background-image: url(../images/happy-pet.jpg);
+  background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   font-size: 150px;
   text-align: center;
-  z-index: 1;
   display: block;
   position: static;
   text-shadow: 0 7px 10px #000; }
@@ -262,12 +257,12 @@ h2 {
     position: relative;
     margin: inherit; }
 
-#pet-header {
+#main-header {
   text-align: center;
   margin: inherit;
   padding-top: 15%; }
 
-.page-description {
+.motto {
   display: block;
   background-color: rgba(69, 87, 99, 0.1);
   margin: inherit;
@@ -276,7 +271,7 @@ h2 {
   padding-bottom: 30px;
   color: #698799; }
 
-.pet-text {
+.introduction {
   font-size: 20px;
   color: #fff;
   text-indent: 5%;
