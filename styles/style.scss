@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables-styles";
 @import "button";
 @import "mixins-styles";
 @import "foo-style";
@@ -9,6 +9,7 @@ body {
   font-family: $norm-font;
   background-color: #fff;
   color: $grey;
+  margin: 0;
 }
 
 h1 {
@@ -102,7 +103,7 @@ h2 {
 /* END: product list */
 
 /* START: Style sekcji formularz */
-#sc-form-submit {
+#form-submit {
   text-align: center;
   padding: 50px;
   margin: 10px;

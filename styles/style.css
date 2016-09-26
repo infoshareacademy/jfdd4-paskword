@@ -225,7 +225,8 @@ nav {
 body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
-  color: #698799; }
+  color: #698799;
+  margin: 0; }
 
 h1 {
   color: #698799;
@@ -300,7 +301,7 @@ h2 {
 
 /* END: product list */
 /* START: Style sekcji formularz */
-#sc-form-submit {
+#form-submit {
   text-align: center;
   padding: 50px;
   margin: 10px;
