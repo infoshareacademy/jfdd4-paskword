@@ -1,2 +1,4 @@
 .idea
 *.iml
+/styles/style.css.map
+/styles/style.css
