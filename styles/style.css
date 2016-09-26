@@ -1,3 +1,11 @@
+/*reset ustawień przeglądarek www*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* to sa buttony */
 .button {
   display: inline-block;
   border-radius: 15px;
@@ -91,7 +99,7 @@ footer {
     color: #fff;
     background: rgba(0, 0, 0, 0.75); }
 
-.text-list {
+.text {
   background: rgba(255, 255, 255, 0.75);
   color: black;
   position: absolute;
@@ -100,7 +108,7 @@ footer {
   bottom: 5%;
   left: 5%; }
 
-#text-list2 {
+#text2 {
   position: absolute;
   top: 10%;
   right: 10%;
@@ -161,10 +169,10 @@ footer {
       .func-list div:hover {
         transform: scale(1.2);
         z-index: 1; }
-        .func-list div:hover .text-list {
+        .func-list div:hover .text {
           visibility: visible; }
 
-  .text-list {
+  .text {
     visibility: hidden; }
 
   .list1 {
