@@ -43,14 +43,13 @@ nav {
 
     li:first-child {
       margin-right: auto;
+      a:hover {
+        background-color: transparent;
+      }
     }
   }
 }
 
 .active {
   font-weight: bold;
-}
-
-.logo:hover {
-background-color: transparent;
 }
