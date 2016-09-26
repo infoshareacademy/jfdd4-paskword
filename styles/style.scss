@@ -1,0 +1,138 @@
+@import "variables";
+@import "button";
+@import "mixins-styles";
+@import "foo-style";
+@import "funclist-style";
+@import "nav-style";
+
+body {
+  font-family: $norm-font;
+  background-color: #fff;
+  color: $grey;
+  margin: 0;
+}
+
+h1 {
+  color: $grey;
+  font-family: $head-font;
+}
+
+h2 {
+  color: $cyan;
+}
+
+/*START: main-photo + FUTRZAK*/
+.main-photo {
+  font-family: $head-font;
+  background-image: url(../images/happy-pet.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 150px;
+  text-align: center;
+  z-index: 1;
+  display: block;
+  position: static;
+  text-shadow: 0 7px 10px #000;
+
+  h1 {
+    color: $cyan;
+    margin: inherit;
+  }
+
+  p {
+    color: $white;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 2px;
+    position: relative;
+    margin: inherit;
+  }
+}
+
+#pet-header {
+  font-size: 250px;
+  text-align: center;
+  color: $light;
+  background-size: cover;
+  background: url(../images/happy-pet.jpg) no-repeat center;
+  margin: inherit;
+  z-index: 1;
+  display: block;
+  position: static;
+  padding-top: 60px;
+  padding-bottom: 1px;
+  text-shadow: 0 7px 10px #000;
+}
+
+.page-description {
+  display: block;
+  background-color: $light;
+  margin: inherit;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $grey;
+}
+
+
+.pet-text {
+  font-size: 20px;
+  color: $white;
+  text-indent: 5%;
+  background-color: $brown;
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 2px 10px #000;
+}
+
+
+/*END: main photo + FUTRZAK*/
+
+/* START: product list */
+
+.product-list {
+  font-size: 18px;
+  font-family: $head-font;
+  font-weight: bold;
+  color: $grey;
+  background-color: $light;
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  ul {
+    list-style-type: none;
+  }
+}
+
+/* END: product list */
+
+/* START: Style sekcji formularz */
+#sc-form-submit {
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  background: $white no-repeat left bottom;
+  background-position-x: 25px;
+}
+
+.email-input {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.article-styles {
+  color: $brown;
+}
+
+/* KONIEC Style sekcji formularz */
+
+
+@media screen and (min-width: 1201px) {
+  .main-photo {
+    font-size: 220px;
+  }
+}
