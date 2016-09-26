@@ -92,7 +92,7 @@ footer {
     color: #fff;
     background: rgba(0, 0, 0, 0.75); }
 
-.text {
+.text-list {
   background: rgba(255, 255, 255, 0.75);
   color: black;
   position: absolute;
@@ -101,7 +101,7 @@ footer {
   bottom: 5%;
   left: 5%; }
 
-#text2 {
+#text-list2 {
   position: absolute;
   top: 10%;
   right: 10%;
@@ -162,10 +162,10 @@ footer {
       .func-list div:hover {
         transform: scale(1.2);
         z-index: 1; }
-        .func-list div:hover .text {
+        .func-list div:hover .text-list {
           visibility: visible; }
 
-  .text {
+  .text-list {
     visibility: hidden; }
 
   .list1 {
