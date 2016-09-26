@@ -24,18 +24,19 @@
   }
 }
 
-.text {
+.text-list {
   background: rgba(255, 255, 255, 0.75);
   color: black;
   @include func-header(auto, 5%, 5%, 5%);
 }
 
-#text2 {
+#text-list2 {
   @include func-header(10%, 10%, auto, 10%);
 }
 
 .list1 {
   background: $white url("../images/func-list/cat_teddy.jpg");
+
   h1 {
     @include func-header(10px, 10px, auto, 10px);
   }
@@ -43,6 +44,7 @@
 
 .list2 {
   background: $white url("../images/func-list/fox.jpg");
+
   h1 {
     @include func-header(auto, 10px, 5px, 10px);
   }
@@ -50,26 +52,32 @@
 
 .list3 {
   background: $white url("../images/func-list/pupper.jpg");
+
   h1 {
     @include func-header(10px, 10px, auto, 10px);
   }
 }
+
 @media screen and (min-width: 801px) and (max-width: 1201px) {
   .func-list {
+
     div {
       display: block;
     }
   }
+
   .list1 {
     padding-left: 5%;
     width: 45%;
     float: left;
   }
+
   .list2 {
     padding-right: 5%;
     width: 45%;
     float: right;
   }
+
   .list3 {
     width: 100%;
     clear: both;
@@ -78,6 +86,7 @@
 }
 @media screen and (min-width: 1201px)
 {
+
   .func-list {
     display: flex;
     flex-direction: row;
@@ -85,32 +94,41 @@
 
     div {
       transition: all 1s;
+
       &:hover {
         transform: scale(1.2);
         z-index: 1;
-        .text {
+
+        .text-list {
           visibility: visible;
         }
       }
     }
   }
-  .text {
+
+  .text-list {
     visibility: hidden;
   }
+
   .list1 {
     width: 32%;
+
     &:hover {
       transform-origin: left 2px;
     }
   }
+
   .list2 {
     width: 32%;
+
     &:hover {
       transform-origin: center 0;
     }
   }
+
   .list3 {
     width: 32%;
+
     &:hover {
       transform-origin: right 2px;
     }
