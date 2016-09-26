@@ -1,7 +1,5 @@
 @import "variables-styles";
 
-/* to sa buttony */
-
 .button {
   display: inline-block;
   border-radius: 15px;
@@ -15,12 +13,10 @@
   border: medium $grey;
   text-decoration: none;
 
-
   &:hover {
     font-weight: bold;
   }
 }
-
 
 .button-submit {
   background-color: $brown;
