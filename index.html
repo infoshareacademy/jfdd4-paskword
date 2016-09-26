@@ -12,22 +12,24 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<!--START navbar-->
-    <header>
-      <nav>
-          <ul>
-              <li><a class="logo" href="#main-photo">
-                  <img src="images/paw-64-white.png">
-              </a></li>
-              <li><a class="active" href="#main-photo">HOME</a></li>
-              <li><a href="#about">OFERTA</a></li>
-              <li><a href="#details">OPIS FUNKCJI</a></li>
-              <li><a href="#form-submit">KONTAKT</a></li>
-              <li><a href="#team">O NAS</a></li>
-        </ul>
-      </nav>
-    </header>
-<!--END navbar-->
+
+<!-- navbar: menu + logo-->
+<header>
+  <nav>
+      <ul>
+          <li><a class="logo" href="#main-photo"><img src="images/paw-64-white.png"></a></li>
+
+          <div id="menu">
+              <div class="menu-trigger"><a id="menu-short" href="#">MENU</a></div>
+          <li><a class="active" href="#main-photo">HOME</a></li>
+          <li><a href="#about">OFERTA</a></li>
+          <li><a href="#details">OPIS FUNKCJI</a></li>
+          <li><a href="#form-submit">KONTAKT</a></li>
+          <li><a href="#team">O NAS</a></li>
+              </div>
+    </ul>
+  </nav>
+</header>
 
 <!--START zajawka-->
     <main>
@@ -163,5 +165,12 @@
     </footer>
 <!--END team info -->
 
+<!--obsługa zwijanego menu-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('.menu-trigger a').click(function() {
+        $('#menu').toggleClass('visible');
+    });
+</script>
 </body>
 </html>

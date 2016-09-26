@@ -1,48 +1,147 @@
 @import "variables-styles";
 @import "mixins-styles";
 
-nav {
-  margin: 0;
-  width: 100%;
-
-  ul {
-    font-size: 20px;
-    background-color: $brown;
+@media screen and (max-width: 799px) {
+  nav {
     margin: 0;
-    padding: 0;
-    display: flex;
-    position: fixed;
     width: 100%;
-    z-index: 999999;
 
-    li {
-      display: inline-block;
-      list-style-type: none;
-      justify-content: flex-end;
-      padding: 10px;
+    ul {
+      font-size: 20px;
+      background-color: $brown;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: fixed;
+      width: 100%;
+      z-index: 999999;
 
-      a {
-        color: $white;
-        background-color: transparent;
-        display: block;
-        padding: 1rem 2rem;
-        text-decoration: none;
+      .visible {
+        font-size: 20px;
+        background-color: $brown;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 999999;
 
-        img {
-          max-width: 60px;
-          min-width: 30px;
-          width: 100%;
+        li {
+          display: block;
+          list-style-type: none;
+          justify-content: flex-end;
+          padding: 10px;
+
+          a {
+            color: $white;
+            background-color: transparent;
+            display: block;
+            padding: 1rem 2rem;
+            text-decoration: none;
+
+            img {
+              max-width: 60px;
+              min-width: 30px;
+              width: 100%;
+            }
+          }
+
+          a:hover {
+            background-color: $white;
+            color: $brown;
+          }
         }
-      }
 
-      a:hover {
-        background-color: $white;
-        color: $brown;
+        li:first-child {
+          margin-right: auto;
+        }
       }
     }
 
-    li:first-child {
-      margin-right: auto;
+    div {
+      margin-left: auto;
+      li {
+        display: none;
+        .visible {
+          display: block;
+          .menu-trigger {
+
+            a {
+              color: $white;
+              background-color: transparent;
+              display: block;
+              padding: 1rem 2rem;
+              text-decoration: none;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  #menu-short {
+    color: $white;
+    background-color: transparent;
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.logo:hover {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-trigger {
+    display: none;
+  }
+  nav {
+    margin: 0;
+    width: 100%;
+
+    ul {
+      font-size: 20px;
+      background-color: $brown;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: fixed;
+      width: 100%;
+      z-index: 999999;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+        justify-content: flex-end;
+        padding: 10px;
+
+        a {
+          color: $white;
+          background-color: transparent;
+          display: block;
+          padding: 1rem 2rem;
+          text-decoration: none;
+
+          img {
+            max-width: 60px;
+            min-width: 30px;
+            width: 100%;
+          }
+        }
+
+        a:hover {
+          background-color: $white;
+          color: $brown;
+        }
+      }
+
+      li:first-child {
+        margin-right: auto;
+      }
     }
   }
 }
