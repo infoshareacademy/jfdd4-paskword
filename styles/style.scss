@@ -25,14 +25,10 @@ h2 {
 /*START: main-photo + FUTRZAK*/
 .main-photo {
   font-family: $head-font;
-  background-image: url(../images/happy-pet.jpg);
+  background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   font-size: 150px;
   text-align: center;
-  z-index: 1;
   display: block;
   position: static;
   text-shadow: 0 7px 10px #000;
@@ -53,13 +49,13 @@ h2 {
   }
 }
 
-#pet-header {
+#main-header {
   text-align: center;
   margin: inherit;
   padding-top: 15%;
 }
 
-.page-description {
+.motto {
   display: block;
   background-color: $light;
   margin: inherit;
@@ -69,7 +65,7 @@ h2 {
   color: $grey;
 }
 
-.pet-text {
+.introduction {
   font-size: 20px;
   color: $white;
   text-indent: 5%;
