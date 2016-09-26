@@ -39,7 +39,6 @@ h2 {
   background-position: center center;
   font-size: 150px;
   text-align: center;
-  z-index: 1;
   display: block;
   position: static;
   text-shadow: 0 7px 10px #000;
@@ -60,7 +59,7 @@ h2 {
   }
 }
 
-#pet-header {
+#main-header {
   text-align: center;
   margin: inherit;
   padding-top: 15%;
