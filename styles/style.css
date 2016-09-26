@@ -1,10 +1,4 @@
-/*reset ustawień przeglądarek www*/
-html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
+@charset "UTF-8";
 /* to sa buttony */
 .button {
   display: inline-block;
@@ -229,6 +223,13 @@ nav {
 .logo:hover {
   background-color: transparent; }
 
+/*START reset ustawień przeglądarek www - initial propose*/
+/*html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}*/
+/*END reset ustawień przeglądarek www*/
 body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
