@@ -32,11 +32,8 @@ h2 {
 /*START: main-photo + FUTRZAK*/
 .main-photo {
   font-family: $head-font;
-  background-image: url(../images/happy-pet.jpg);
+  background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   font-size: 150px;
   text-align: center;
   z-index: 1;
