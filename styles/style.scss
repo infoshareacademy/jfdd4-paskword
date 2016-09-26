@@ -36,7 +36,6 @@ h2 {
   position: static;
   text-shadow: 0 7px 10px #000;
 
-
   h1 {
     color: $cyan;
     margin: inherit;
@@ -59,7 +58,7 @@ h2 {
   padding-top: 15%;
 }
 
-.page-description {
+.motto {
   display: block;
   background-color: $light;
   margin: inherit;
@@ -69,7 +68,7 @@ h2 {
   color: $grey;
 }
 
-.pet-text {
+.introduction {
   font-size: 20px;
   color: $white;
   text-indent: 5%;

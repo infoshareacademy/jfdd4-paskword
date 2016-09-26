@@ -265,7 +265,7 @@ h2 {
   margin: inherit;
   padding-top: 15%; }
 
-.page-description {
+.motto {
   display: block;
   background-color: rgba(69, 87, 99, 0.1);
   margin: inherit;
@@ -274,7 +274,7 @@ h2 {
   padding-bottom: 30px;
   color: #698799; }
 
-.pet-text {
+.introduction {
   font-size: 20px;
   color: #fff;
   text-indent: 5%;
