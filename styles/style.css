@@ -183,13 +183,23 @@ footer {
       transform-origin: right 2px; } }
 /*END: styli func-list*/
 .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-radius: 0; }
 
 .navbar-default {
-  background-color: rgba(59, 32, 16, 0.7); }
+  background-color: rgba(59, 32, 16, 0.7);
+  border: none; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  background-color: white; }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  font-weight: bold;
+  font-size: larger;
+  color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
 
 html, body {
   font-family: "Scope One", sans-serif;
