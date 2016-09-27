@@ -182,114 +182,14 @@ footer {
     .list3:hover {
       transform-origin: right 2px; } }
 /*END: styli func-list*/
-@media screen and (max-width: 799px) {
-  nav {
-    margin: 0;
-    width: 100%; }
-    nav ul {
-      font-size: 20px;
-      background-color: rgba(59, 32, 16, 0.7);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      position: fixed;
-      width: 100%;
-      z-index: 999999; }
-      nav ul .visible {
-        font-size: 20px;
-        background-color: rgba(59, 32, 16, 0.7);
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        width: 100%;
-        z-index: 999999; }
-        nav ul .visible li {
-          display: block;
-          list-style-type: none;
-          justify-content: flex-end;
-          padding: 10px; }
-          nav ul .visible li a {
-            color: #fff;
-            background-color: transparent;
-            display: block;
-            padding: 1rem 2rem;
-            text-decoration: none; }
-            nav ul .visible li a img {
-              max-width: 60px;
-              min-width: 30px;
-              width: 100%; }
-          nav ul .visible li a:hover {
-            background-color: #fff;
-            color: rgba(59, 32, 16, 0.7); }
-        nav ul .visible li:first-child {
-          margin-right: auto; }
-    nav div {
-      margin-left: auto; }
-      nav div li {
-        display: none; }
-        nav div li .visible {
-          display: block; }
-          nav div li .visible .menu-trigger a {
-            color: #fff;
-            background-color: transparent;
-            display: block;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            text-align: right; }
+.navbar {
+  margin-bottom: 0; }
 
-  #menu-short {
-    color: #fff;
-    background-color: transparent;
-    display: block;
-    padding: 1rem 2rem;
-    text-decoration: none; } }
-.active {
-  font-weight: bold; }
+.navbar-default {
+  background-color: rgba(59, 32, 16, 0.7); }
 
-.logo:hover {
-  background-color: transparent; }
-
-@media screen and (min-width: 800px) {
-  .menu-trigger {
-    display: none; }
-
-  nav {
-    margin: 0;
-    width: 100%; }
-    nav ul {
-      font-size: 20px;
-      background-color: rgba(59, 32, 16, 0.7);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      position: fixed;
-      width: 100%;
-      z-index: 999999; }
-      nav ul li {
-        display: inline-block;
-        list-style-type: none;
-        justify-content: flex-end;
-        padding: 10px; }
-        nav ul li a {
-          color: #fff;
-          background-color: transparent;
-          display: block;
-          padding: 1rem 2rem;
-          text-decoration: none; }
-          nav ul li a img {
-            max-width: 60px;
-            min-width: 30px;
-            width: 100%; }
-        nav ul li a:hover {
-          background-color: #fff;
-          color: rgba(59, 32, 16, 0.7); }
-      nav ul li:first-child {
-        margin-right: auto; } }
-.active {
-  font-weight: bold; }
-
-.logo:hover {
-  background-color: transparent; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: white; }
 
 html, body {
   font-family: "Scope One", sans-serif;
