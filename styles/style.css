@@ -201,6 +201,9 @@ footer {
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
 
+nav img {
+  margin: 0.3em; }
+
 html, body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
