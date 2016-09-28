@@ -53,6 +53,23 @@ footer .media h4 {
 .media img:hover {
   transform: rotate(-30deg); }
 
+.rotate {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+#mate1 {
+  transition: all ease-in 2s; }
+
+#mate2 {
+  transition: all 2s ease-in 2s; }
+
+#mate3 {
+  transition: all 2s ease-in 4s; }
+
+#mate4 {
+  transition: all 2s ease-in 6s; }
+
 /*END: style footer*/
 .caption h3 {
   text-align: center; }
