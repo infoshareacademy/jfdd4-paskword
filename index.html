@@ -13,24 +13,35 @@
     <link rel="icon" href="favicon.ico" sizes="16x16">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- navbar: menu + logo-->
 <header>
-  <nav>
-      <ul>
-          <li><a class="logo" href="#main-photo"><img src="images/paw-64-white.png"></a></li>
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img style="width: 50px;" src="images/paw-50.png" alt="Futrzak">Futrzak
+                </a>
+            </div>
 
-          <div id="menu">
-              <div class="menu-trigger"><a id="menu-short" href="#">MENU</a></div>
-          <li><a class="active" href="#main-photo">HOME</a></li>
-          <li><a href="#about">OFERTA</a></li>
-          <li><a href="#details">OPIS FUNKCJI</a></li>
-          <li><a href="#form-submit">KONTAKT</a></li>
-          <li><a href="#team">O NAS</a></li>
-              </div>
-    </ul>
-  </nav>
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#main-photo">HOME</a></li>
+                <li><a href="#about">OFERTA</a></li>
+                <li><a href="#details">POPIS FUNKCJI</a></li>
+                <li><a href="#form-submit">KONTAKT</a></li>
+                <li><a href="#team">O NAS</a></li>
+            </ul></div>
+        </div>
+        </div>
+    </nav>
 </header>
 
 <!--START zajawka-->
@@ -167,13 +178,6 @@
     </footer>
 <!--END team info -->
 
-<!--obsługa zwijanego menu-->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $('.menu-trigger a').click(function() {
-        $('#menu').toggleClass('visible');
-    });
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
