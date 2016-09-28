@@ -1,0 +1,37 @@
+@import "variables-styles";
+@import "mixins-styles";
+
+.extra-info {
+
+  .copyright {
+    background: $brown;
+    color: white;
+    margin: 0 auto;
+  }
+  .terms {
+    color: $brown;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: $cyan;
+    }
+  }
+}
+
+#content-area {
+  display: none;
+  height: 200px;
+  overflow: auto;
+  margin-bottom: 1.5em;
+  padding: 10px;
+  border: solid 1px #d7d7d7;
+  color: #505050;
+  background-color: #ffffff;
+  font-size: 90%;
+}

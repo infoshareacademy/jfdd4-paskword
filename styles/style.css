@@ -36,22 +36,23 @@ footer .media h4 {
 
 .media {
   background-color: rgba(59, 32, 16, 0.7);
-  margin: 1% 0; }
-
-.media-icons a {
-  padding: 1%; }
+  margin: 1% 0 0 0; }
+  .media h4 img {
+    margin: 0;
+    padding: 0; }
 
 .media-icons {
   display: flex;
   justify-content: center;
   padding: 1%; }
+  .media-icons a {
+    padding: 1%; }
 
 .media img {
   margin: 5% 5%;
   transition: all 0.5s ease; }
-
-.media img:hover {
-  transform: rotate(-30deg); }
+  .media img:hover {
+    transform: rotate(-30deg); }
 
 .rotate {
   -webkit-transform: rotate(360deg);
@@ -213,6 +214,31 @@ footer .media h4 {
 
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
+
+.extra-info .copyright {
+  background: rgba(59, 32, 16, 0.7);
+  color: white;
+  margin: 0 auto; }
+.extra-info .terms {
+  color: rgba(59, 32, 16, 0.7);
+  margin: 0 auto; }
+  .extra-info .terms p {
+    text-align: center;
+    font-size: 1.5em; }
+  .extra-info .terms a {
+    text-decoration: none;
+    color: #0bcbcc; }
+
+#content-area {
+  display: none;
+  height: 200px;
+  overflow: auto;
+  margin-bottom: 1.5em;
+  padding: 10px;
+  border: solid 1px #d7d7d7;
+  color: #505050;
+  background-color: #ffffff;
+  font-size: 90%; }
 
 html, body {
   font-family: "Scope One", sans-serif;
