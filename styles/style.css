@@ -172,9 +172,9 @@ footer .media h4 {
   font-family: "Arima Madurai", serif;
   font-size: 1.6em; }
   .navbar-brand img {
-    height: 100%;
-    width: auto;
-    padding: 0.35em; }
+    width: 100%;
+    max-width: 50px;
+    padding: 0.3em; }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus,
@@ -192,7 +192,7 @@ footer .media h4 {
   background: none;
   font-weight: bold;
   font-size: larger;
-  color: #fff; }
+  color: #0bcbcc; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
