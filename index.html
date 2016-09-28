@@ -13,104 +13,115 @@
     <link rel="icon" href="favicon.ico" sizes="16x16">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- navbar: menu + logo-->
 <header>
-    <nav>
-        <ul>
-            <li><a class="logo" href="#main-photo"><img src="images/paw-64-white.png"></a></li>
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img style="width: 50px;" src="images/paw-50.png" alt="Futrzak">Futrzak
+                </a>
+            </div>
 
-            <div id="menu">
-                <div class="menu-trigger"><a id="menu-short" href="#">MENU</a></div>
-                <li><a class="active" href="#main-photo">HOME</a></li>
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#main-photo">HOME</a></li>
                 <li><a href="#about">OFERTA</a></li>
-                <li><a href="#details">OPIS FUNKCJI</a></li>
+                <li><a href="#details">POPIS FUNKCJI</a></li>
                 <li><a href="#form-submit">KONTAKT</a></li>
                 <li><a href="#team">O NAS</a></li>
-            </div>
-        </ul>
+            </ul></div>
+        </div>
+        </div>
     </nav>
 </header>
 
 <!--START zajawka-->
-<main>
-    <section id="main-photo">
-        <section class="main-photo">
-            <h1 id="main-header">Futrzak </h1>
-            <p>-Nie musisz tracić czasu, by zaplanować wizytę u weterynarza.
-                <br/>Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
-            <a class="button button-info" href="#form-submit">Kliknij tutaj po szczegółowe info!</a>
+    <main>
+        <section id="main-photo">
+            <section class="main-photo">
+                <h1 id="main-header">Futrzak </h1>
+                <p>-Nie musisz tracić czasu, by zaplanować wizytę u weterynarza.
+                    <br/>Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
+                <a class="button button-info" href="#form-submit">Kliknij tutaj po szczegółowe info!</a>
+            </section>
+            <h2 class="motto">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
         </section>
-        <h2 class="motto">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
-    </section>
-    <!--END zajawka -->
+<!--END zajawka -->
 
-    <!--START product's functions list-->
-    <section class="func-list" id="about">
-        <div class="list1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <h1>Zaplanuj najbliższą wizytę u weterynarza</h1>
-            <ul class="text-list">
-                <li>znajdź najbliższą przychodnię</li>
-                <li>sprawdź wolne terminy</li>
-                <li>darmowa rejestracja</li>
+<!--START product's functions list-->
+        <section class="func-list" id="about">
+            <div class="list1">
+                <h1>Zaplanuj najbliższą wizytę u weterynarza</h1>
+                <ul class="text-list">
+                    <li>znajdź najbliższą przychodnię</li>
+                    <li>sprawdź wolne terminy</li>
+                    <li>darmowa rejestracja</li>
+                </ul>
+            </div>
+            <div class="list2">
+                <h1>Sprawdź naszych zaufanych lekarzy</h1>
+                <ul class="text-list" id="text-list2">
+                    <li>umów swojego ulubieńca do jego ulubionego lekarza</li>
+                    <li>zobacz oceny i opinie o wybranych lekarzach</li>
+                    <li>sprawdź czy jest w Twojej okolicy hotel dla zwierząt</li>
+                </ul>
+            </div>
+            <div class="list3">
+                <h1>Zapoznaj się z naszą poradą dnia</h1>
+                <ul class="text-list">
+                    <li>Koty żyjące z nami, nie przeznaczone do rozrodu powinny zostać poddane zabiegowi sterylizacji/kastracji.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="product-list" id="details">
+            <p class="description">Ta strona pozwoli Ci na zlokalizowanie najbliższego weterynarza w Twojej okolicy i
+                zasięgnięcia o nim opinii.</p>
+            <p>W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
+                Twojego domowego pupila.</p>
+            <ul>
+                <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
+                <li>Komentarze, polecenia i opinie o weterynarzach</li>
+                <li>Szybkie porady i wstępna diagnoza</li>
+                <li>Możliwość rejestracji na wizytę</li>
+                <li>Spis domów tymczasowych i hoteli dla zwierząt</li>
+                <li>Losowa porada dnia</li>
+                <li>Baza linków (wizytówek lekarzy)</li>
+                <li>Powiadomienia mailowe (przypomnienia, potwierdzenie rejestracji, itp.)</li>
+                <li>I inne - będziesz zaskoczony!</li>
             </ul>
-        </div>
-        <div class="list2 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <h1>Sprawdź naszych zaufanych lekarzy</h1>
-            <ul class="text-list" id="text-list2">
-                <li>umów swojego ulubieńca do jego ulubionego lekarza</li>
-                <li>zobacz oceny i opinie o wybranych lekarzach</li>
-                <li>sprawdź czy jest w Twojej okolicy hotel dla zwierząt</li>
-            </ul>
-        </div>
-        <div class="list3 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <h1>Zapoznaj się z naszą poradą dnia</h1>
-            <ul class="text-list">
-                <li>Koty żyjące z nami, nie przeznaczone do rozrodu powinny zostać poddane zabiegowi sterylizacji/kastracji.</li>
-            </ul>
-        </div>
-    </section>
-    <section class="product-list" id="details">
-        <p class="description">Ta strona pozwoli Ci na zlokalizowanie najbliższego weterynarza w Twojej okolicy i
-            zasięgnięcia o nim opinii.</p>
-        <p>W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
-            Twojego domowego pupila.</p>
-        <ul>
-            <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
-            <li>Komentarze, polecenia i opinie o weterynarzach</li>
-            <li>Szybkie porady i wstępna diagnoza</li>
-            <li>Możliwość rejestracji na wizytę</li>
-            <li>Spis domów tymczasowych i hoteli dla zwierząt</li>
-            <li>Losowa porada dnia</li>
-            <li>Baza linków (wizytówek lekarzy)</li>
-            <li>Powiadomienia mailowe (przypomnienia, potwierdzenie rejestracji, itp.)</li>
-            <li>I inne - będziesz zaskoczony!</li>
-        </ul>
-    </section>
-    <!--END product's functions list-->
+        </section>
+<!--END product's functions list-->
 
-    <!--START formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
-    <section id="form-submit">
-        <article>
-            <h1 class="header">Zapis na powiadomienie o premierze produktu</h1>
-            <h3>Pragniemy poinformować, że Twój e-mail potrzebny jest nam wyłącznie w celu
-                poinformowania Cię o dostępności naszego produktu.</h3>
-            <h3>Podając swój adres e-mail wyrażasz zgodę na wysłanie takiej informacji. Jednocześnie informujemy, że nie
+<!--START formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
+        <section id="form-submit">
+            <article>
+                <h1 class="header">Zapis na powiadomienie o premierze produktu</h1>
+                <h3>Pragniemy poinformować, że Twój e-mail potrzebny jest nam wyłącznie w celu
+                    poinformowania Cię o dostępności naszego produktu.</h3>
+                <h3>Podając swój adres e-mail wyrażasz zgodę na wysłanie takiej informacji. Jednocześnie informujemy, że nie
                 zamierzamy wykorzystywać Twojego adresu do przesyłania żadnych niepożądanych przez Ciebie treści.</h3>
-            <h2>Dziękujemy za zainteresowanie naszym produktem!</h2>
-            <img src="images/paw.png" alt="paw">
-            <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
-                premierze!</h3>
-        </article>
-        <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
-            <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
-            <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
-            <input type="submit" class="button button-submit" value="Zapisz SIĘ"><br>
-        </form>
-    </section>
-    <!--END formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
-</main>
+                <h2>Dziękujemy za zainteresowanie naszym produktem!</h2>
+                <img src="images/paw.png" alt="paw">
+                <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
+                    premierze!</h3>
+            </article>
+            <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
+                <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
+                <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
+                <input type="submit" class="button button-submit" value="Zapisz SIĘ"><br>
+            </form>
+        </section>
+<!--END formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
+    </main>
 
 <!--START team info-->
 
@@ -186,13 +197,6 @@
 </footer>
 <!--END team info -->
 
-<!--obsługa zwijanego menu-->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $('.menu-trigger a').click(function() {
-        $('#menu').toggleClass('visible');
-    });
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

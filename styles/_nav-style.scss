@@ -1,155 +1,49 @@
 @import "variables-styles";
 @import "mixins-styles";
 
-@media screen and (max-width: 799px) {
-  nav {
-    margin: 0;
-    width: 100%;
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
 
-    ul {
-      font-size: 20px;
-      background-color: $brown;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      position: fixed;
-      width: 100%;
-      z-index: 999999;
+.navbar-default {
+  background-color: $brown;
+  border: none;
+}
 
-      .visible {
-        font-size: 20px;
-        background-color: $brown;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        width: 100%;
-        z-index: 999999;
-
-        li {
-          display: block;
-          list-style-type: none;
-          justify-content: flex-end;
-          padding: 10px;
-
-          a {
-            color: $white;
-            background-color: transparent;
-            display: block;
-            padding: 1rem 2rem;
-            text-decoration: none;
-
-            img {
-              max-width: 60px;
-              min-width: 30px;
-              width: 100%;
-            }
-          }
-
-          a:hover {
-            background-color: $white;
-            color: $brown;
-          }
-        }
-
-        li:first-child {
-          margin-right: auto;
-        }
-      }
-    }
-
-    div {
-      margin-left: auto;
-      li {
-        display: none;
-        .visible {
-          display: block;
-          .menu-trigger {
-
-            a {
-              color: $white;
-              background-color: transparent;
-              display: block;
-              padding: 1rem 2rem;
-              text-decoration: none;
-              text-align: right;
-            }
-          }
-        }
-      }
-    }
+.navbar-brand {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  font-family: $head-font;
+  font-size: 1.6em;
+  img {
+    height: 100%;
+    width: auto;
+    padding: 0.35em;
   }
-  #menu-short {
-    color: $white;
-    background-color: transparent;
-    display: block;
-    padding: 1rem 2rem;
-    text-decoration: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: $cyan;
+}
+.navbar-default .navbar-toggle {
+  border-color: $cyan;
+  .icon-bar {
+    background-color: $cyan;
   }
 }
 
-.active {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
   font-weight: bold;
+  font-size: larger;
+  color: $white;
 }
 
-.logo:hover {
-  background-color: transparent;
-}
-
-@media screen and (min-width: 800px) {
-  .menu-trigger {
-    display: none;
-  }
-  nav {
-    margin: 0;
-    width: 100%;
-
-    ul {
-      font-size: 20px;
-      background-color: $brown;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      position: fixed;
-      width: 100%;
-      z-index: 999999;
-
-      li {
-        display: inline-block;
-        list-style-type: none;
-        justify-content: flex-end;
-        padding: 10px;
-
-        a {
-          color: $white;
-          background-color: transparent;
-          display: block;
-          padding: 1rem 2rem;
-          text-decoration: none;
-
-          img {
-            max-width: 60px;
-            min-width: 30px;
-            width: 100%;
-          }
-        }
-
-        a:hover {
-          background-color: $white;
-          color: $brown;
-        }
-      }
-
-      li:first-child {
-        margin-right: auto;
-      }
-    }
-  }
-}
-
-.active {
-  font-weight: bold;
-}
-
-.logo:hover {
-  background-color: transparent;
+.navbar-default .navbar-nav > li > a {
+  color: $white;
 }
