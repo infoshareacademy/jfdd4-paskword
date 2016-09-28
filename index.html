@@ -33,13 +33,13 @@
 
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#main-photo">HOME</a></li>
-                <li><a href="#about">OFERTA</a></li>
-                <li><a href="#details">POPIS FUNKCJI</a></li>
-                <li><a href="#form-submit">KONTAKT</a></li>
-                <li><a href="#team">O NAS</a></li>
-            </ul></div>
-        </div>
+                    <li class="active"><a href="#main-photo">HOME</a></li>
+                    <li><a href="#about">OFERTA</a></li>
+                    <li><a href="#details">POPIS FUNKCJI</a></li>
+                    <li><a href="#form-submit">KONTAKT</a></li>
+                    <li><a href="#team">O NAS</a></li>
+                </ul>
+           </div>
         </div>
     </nav>
 </header>
@@ -83,21 +83,23 @@
             </div>
         </section>
         <section class="product-list" id="details">
-            <p class="description">Ta strona pozwoli Ci na zlokalizowanie najbliższego weterynarza w Twojej okolicy i
-                zasięgnięcia o nim opinii.</p>
-            <p>W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
-                Twojego domowego pupila.</p>
-            <ul>
-                <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
-                <li>Komentarze, polecenia i opinie o weterynarzach</li>
-                <li>Szybkie porady i wstępna diagnoza</li>
-                <li>Możliwość rejestracji na wizytę</li>
-                <li>Spis domów tymczasowych i hoteli dla zwierząt</li>
-                <li>Losowa porada dnia</li>
-                <li>Baza linków (wizytówek lekarzy)</li>
-                <li>Powiadomienia mailowe (przypomnienia, potwierdzenie rejestracji, itp.)</li>
-                <li>I inne - będziesz zaskoczony!</li>
-            </ul>
+            <div class="container-fluid">
+                <p class="description">Ta strona pozwoli Ci na zlokalizowanie najbliższego weterynarza w Twojej okolicy i
+                    zasięgnięcia o nim opinii.</p>
+                <p>W prosty i wygodny sposób znajdź wszelkie niezbędne informacje, by trafić do miejsca, gdzie zadbają o
+                    Twojego domowego pupila.</p>
+                <ul>
+                    <li>Szukanie najbliższego wolnego terminu i najbliższej lokalizacji weterynarza</li>
+                    <li>Komentarze, polecenia i opinie o weterynarzach</li>
+                    <li>Szybkie porady i wstępna diagnoza</li>
+                    <li>Możliwość rejestracji na wizytę</li>
+                    <li>Spis domów tymczasowych i hoteli dla zwierząt</li>
+                    <li>Losowa porada dnia</li>
+                    <li>Baza linków (wizytówek lekarzy)</li>
+                    <li>Powiadomienia mailowe (przypomnienia, potwierdzenie rejestracji, itp.)</li>
+                    <li>I inne - będziesz zaskoczony!</li>
+                </ul>
+            </div>
         </section>
 <!--END product's functions list-->
 
@@ -114,10 +116,12 @@
                 <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
                     premierze!</h3>
             </article>
-            <form  action="http://jfdd.is-academy.pl/mailer.php" method="POST">
-                <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
-                <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
-                <input type="submit" class="button button-submit" value="Zapisz SIĘ"><br>
+            <form class="form-inline" action="http://jfdd.is-academy.pl/mailer.php" method="POST">
+                <div class="form-group">
+                    <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
+                    <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
+                    <input type="submit" class="button button-submit" value="Zapisz SIĘ"><br>
+                </div>
             </form>
         </section>
 <!--END formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
@@ -172,7 +176,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="media">
         <h4> Bądź na bieżąco z Futrzakiem</h4>
