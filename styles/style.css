@@ -27,62 +27,46 @@
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
-/* START: Footer style*/
-footer {
-  background-color: rgba(59, 32, 16, 0.7);
-  width: auto;
-  margin: 1% 1%;
-  padding: 1% 1%;
-  color: #fff; }
-  footer h1 {
-    color: #fff;
-    margin: 2% 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round; }
-  footer p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger; }
-  footer div {
-    display: flex;
-    justify-content: center;
-    margin: auto; }
-  footer figure {
-    padding: 2%;
-    margin: 2%; }
-  footer figcaption {
-    text-align: center; }
-  footer img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto; }
-
-.user {
-  height: 96px;
-  width: 96px; }
+/* START: Footer style */
+footer .media h4 {
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+  word-spacing: 4px; }
 
 .media {
+  background-color: rgba(59, 32, 16, 0.7);
   margin: 1% 0; }
-  .media img {
-    margin: 5% 5%;
-    padding: 0 15%;
-    transition: all 0.5s ease; }
-    .media img:hover {
-      transform: rotate(-30deg); }
+
+.media-icons a {
+  padding: 1%; }
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+  padding: 1%; }
+
+.media img {
+  margin: 5% 5%;
+  transition: all 0.5s ease; }
+
+.media img:hover {
+  transform: rotate(-30deg); }
 
 /*END: style footer*/
+.caption h3 {
+  text-align: center; }
+
+.thumbnail {
+  border: none; }
+
 /*START func-list*/
 .func-list {
   letter-spacing: 4px;
-  word-spacing: 4px;
-  width: 100%; }
+  word-spacing: 4px; }
   .func-list div {
     display: block;
     height: 359px;
-    max-width: 640px;
     margin: 1% auto;
     background-size: cover;
     position: relative; }
@@ -140,16 +124,13 @@ footer {
 
   .list1 {
     padding-left: 5%;
-    width: 45%;
     float: left; }
 
   .list2 {
     padding-right: 5%;
-    width: 45%;
     float: right; }
 
   .list3 {
-    width: 100%;
     clear: both; } }
 @media screen and (min-width: 1201px) {
   .func-list {
@@ -167,20 +148,14 @@ footer {
   .text-list {
     visibility: hidden; }
 
-  .list1 {
-    width: 32%; }
-    .list1:hover {
-      transform-origin: left 2px; }
+  .list1:hover {
+    transform-origin: left 2px; }
 
-  .list2 {
-    width: 32%; }
-    .list2:hover {
-      transform-origin: center 0; }
+  .list2:hover {
+    transform-origin: center 0; }
 
-  .list3 {
-    width: 32%; }
-    .list3:hover {
-      transform-origin: right 2px; } }
+  .list3:hover {
+    transform-origin: right 2px; } }
 /*END: styli func-list*/
 @media screen and (max-width: 799px) {
   nav {
