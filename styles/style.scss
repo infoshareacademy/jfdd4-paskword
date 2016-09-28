@@ -11,6 +11,8 @@ html, body {
   color: $grey;
   margin: 0;
   padding:0;
+  width:100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -29,7 +31,6 @@ h2 {
   font-family: $head-font;
   background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  font-size: 150px;
   text-align: center;
   display: block;
   position: static;
@@ -42,19 +43,24 @@ h2 {
 
   p {
     color: $white;
-    font-size: 30px;
+    font-size: 1.5vw;
     text-align: center;
     padding-bottom: 200px;
-    padding-top: 2px;
+    padding-top: 20px;
     position: relative;
     margin: inherit;
   }
 }
 
+.padding0{
+  padding:0;
+}
+
 #main-header {
   text-align: center;
   margin: inherit;
-  padding-top: 15%;
+  padding-top: 6vw;
+  font-size: 9vw;
 }
 
 .motto {
@@ -65,17 +71,6 @@ h2 {
   padding-top: 30px;
   padding-bottom: 30px;
   color: $grey;
-}
-
-.introduction {
-  font-size: 20px;
-  color: $white;
-  text-indent: 5%;
-  background-color: $brown;
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  text-shadow: 0 2px 10px #000;
 }
 
 /*END: main photo + FUTRZAK*/
@@ -117,9 +112,3 @@ h2 {
 }
 
 /* KONIEC Style sekcji formularz */
-
-@media screen and (min-width: 1201px) {
-  .main-photo {
-    font-size: 220px;
-  }
-}
