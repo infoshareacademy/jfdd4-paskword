@@ -6,7 +6,6 @@
 
 $('.nav a').on('click', function () {
     if (window.innerWidth < 768) {
-        // $('.btn-navbar').click();
         $('.navbar-toggle').click()
     }
 });
