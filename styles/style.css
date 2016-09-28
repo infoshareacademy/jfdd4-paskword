@@ -159,7 +159,8 @@ footer .media h4 {
 /*END: styli func-list*/
 .navbar {
   margin-bottom: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  width: 100%; }
 
 .navbar-default {
   background-color: rgba(59, 32, 16, 0.7);
@@ -281,7 +282,7 @@ h2 {
   background-position-x: 25px; }
 
 .email-input {
-  font-size: 30px;
+  font-size: 20px;
   margin: 20px; }
 
 .article-styles {

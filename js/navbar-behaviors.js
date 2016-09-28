@@ -3,20 +3,23 @@
  */
 
 //hides mobile menu after click on any element
-// Navbar doesn't hide page content
-$('.nav a').on('click', function(){
-    $('.btn-navbar').click();
-    $('.navbar-toggle').click()
-});
 
+$('.nav a').on('click', function () {
+    if (window.innerWidth < 768) {
+        // $('.btn-navbar').click();
+        $('.navbar-toggle').click()
+    }
+});
+// Navbar doesn't hide page content
 // -48 - height of navbar -2 because of right scrollpsy
 //Navbar doesn't cover the content of sections after clicking in menu
- var uncoveringContentUnderNavbar = function() {
-     scrollBy(0, -46)};
- if (location.hash) {
-     uncoveringContentUnderNavbar();
+var uncoveringContentUnderNavbar = function () {
+    scrollBy(0, -49)
+};
+if (location.hash) {
+    uncoveringContentUnderNavbar();
 }
- window.addEventListener("hashchange", uncoveringContentUnderNavbar);
+window.addEventListener("hashchange", uncoveringContentUnderNavbar);
 
 // $("nav").resize(function () {
 //     $('#godown').height($("nav").height() + 10);
