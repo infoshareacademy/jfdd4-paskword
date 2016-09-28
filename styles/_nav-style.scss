@@ -18,9 +18,9 @@
   font-family: $head-font;
   font-size: 1.6em;
   img {
-    height: 100%;
-    width: auto;
-    padding: 0.35em;
+    width:100%;
+    max-width:50px;
+    padding: 0.3em;
   }
 }
 .navbar-default .navbar-brand,
