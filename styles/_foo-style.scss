@@ -1,13 +1,17 @@
+@import "variables-styles";
+@import "mixins-styles";
+
 /* START: Footer style */
+
 footer  .media h4 {
   text-align: center;
-  color: white;
+  color: $white;
   letter-spacing: 4px;
   word-spacing: 4px;
 }
 
 .media {
-  background-color: rgba(59, 32, 16, 0.7);
+  background-color: $brown;
   margin: 1% 0;
 }
 
@@ -29,6 +33,7 @@ footer  .media h4 {
 .media img:hover {
   transform: rotate(-30deg);
 }
+
 /*END: style footer*/
 
 .caption h3 {
