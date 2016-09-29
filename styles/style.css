@@ -174,8 +174,9 @@ footer .media h4 {
   font-size: 1.6em; }
   .navbar-brand img {
     width: 100%;
-    max-width: 50px;
-    padding: 0.3em; }
+    max-width: 40px; }
+  .navbar-brand span {
+    padding: 0 0.7vw; }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus,
