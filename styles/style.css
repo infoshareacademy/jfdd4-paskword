@@ -228,17 +228,15 @@ footer .media h4 {
   .extra-info .terms a {
     text-decoration: none;
     color: #0bcbcc; }
-
-#content-area {
+.extra-info #showTerms {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+.extra-info #hidden-terms {
   display: none;
-  height: 200px;
-  overflow: auto;
-  margin-bottom: 1.5em;
-  padding: 10px;
-  border: solid 1px #d7d7d7;
-  color: #505050;
-  background-color: #ffffff;
-  font-size: 90%; }
+  text-align: justify;
+  color: black;
+  margin: 3% 5%; }
 
 html, body {
   font-family: "Scope One", sans-serif;

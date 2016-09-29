@@ -22,16 +22,17 @@
       color: $cyan;
     }
   }
-}
 
-#content-area {
-  display: none;
-  height: 200px;
-  overflow: auto;
-  margin-bottom: 1.5em;
-  padding: 10px;
-  border: solid 1px #d7d7d7;
-  color: #505050;
-  background-color: #ffffff;
-  font-size: 90%;
+  #showTerms {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #hidden-terms {
+    display: none;
+    text-align: justify;
+    color: black;
+    margin: 3% 5%;
+  }
 }

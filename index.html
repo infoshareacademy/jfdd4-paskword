@@ -218,6 +218,7 @@
     </div>
 </footer>
 <!--END team info -->
+
 <!--START extra info about our product-->
 <footer class="extra-info">
     <div class="copyright col-xs-12 ">
@@ -225,12 +226,21 @@
         <p>Copyright 2016, PASKword </p>
     </div>
     <div class="terms">
-        <script src="js/popUpTerms.js"></script>
-        <p>Korzystając ze strony zgadzam się z</p>
-        <button onClick="popUpTerms()">warunkami</button>
-        <p id="terms"></p>
-
-
+        <p>Korzystając ze strony zgadzam się z
+            <span id="showTerms" onClick="showTerms()">warunkami</span>
+        </p>
+        <div id="hidden-terms">
+            <fieldset>
+                <legend>Warunki korzystania </legend>
+                <ol>
+                    <li>Niedozwolone jest korzystanie ze stron internetowych Austrian w sposób powodujący naruszenie praw własności osób trzecich.</li>
+                    <li>Zastrzegamy sobie prawo do przeprowadzania, w dowolnym czasie i bez wcześniejszego powiadomienia, korekt i zmian informacji, usług, produktów i innych treści zamieszczonych na stronie internetowej Futrzak. Zastrzegamy sobie również prawo do wprowadzania w dowolnej chwili zmian w niniejszym regulaminie.</li>
+                    <li>Na stronie internetowej Futrzak mogą znaleźć się linki czy odsyłacze do innych stron, które nie są zarządzane przez PASKword. O ile nie stwierdzono inaczej, PASKword nie ponosi odpowiedzialności za te strony oraz jednoznacznie odcina się od wszelkich treści na nich zawartych. Niniejsze oświadczenie odnosi się do wszystkich podanych przez PASKword linków do obcych portali oraz treści zamieszczonych na stronach, do których te linki prowadzą.</li>
+                </ol>
+                <label for="acceptTerms">Zgadzam się na powyższe warunki.</label>
+                <input id="acceptTerms" type="checkbox">
+            </fieldset>
+        </div>
     </div>
 </footer>
 <!--END extra info about our product-->
@@ -238,6 +248,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/teamRotate.js"></script>
+<script src="js/showTerms.js"></script>
 
 </body>
 </html>
