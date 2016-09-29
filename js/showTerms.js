@@ -11,6 +11,6 @@ function showTerms() {
 
 $('#acceptTerms').change(function() {
     if (this.checked) {
-        $('#hidden-terms').hide();
+        $('#hidden-terms').hide('slow');
     }
 });
