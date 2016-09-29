@@ -11,6 +11,7 @@ html, body {
   color: $grey;
   margin: 0;
   padding:0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -90,7 +91,6 @@ h2 {
   background-color: $light;
   text-align: center;
   padding: 50px;
-  margin: 10px;
   ul {
     list-style-type: none;
   }

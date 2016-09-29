@@ -19,9 +19,11 @@
 }
 
 .button-submit {
+  display: inline-block;
   background-color: $brown;
-  font-size: 50px;
+  font-size: 1vw;
   padding: 25px;
+  text-align: center;
   text-transform: uppercase;
 
   &:hover {
@@ -38,3 +40,8 @@
   }
 }
 
+@media screen and (min-width: 767px) {
+  .button-submit {
+    font-size: 50px;
+  }
+}
