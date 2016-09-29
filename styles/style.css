@@ -242,6 +242,9 @@ footer .media h4 {
   color: black;
   margin: 3% 5%; }
 
+#gameboard {
+  display: none; }
+
 html, body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;

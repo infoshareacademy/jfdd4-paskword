@@ -8,6 +8,7 @@ function showTerms() {
     $('#acceptTerms').change(function () {
         if (this.checked) {
             $('#hidden-terms').hide('slow');
+            isVisible = false;
         }
     });
 
