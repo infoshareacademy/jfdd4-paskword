@@ -297,6 +297,16 @@ h2 {
   padding-bottom: 30px;
   color: #698799; }
 
+.introduction {
+  font-size: 20px;
+  color: #fff;
+  text-indent: 5%;
+  background-color: rgba(59, 32, 16, 0.7);
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 2px 10px #000; }
+
 /*END: main photo + FUTRZAK*/
 /* START: product list */
 .product-list {
@@ -328,5 +338,8 @@ h2 {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
+@media screen and (min-width: 1201px) {
+  .main-photo {
+    font-size: 220px; } }
 
 /*# sourceMappingURL=style.css.map */
