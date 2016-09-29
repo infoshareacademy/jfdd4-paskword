@@ -23,7 +23,9 @@
 
 .button-info {
   font-size: 16px;
-  padding: 10px 40px; }
+  padding: 10px 40px;
+  margin-bottom: 17vw;
+  margin-top: 0px; }
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
@@ -36,22 +38,40 @@ footer .media h4 {
 
 .media {
   background-color: rgba(59, 32, 16, 0.7);
-  margin: 1% 0; }
-
-.media-icons a {
-  padding: 1%; }
+  margin: 1% 0 0 0; }
+  .media h4 img {
+    margin: 0;
+    padding: 0; }
 
 .media-icons {
   display: flex;
   justify-content: center;
   padding: 1%; }
+  .media-icons a {
+    padding: 1%; }
 
 .media img {
   margin: 5% 5%;
   transition: all 0.5s ease; }
+  .media img:hover {
+    transform: rotate(-30deg); }
 
-.media img:hover {
-  transform: rotate(-30deg); }
+.rotate {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+#mate1 {
+  transition: all ease-in 2s; }
+
+#mate2 {
+  transition: all 2s ease-in 2s; }
+
+#mate3 {
+  transition: all 2s ease-in 4s; }
+
+#mate4 {
+  transition: all 2s ease-in 6s; }
 
 /*END: style footer*/
 .caption h3 {
@@ -199,12 +219,37 @@ footer .media h4 {
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
 
+.extra-info .copyright {
+  background: rgba(59, 32, 16, 0.7);
+  color: white;
+  margin: 0 auto; }
+.extra-info .terms {
+  color: rgba(59, 32, 16, 0.7);
+  margin: 0 auto; }
+  .extra-info .terms p {
+    text-align: center;
+    font-size: 1.5em; }
+  .extra-info .terms a {
+    text-decoration: none;
+    color: #0bcbcc; }
+.extra-info #showTerms {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+.extra-info #hidden-terms {
+  display: none;
+  text-align: justify;
+  color: black;
+  margin: 3% 5%; }
+
 html, body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
   color: #698799;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; }
 
 h1 {
   color: #698799;
@@ -218,7 +263,6 @@ h2 {
   font-family: "Arima Madurai", serif;
   background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  font-size: 150px;
   text-align: center;
   display: block;
   position: static;
@@ -228,17 +272,21 @@ h2 {
     margin: inherit; }
   .main-photo p {
     color: #fff;
-    font-size: 30px;
+    font-size: 1.5vw;
     text-align: center;
     padding-bottom: 200px;
-    padding-top: 2px;
+    padding-top: 20px;
     position: relative;
     margin: inherit; }
+
+.padding0 {
+  padding: 0; }
 
 #main-header {
   text-align: center;
   margin: inherit;
-  padding-top: 15%; }
+  padding-top: 6vw;
+  font-size: 9vw; }
 
 .motto {
   display: block;
@@ -248,16 +296,6 @@ h2 {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #698799; }
-
-.introduction {
-  font-size: 20px;
-  color: #fff;
-  text-indent: 5%;
-  background-color: rgba(59, 32, 16, 0.7);
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  text-shadow: 0 2px 10px #000; }
 
 /*END: main photo + FUTRZAK*/
 /* START: product list */
@@ -290,8 +328,5 @@ h2 {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
-@media screen and (min-width: 1201px) {
-  .main-photo {
-    font-size: 220px; } }
 
 /*# sourceMappingURL=style.css.map */

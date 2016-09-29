@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img clas src="images/paw-50.png" alt="Futrzak"><span>Futrzak</span>
+                        <img class="img-responsive" src="images/paw-50.png" alt="Futrzak"><span>Futrzak</span>
                     </a>
                 </div>
 
@@ -46,16 +46,20 @@
 </header>
 
 <!--START zajawka-->
-<main>
-    <section id="main-photo">
-        <section class="main-photo">
-            <h1 id="main-header">Futrzak </h1>
-            <p>-Nie musisz tracić czasu, by zaplanować wizytę u weterynarza.
-                <br/>Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
-            <a class="button button-info" href="#form-submit">Kliknij tutaj po szczegółowe info!</a>
+    <main>
+        <section  class="container-fluid" id="main-photo">
+            <div class="row">
+                <div class="padding0 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <section class="main-photo">
+                        <h1 id="main-header">Futrzak </h1>
+                        <p>-Nie musisz tracić czasu, by zaplanować wizytę u weterynarza.
+                            <br/>Zaoszczędź pieniądze i zarejestruj wizytę w najprostszy możliwy sposób!-</p>
+                        <a class="button button-info" href="#form-submit">Kliknij tutaj po szczegółowe info!</a>
+                    </section>
+                    <h2 class="motto">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
+                </div>
+                </div>
         </section>
-        <h2 class="motto">Zdrowy zwierzak da Ci powód do uśmiechu.</h2>
-    </section>
     <!--END zajawka -->
 
     <!--START product's functions list-->
@@ -128,14 +132,17 @@
 
 <!--START team info-->
 
-<footer>
+<footer id="about-us">
     <!-- <h1 class="header">O nas</h1> -->
-    <div class="container" id="about-us">
+    <div class="container">
         <div class="row">
 
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="images/iconmonstr-user-5-96.png" alt="teammate #1"/>
+                    <img class="img-responsive img-circle"
+                         id="mate1"
+                         src="images/func-list/fox.jpg"
+                         alt="teammate #1"/>
                     <div class="caption">
                         <h3>Agata</h3>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
@@ -147,7 +154,10 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="images/iconmonstr-user-5-96.png" alt="teammate #2"/>
+                    <img class="img-responsive img-circle"
+                         id="mate2"
+                         src="images/func-list/fox.jpg"
+                         alt="teammate #2"/>
                     <div class="caption">
                         <h3>Katarzyna</h3>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
@@ -159,7 +169,10 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="images/iconmonstr-user-5-96.png" alt="teammate #3"/>
+                    <img class="img-responsive img-circle"
+                         id="mate3"
+                         src="images/func-list/fox.jpg"
+                         alt="teammate #3"/>
                     <div class="caption">
                         <h3>Sandra</h3>
                         <p>Cras justo odio, dapibus ac faCras justo odio, dapibus ac faCras justo odio, dapibus ac
@@ -170,7 +183,10 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="images/iconmonstr-user-5-96.png" alt="teammate #4">
+                    <img class="img-responsive img-circle"
+                         id="mate4"
+                         src="images/func-list/fox.jpg"
+                         alt="teammate #4">
                     <div class="caption">
                         <h3>Paweł</h3>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
@@ -201,13 +217,42 @@
                 <img class="img-responsive" src="images/media/tumblr.png" alt="tumblr">
             </a>
         </div>
+        <h4>Data wydania <img src="images/paw.png" alt="paw"> 10.10.2016</h4>
     </div>
 </footer>
 <!--END team info -->
 
+<!--START extra info about our product-->
+<footer class="extra-info">
+    <div class="copyright col-xs-12 ">
+        <p>Ostatnia aktualizacja 10.10.2016</p>
+        <p>Copyright 2016, PASKword </p>
+    </div>
+    <div class="terms">
+        <p>Korzystając ze strony zgadzam się z
+            <span id="showTerms" onClick="showTerms()">warunkami</span>
+        </p>
+        <div id="hidden-terms">
+            <fieldset>
+                <legend>Warunki korzystania </legend>
+                <ol>
+                    <li>Niedozwolone jest korzystanie ze stron internetowych Austrian w sposób powodujący naruszenie praw własności osób trzecich.</li>
+                    <li>Zastrzegamy sobie prawo do przeprowadzania, w dowolnym czasie i bez wcześniejszego powiadomienia, korekt i zmian informacji, usług, produktów i innych treści zamieszczonych na stronie internetowej Futrzak. Zastrzegamy sobie również prawo do wprowadzania w dowolnej chwili zmian w niniejszym regulaminie.</li>
+                    <li>Na stronie internetowej Futrzak mogą znaleźć się linki czy odsyłacze do innych stron, które nie są zarządzane przez PASKword. O ile nie stwierdzono inaczej, PASKword nie ponosi odpowiedzialności za te strony oraz jednoznacznie odcina się od wszelkich treści na nich zawartych. Niniejsze oświadczenie odnosi się do wszystkich podanych przez PASKword linków do obcych portali oraz treści zamieszczonych na stronach, do których te linki prowadzą.</li>
+                </ol>
+                <label for="acceptTerms">Zgadzam się na powyższe warunki.</label>
+                <input id="acceptTerms" type="checkbox">
+            </fieldset>
+        </div>
+    </div>
+</footer>
+<!--END extra info about our product-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/navbar-behaviors.js"></script>
+<script src="js/teamRotate.js"></script>
+<script src="js/showTerms.js"></script>
 
 </body>
 </html>
