@@ -23,7 +23,9 @@
 
 .button-info {
   font-size: 16px;
-  padding: 10px 40px; }
+  padding: 10px 40px;
+  margin-bottom: 17vw;
+  margin-top: 0px; }
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
@@ -243,7 +245,9 @@ html, body {
   background-color: #fff;
   color: #698799;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; }
 
 h1 {
   color: #698799;
@@ -257,7 +261,6 @@ h2 {
   font-family: "Arima Madurai", serif;
   background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  font-size: 150px;
   text-align: center;
   display: block;
   position: static;
@@ -267,17 +270,21 @@ h2 {
     margin: inherit; }
   .main-photo p {
     color: #fff;
-    font-size: 30px;
+    font-size: 1.5vw;
     text-align: center;
     padding-bottom: 200px;
-    padding-top: 2px;
+    padding-top: 20px;
     position: relative;
     margin: inherit; }
+
+.padding0 {
+  padding: 0; }
 
 #main-header {
   text-align: center;
   margin: inherit;
-  padding-top: 15%; }
+  padding-top: 6vw;
+  font-size: 9vw; }
 
 .motto {
   display: block;
@@ -287,16 +294,6 @@ h2 {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #698799; }
-
-.introduction {
-  font-size: 20px;
-  color: #fff;
-  text-indent: 5%;
-  background-color: rgba(59, 32, 16, 0.7);
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  text-shadow: 0 2px 10px #000; }
 
 /*END: main photo + FUTRZAK*/
 /* START: product list */
@@ -329,8 +326,5 @@ h2 {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
-@media screen and (min-width: 1201px) {
-  .main-photo {
-    font-size: 220px; } }
 
 /*# sourceMappingURL=style.css.map */
