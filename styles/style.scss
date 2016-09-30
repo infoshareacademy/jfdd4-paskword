@@ -26,7 +26,6 @@ h2 {
   color: $cyan;
 }
 
-
 /*START: main-photo + FUTRZAK*/
 .main-photo {
   font-family: $head-font;
@@ -97,7 +96,6 @@ h2 {
   background-color: $light;
   text-align: center;
   padding: 50px;
-  margin: 10px;
   ul {
     list-style-type: none;
   }
@@ -112,6 +110,10 @@ h2 {
   margin: 10px;
   background: $white no-repeat left bottom;
   background-position-x: 25px;
+}
+
+#team {
+  /* do ostylowania */
 }
 
 .email-input {
