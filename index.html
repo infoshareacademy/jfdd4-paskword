@@ -8,8 +8,8 @@
     <title>Futrzak Wizytówka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Scope+One&subset=latin-ext,latin" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Arima+Madurai&subset=latin-ext,latin" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico" sizes="16x16">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -38,7 +38,7 @@
                     <li><a href="#details">POPIS FUNKCJI</a></li>
                     <li><a href="#form-submit">KONTAKT</a></li>
                     <li><a href="#team">O NAS</a></li>
-                </ul>
+               </ul>
            </div>
         </div>
     </nav>
@@ -127,6 +127,19 @@
                     <input type="submit" class="button button-submit" value="Zapisz SIĘ"><br>
                 </div>
             </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <form class="form-inline" action="http://jfdd.is-academy.pl/mailer.php" method="POST">
+                            <div class="form-group">
+                                <input class="email-input form-control" type="email" name="email-submit" placeholder="Podaj swój adres email...">
+                                <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
+                                <input type="submit" class="button button-submit" value="Zapisz Się"><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 <!--END formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
     </main>

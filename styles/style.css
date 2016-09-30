@@ -14,9 +14,11 @@
     font-weight: bold; }
 
 .button-submit {
+  display: inline-block;
   background-color: rgba(59, 32, 16, 0.7);
-  font-size: 50px;
-  padding: 25px;
+  font-size: 1vw;
+  text-align: center;
+  padding: 35px 25px 25px;
   text-transform: uppercase; }
   .button-submit:hover {
     background-color: rgba(139, 76, 38, 0.7); }
@@ -27,6 +29,9 @@
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
+@media screen and (min-width: 767px) {
+  .button-submit {
+    font-size: 50px; } }
 /* START: Footer style */
 footer .media h4 {
   text-align: center;
@@ -202,7 +207,8 @@ html, body {
   background-color: #fff;
   color: #698799;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 h1 {
   color: #698799;
@@ -266,8 +272,7 @@ h2 {
   color: #698799;
   background-color: rgba(69, 87, 99, 0.1);
   text-align: center;
-  padding: 50px;
-  margin: 10px; }
+  padding: 50px; }
   .product-list ul {
     list-style-type: none; }
 
