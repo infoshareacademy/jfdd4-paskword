@@ -12,27 +12,58 @@ footer  .media h4 {
 
 .media {
   background-color: $brown;
-  margin: 1% 0;
-}
+  margin: 1% 0 0 0;
 
-.media-icons a {
-  padding: 1%;
+  h4 {
+
+    img {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .media-icons {
   display: flex;
   justify-content: center;
   padding: 1%;
+
+  a {
+    padding: 1%;
+  }
 }
 
 .media img {
   margin: 5% 5%;
   transition: all 0.5s ease;
+
+  &:hover {
+    transform: rotate(-30deg);
+  }
 }
 
-.media img:hover {
-  transform: rotate(-30deg);
+.rotate {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
+
+#mate1 {
+  transition: all ease-in 2s;
+}
+
+#mate2 {
+  transition: all 2s ease-in 2s;
+}
+
+#mate3 {
+  transition: all 2s ease-in 4s;
+}
+
+#mate4 {
+  transition: all 2s ease-in 6s;
+}
+
 
 /*END: style footer*/
 
@@ -41,5 +72,5 @@ footer  .media h4 {
 }
 
 .thumbnail {
-  border:none;
+  border: none;
 }
