@@ -242,6 +242,16 @@ footer .media h4 {
   color: black;
   margin: 3% 5%; }
 
+#form-submit .start {
+  background: navajowhite url("../images/game-textures/sidewalk.jpg") repeat; }
+#form-submit .start-text {
+  color: black;
+  background: rgba(255, 255, 255, 0.75); }
+#form-submit .street {
+  background: #698799 url("../images/game-textures/street.jpg") repeat; }
+#form-submit .water {
+  background: #0bcbcc url("../images/game-textures/water.jpg") repeat; }
+
 html, body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
