@@ -6,11 +6,12 @@
  */
 
 $(document).ready(function() {
-    $('#form1').on('submit', function(e) {
-        e.preventDefault();
-        $('#form-submit').empty();
-        initGameboard();
-    });
+    // $('#form1').on('submit', function(e) {
+    //     e.preventDefault();
+    //     $('#form-submit').empty();
+    //     initGameboard();
+    // });
+
 });
 
 function initGameboard() {
@@ -35,7 +36,7 @@ function initGameboard() {
         }
         for (var x=0; x<rows; x++) {
             if (x==0 && y==0) {
-                $row.append($('<td>').text('START').addClass('col-xs-1 start-text'));
+                $row.append($('<td>').attr('id', 'startLocation').text('START').addClass('col-xs-1 start-text'));
             }
             else if(x==0 && y==10) {
                 $row.append($('<td>').text('META').addClass('col-xs-1 start-text finish'));
@@ -50,3 +51,5 @@ function initGameboard() {
     }
 }
 
+$('#form-submit').empty();
+initGameboard();
