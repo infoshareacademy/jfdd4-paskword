@@ -1,7 +1,8 @@
 /**
  * Created by agatakulbicka on 29.09.16.
  */
-$(document).ready(function () {
+
+function initFrog() {
     var score;
     var croak = new Audio('sounds/frog.mp3');
     var rowCount = $('#board tr').length;
@@ -17,10 +18,9 @@ $(document).ready(function () {
         document.getElementById(y + '-' + x).innerHTML = '';
     }
 
-    function addStartText(){
+    function addStartText() {
         var $startPosition = $('#0-0').text();
-        if($startPosition == '')
-        {
+        if ($startPosition == '') {
             $('#0-0').text('START');
         }
     }
@@ -94,4 +94,4 @@ $(document).ready(function () {
                 break;
         }
     });
-});
+}

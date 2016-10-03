@@ -6,11 +6,12 @@
  */
 
 $(document).ready(function() {
-// $('#form1').on('submit', function(e) {
-    //     e.preventDefault();
-    //     $('#form-submit').empty();
-    //     initGameboard();
-    // });
+$('#form1').on('submit', function(e) {
+        e.preventDefault();
+        $('#form-submit').empty();
+        initGameboard();
+        initFrog();
+    });
 
 });
 
@@ -19,6 +20,7 @@ function initGameboard() {
     $('#form-submit').append(gameBoard);
     var rows=12;
     var cols=12;
+    // var imgFrog = "<img src='images/small-frog.png' />";
     for (var y=0; y<cols; y++) {
 
         var $row = $('<tr>');
@@ -52,5 +54,5 @@ function initGameboard() {
     }
 }
 
-$('#form-submit').empty();
-initGameboard();
+// $('#form-submit').empty();
+// initGameboard();
