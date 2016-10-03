@@ -6,7 +6,7 @@
  */
 
 $(document).ready(function() {
-    // $('#form1').on('submit', function(e) {
+// $('#form1').on('submit', function(e) {
     //     e.preventDefault();
     //     $('#form-submit').empty();
     //     initGameboard();
@@ -20,6 +20,7 @@ function initGameboard() {
     var rows=12;
     var cols=12;
     for (var y=0; y<cols; y++) {
+
         var $row = $('<tr>');
 
         if (y==0 || y==5 || y ==10 || y==11) {
@@ -36,16 +37,16 @@ function initGameboard() {
         }
         for (var x=0; x<rows; x++) {
             if (x==0 && y==0) {
-                $row.append($('<td>').attr('id', 'startLocation').text('START').addClass('col-xs-1 start-text'));
+                $row.append($('<td>').attr('id', y + '-' + x).text('START').addClass('col-xs-1 start-text'));
             }
             else if(x==0 && y==10) {
-                $row.append($('<td>').text('META').addClass('col-xs-1 start-text finish'));
+                $row.append($('<td>').attr('id', y + '-' + x).text('META').addClass('col-xs-1 start-text finish'));
             }
             else if(x==0 && y==11) {
-                $row.append($('<td>').text('PUNKTY').addClass('col-xs-1 start-text points'));
+                $row.append($('<td>').attr('id', y + '-' + x).text('PUNKTY').addClass('col-xs-1 start-text points'));
             }
             else {
-                $row.append($('<td>').text('x').addClass('col-xs-1'));
+                $row.append($('<td>').attr('id', y + '-' + x).text('x').addClass('col-xs-1'));
             }
         }
     }
