@@ -48,5 +48,21 @@ function initGameboard() {
             }
         }
     }
+//Add trucks on the streets
+    var $truck = new Image(50,50);
+    $truck.src = "images/game-textures/truck.png";
+
+    for(i=1; i<cols; i++) {
+        $('.street td:nth-child(' + i + ')')
+            .append($truck)
+            .addClass('mirror')
+            // .fadeOut('slow', function() {
+            //     $(this).remove().delay(2000);
+            // });
+    }
+
+
+
+
 }
 

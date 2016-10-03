@@ -251,6 +251,10 @@ footer .media h4 {
   background: #698799 url("../images/game-textures/street.jpg") repeat; }
 #form-submit .water {
   background: #0bcbcc url("../images/game-textures/water.jpg") repeat; }
+#form-submit .mirror img {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
 
 html, body {
   font-family: "Scope One", sans-serif;
