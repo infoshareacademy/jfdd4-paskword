@@ -17,12 +17,19 @@ $(document).ready(function () {
         document.getElementById(y + '-' + x).innerHTML = '';
     }
 
+    function addStartText(){
+        var $startPosition = $('#0-0').text();
+        if($startPosition == '')
+        {
+            $('#0-0').text('START');
+        }
+    }
+
     function left() {
         if (x > 0) {
             removeOldFrog();
             x -= 1;
             document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
-            console.log(x);
         }
         else {
             croak.play();
@@ -40,18 +47,16 @@ $(document).ready(function () {
         }
     }
 
-
     function right() {
         if (x < (columnCount - 1)) {
             removeOldFrog();
             x += 1;
             document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
-            console.log(x);
+            addStartText();
         }
         else {
             croak.play();
         }
-
     }
 
     function down() {
@@ -59,6 +64,7 @@ $(document).ready(function () {
             removeOldFrog();
             y += 1;
             document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            addStartText();
         }
         else {
             console.log('brawo, wygrałeś!');
