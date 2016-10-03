@@ -26,7 +26,6 @@ h2 {
   color: $cyan;
 }
 
-
 /*START: main-photo + FUTRZAK*/
 .main-photo {
   font-family: $head-font;
@@ -125,8 +124,32 @@ h2 {
 
 /* KONIEC Style sekcji formularz */
 
-@media screen and (min-width: 1201px) {
-  .main-photo {
-    font-size: 220px;
+/* Start Carousel Section*/
+.carousel {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#miniatury{
+  display: inline-block;
+  right: 250px;
+  margin-left: 0px;
+  width: 20%;
+  left: 100%;
+
+
+  img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    height: 54px;
+    left: 0;
+    width: 100px;
+
   }
 }
+.carousel-indicators .active {
+  height: 100%;
+}
+/* End Carousel Section*/
