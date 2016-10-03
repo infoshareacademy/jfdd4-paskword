@@ -7,17 +7,24 @@
     <meta name="author" content="PASKword">
     <title>Futrzak Wizytówka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon.ico" sizes="16x16">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Scope+One&subset=latin-ext"
+          type="text/css">
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Arima+Madurai&subset=latin-ext"
+          type="text/css">
+    <link rel="icon"
+          href="favicon.ico"
+          sizes="16x16">
+    <link rel="stylesheet"
+          href="styles/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- navbar: menu + logo-->
 <header>
-
     <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
         <div class="container-fluid">
                 <div class="navbar-header">
@@ -29,9 +36,10 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="images/paw-50.png" alt="Futrzak">Futrzak
+                        <img class="img-responsive" src="images/paw-50.png" alt="Futrzak"><span>Futrzak</span>
                     </a>
                 </div>
+
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#main-photo">HOME</a></li>
@@ -41,7 +49,6 @@
                         <li><a href="#about-us">O NAS</a></li>
                     </ul>
                 </div>
-            </div>
         </div>
     </nav>
 </header>
@@ -194,13 +201,23 @@
             <h3>Gwarantujemy, że będziesz jedną z pierwszych osób, które dowiedzą się o jego
                 premierze!</h3>
         </article>
-        <form action="http://jfdd.is-academy.pl/mailer.php" method="POST">
-            <input class="email-input" type="email" name="email-submit" placeholder="Podaj swój adres email...">
-            <input type="hidden" name="receiver" value="paskword@infoshareacademy.com">
-            <input type="submit" class="button button-submit" value="Zapisz SIĘ"><br>
+        <form id="form1"
+              action="http://jfdd.is-academy.pl/mailer.php"
+              method="POST">
+            <input class="email-input"
+                   type="email"
+                   name="email-submit"
+                   placeholder="Podaj swój adres email...">
+            <input type="hidden"
+                   name="receiver"
+                   value="paskword@infoshareacademy.com">
+            <input type="submit"
+                   class="button button-submit"
+                   value="Zapisz SIĘ"><br>
         </form>
     </section>
     <!--END formularz z powiadomieniem o premierze: pole do adresu e-mail i button -->
+
 </main>
 
 <!--START team info-->
@@ -221,7 +238,7 @@
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                             gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                         <a href="https://www.linkedin.com/in/agata-kulbicka-3b6778b5" target="_blank">
-                            <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                            <img src="images/media/linkedin.png" alt="linkedin icon"></a>
                     </div>
                 </div>
             </div>
@@ -236,7 +253,7 @@
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                             gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                         <a href="https://www.linkedin.com/in/katarzyna-kałduńska-43aa90127" target="_blank">
-                            <img src="images/iconmonstr-linkedin-3-16.png" alt="linkedin icon"></a>
+                            <img src="images/media/linkedin.png" alt="linkedin icon"></a>
                     </div>
                 </div>
             </div>
@@ -290,12 +307,44 @@
                 <img class="img-responsive" src="images/media/tumblr.png" alt="tumblr">
             </a>
         </div>
+        <h4>Data wydania <img src="images/paw.png" alt="paw"> 10.10.2016</h4>
     </div>
 </footer>
 <!--END team info -->
 
+<!--START extra info about our product-->
+<footer class="extra-info">
+    <div class="copyright col-xs-12 ">
+        <p>Ostatnia aktualizacja 10.10.2016</p>
+        <p>Copyright 2016, PASKword </p>
+    </div>
+    <div class="terms">
+        <p>Korzystając ze strony zgadzam się z
+            <span id="showTerms" onClick="showTerms()">warunkami</span>
+        </p>
+        <div id="hidden-terms">
+            <fieldset>
+                <legend>Warunki korzystania </legend>
+                <ol>
+                    <li>Niedozwolone jest korzystanie ze strony internetowej Futrzak w sposób powodujący naruszenie praw własności osób trzecich.</li>
+                    <li>Zastrzegamy sobie prawo do przeprowadzania, w dowolnym czasie i bez wcześniejszego powiadomienia, korekt i zmian informacji, usług, produktów i innych treści zamieszczonych na stronie internetowej Futrzak. Zastrzegamy sobie również prawo do wprowadzania w dowolnej chwili zmian w niniejszym regulaminie.</li>
+                    <li>Na stronie internetowej Futrzak mogą znaleźć się linki czy odsyłacze do innych stron, które nie są zarządzane przez PASKword. O ile nie stwierdzono inaczej, PASKword nie ponosi odpowiedzialności za te strony oraz jednoznacznie odcina się od wszelkich treści na nich zawartych. Niniejsze oświadczenie odnosi się do wszystkich podanych przez PASKword linków do obcych portali oraz treści zamieszczonych na stronach, do których te linki prowadzą.</li>
+                </ol>
+                <label for="acceptTerms">Zgadzam się na powyższe warunki.</label>
+                <input id="acceptTerms" type="checkbox">
+            </fieldset>
+        </div>
+    </div>
+</footer>
+<!--END extra info about our product-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/navbar-behaviors.js"></script>
 <script src="js/teamRotate.js"></script>
+<script src="js/showTerms.js"></script>
+<script src="js/initGameboard.js"></script>
+<script src="js/frog.js"></script>
+
 </body>
 </html>

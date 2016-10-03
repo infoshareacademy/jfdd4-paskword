@@ -4,6 +4,7 @@
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  width: 100%;
 }
 
 .navbar-default {
@@ -19,8 +20,11 @@
   font-size: 1.6em;
   img {
     width:100%;
-    max-width:50px;
-    padding: 0.3em;
+    max-width:40px;
+    //padding: 0.2vw;
+  }
+  span {
+    padding: 0 0.7vw;
   }
 }
 .navbar-default .navbar-brand,
