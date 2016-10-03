@@ -53,22 +53,13 @@ function initGameboard() {
         }
     }
 //Add trucks on the streets
-    var $truck = new Image(50,50);
+    var $truck = new Image(50,43);
     $truck.src = "images/game-textures/truck.png";
-
-    for(i=1; i<cols; i++) {
-        $('.street td:nth-child(' + i + ')')
-            .append($truck)
-            .addClass('mirror')
-            // .fadeOut('slow', function() {
-            //     $(this).remove().delay(2000);
-            // });
-    }
-
-
-
+    var x = 1;
+    var y = 2;
+    setInterval(function() {
+        document.getElementById(y + '-' + x).append('$truck');
+        x++;
+    }, 300);
 
 }
-
-// $('#form-submit').empty();
-// initGameboard();

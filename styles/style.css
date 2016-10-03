@@ -255,6 +255,8 @@ footer .media h4 {
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
+#form-submit td {
+  height: 49px; }
 
 html, body {
   font-family: "Scope One", sans-serif;
