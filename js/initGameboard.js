@@ -11,7 +11,11 @@ $('#form1').on('submit', function(e) {
         $('#form-submit').empty();
         initGameboard();
         initFrog();
+        // movingWood();
+        //  driftingWood();
+    plywajaceDrzewo();
     });
+
 
 });
 
