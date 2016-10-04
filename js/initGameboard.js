@@ -4,6 +4,10 @@
  * Init Gameboard on click submit button
  * Gameboard is a table 12x12
  */
+var rows=11;
+var cols=11;
+var collision = false;
+var speed = 600;
 
 $(document).ready(function() {
     $('#form1').on('submit', function(event) {
@@ -15,12 +19,17 @@ $(document).ready(function() {
         initRidingTrucks(2, false);
         initRidingTrucks(3, true);
         initRidingTrucks(4, false);
+        initIntervals();
+
     });
-
 });
+function initIntervals() {
+    var truckLoop1 = setInterval(initRidingTrucks(1, true), speed);
+    var truckLoop2 = setInterval(initRidingTrucks(2, false), speed);
+    var truckLoop3 = setInterval(initRidingTrucks(3, true), speed);
+    var truckLoop4 = setInterval(initRidingTrucks(4, false), speed);
+}
 
-var rows=11;
-var cols=11;
 
 function initGameboard() {
     var gameBoard = $('<table>').attr('id','board').addClass('table');
@@ -59,10 +68,13 @@ function initGameboard() {
     }
 }
 
+var intervals =[];
+
 function initRidingTrucks(row,mirror) {
-    var $truck = new Image(50,36);
+    var $truck = new Image(50,30);
     $truck.src = "images/game-textures/truck.png";
-    var speed = 600;
+    $truck.alt = 'truck';
+
     var x;
     if (mirror) {
         x = 0;
@@ -73,10 +85,10 @@ function initRidingTrucks(row,mirror) {
     var z = 1;
     console.log(z);
     var always = false;
-    var truckLoop = setInterval(function() {
+
 
         var truckNum = Math.floor(Math.random() * 3) + 1;
-        var truckDistance = Math.floor(Math.random() * 4) + 2;
+        var truckDistance = Math.floor(Math.random() * 3) + 2;
 
         if (mirror) {
             $('#' + row + '-' + x).empty().append($truck).addClass('mirror');
@@ -98,14 +110,21 @@ function initRidingTrucks(row,mirror) {
                 always = true ;
             }
         }
-        //if ($('#' + row + '-' + x).hasClass( "frog" ).length) {
-        //katastrofa!
-        //}
+        //Collision - frog dead
+        if ($('#board').find('img[src="images/small-frog.png"]').length == 0
+        && !collision) {
+            console.log("KOLIZJA AAAAAAA");
+            collision = true;
+            console.log("przegryw");
+            intervals.forEach(function(interval) {
+                clearInterval(interval);
+            })
+        }
 
         if ((x == truckDistance && truckNum > z  && $('#' + row + '-' + x).children().length==0) || always) {
             //console.log('puu');
             z++;
             initRidingTrucks(row,mirror);
         }
-    }, speed);
+
 }
