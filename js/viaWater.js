@@ -18,33 +18,28 @@ function removeOldWood() {
     document.getElementById(y + '-' + x).innerHTML = '';
 }
 
-function movingWood() {
-
+function addNewWood() {
     document.getElementById(y + '-' + x).innerHTML = '<img src="images/wood.png">';
-    console.log('X PRZED odejmowaniem: ' + x);
-    x--;
-    console.log('X PO odejmowaniu: ' + x);
+}
+addNewWood();
 
+function startMoving() {
+    if(x>0) {
+        removeOldWood();
+        x--;
+        addNewWood();
+        console.log('X PRZED odejmowaniem: ' + x);
+        console.log('X PO odejmowaniu: ' + x);
+    }
+    else{
+        removeOldWood();
+        x=11;
+        addNewWood();
+    }
 }
 
-
-var randomSpeed = Math.round(Math.random() * 9000);
-//
-// function driftingWood() {
-//
-//     for (var i = 0; i < 10; i++) {
-//         setInterval(function () {
-// // removeOldWood();
-//                 movingWood();
-//                 console.log('Prędkość: ', randomSpeed);
-//             },
-//             randomSpeed);
-//     }
-//
-// }
-
-function plywajaceDrzewo(){
-    var inter = setInterval(movingWood, randomSpeed);
-    removeOldWood();
+function driftWood() {
+    addNewWood();
+    setInterval(startMoving, 1000);
 }
 
