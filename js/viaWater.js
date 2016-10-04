@@ -2,44 +2,62 @@
  * Created by agatakulbicka on 03.10.16.
  */
 
-var waterRow = 4;
-var waterCols = 11;
-var y = 6;
-var x = 11;
+var numberOfWoods = 4;
+var riverRows = 4;
 
-function createWoods() {
-    for (var i = 0; i < waterRow; i++) {
-        var wood = new Image;
-        wood.src = "/images/wood.png";
+var woodsArray = [];
+
+for (var j = 0; j < riverRows; j++) {
+    var usedX = [];
+    for (var i = 0; i < numberOfWoods; i++) {
+        var x = randomNumber(0, 11);
+        // console.log('UsedX: ', usedX, x);
+        while (usedX.indexOf(x) !== -1) {
+            x = randomNumber(0, 11);
+            console.log('Jestem!', x);
+        }
+
+        usedX.push(x);
+
+        woodsArray.push(
+            {
+                x: x,
+                y: 6 + j
+            }
+        );
     }
 }
 
-function removeOldWood() {
+function randomNumber(min, max) {
+    return Math.round(Math.random() * (max - min) + min);
+}
+
+
+function removeOldWood(x, y) {
     document.getElementById(y + '-' + x).innerHTML = '';
 }
 
-function addNewWood() {
+function addNewWood(x, y) {
     document.getElementById(y + '-' + x).innerHTML = '<img src="images/wood.png">';
 }
-addNewWood();
 
 function startMoving() {
-    if(x>0) {
-        removeOldWood();
-        x--;
-        addNewWood();
-        console.log('X PRZED odejmowaniem: ' + x);
-        console.log('X PO odejmowaniu: ' + x);
-    }
-    else{
-        removeOldWood();
-        x=11;
-        addNewWood();
-    }
+    woodsArray.forEach(function (wood) {
+        removeOldWood(wood.x, wood.y);
+    });
+    woodsArray.forEach(function (wood) {
+        if (wood.x > 0) {
+            wood.x--;
+            addNewWood(wood.x, wood.y);
+        }
+        else {
+            wood.x = 11;
+            addNewWood(wood.x, wood.y);
+        }
+    });
 }
 
 function driftWood() {
-    addNewWood();
-    setInterval(startMoving, 1000);
+    setInterval(startMoving, 500);
 }
 
