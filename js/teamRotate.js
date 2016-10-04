@@ -11,4 +11,3 @@ $(window).scroll(function() {
         $('#mate1, #mate2, #mate3, #mate4').addClass('rotate');
     };
 });
-
