@@ -5,31 +5,33 @@
  * Gameboard is a table 12x12
  */
 
-$(document).ready(function() {
-$('#form1').on('submit', function(e) {
+$(document).ready(function () {
+    $('#form1').on('submit', function (e) {
         e.preventDefault();
         $('#form-submit').empty();
         initGameboard();
         initFrog();
+        driftWood();
     });
+
 
 });
 
 function initGameboard() {
-    var gameBoard = $('<table>').attr('id','board').addClass('table');
+    var gameBoard = $('<table>').attr('id', 'board').addClass('table');
     $('#form-submit').append(gameBoard);
-    var rows=12;
-    var cols=12;
+    var rows = 12;
+    var cols = 12;
     // var imgFrog = "<img src='images/small-frog.png' />";
-    for (var y=0; y<cols; y++) {
+    for (var y = 0; y < cols; y++) {
 
         var $row = $('<tr>');
 
-        if (y==0 || y==5 || y ==10 || y==11) {
+        if (y == 0 || y == 5 || y == 10 || y == 11) {
             $row.addClass('start');
             gameBoard.append($row);
         }
-        else if (y>0 && y<5) {
+        else if (y > 0 && y < 5) {
             $row.addClass('street');
             gameBoard.append($row);
         }
@@ -37,14 +39,14 @@ function initGameboard() {
             $row.addClass('water');
             gameBoard.append($row);
         }
-        for (var x=0; x<rows; x++) {
-            if (x==0 && y==0) {
+        for (var x = 0; x < rows; x++) {
+            if (x == 0 && y == 0) {
                 $row.append($('<td>').attr('id', y + '-' + x).text('START').addClass('col-xs-1 start-text'));
             }
-            else if(x==0 && y==10) {
+            else if (x == 0 && y == 10) {
                 $row.append($('<td>').attr('id', y + '-' + x).text('META').addClass('col-xs-1 start-text finish'));
             }
-            else if(x==0 && y==11) {
+            else if (x == 0 && y == 11) {
                 $row.append($('<td>').attr('id', y + '-' + x).text('PUNKTY').addClass('col-xs-1 start-text points'));
             }
             else {
