@@ -14,6 +14,10 @@ function initFrog() {
     //current location of the frog
     document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
 
+    function createNewFrog() {
+        document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+    }
+
     function removeOldFrog() {
         document.getElementById(y + '-' + x).innerHTML = '';
     }
@@ -29,7 +33,7 @@ function initFrog() {
         if (x > 0) {
             removeOldFrog();
             x -= 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            createNewFrog();
         }
         else {
             croak.play();
@@ -40,7 +44,7 @@ function initFrog() {
         if (y > 0) {
             removeOldFrog();
             y -= 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            createNewFrog();
         }
         else {
             croak.play();
@@ -51,7 +55,7 @@ function initFrog() {
         if (x < (columnCount - 1)) {
             removeOldFrog();
             x += 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            createNewFrog();
             addStartText();
         }
         else {
@@ -63,13 +67,27 @@ function initFrog() {
         if (y < (rowCount - 2)) {
             removeOldFrog();
             y += 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            createNewFrog();
             addStartText();
         }
         else {
             console.log('brawo, wygrałeś!');
         }
     }
+
+
+    function drowing() {
+        removeOldFrog();
+        console.log("Nisetety, żabka utonęła :(((((");
+    }
+
+    function skipToRiver(){
+        //if it's river - die
+        // it's not - live
+        //jf(kolejne pole jest "niezajęte" przez kłodę) - umrzyj
+
+    }
+
 
     $(document).keydown(function (event) {
         event.stopPropagation(); // arrow keys will be usee only for frog navigation -  arrows keydown won't move the site (up and down)
