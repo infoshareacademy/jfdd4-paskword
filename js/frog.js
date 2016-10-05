@@ -1,10 +1,10 @@
 /**
  * Created by agatakulbicka on 29.09.16.
  */
+var croak = new Audio('sounds/frog.mp3');
 
 function initFrog() {
     var score;
-    var croak = new Audio('sounds/frog.mp3');
     var rowCount = $('#board tr').length;
     var columnCount = $('tr td').length / rowCount;
 
@@ -69,16 +69,18 @@ function initFrog() {
             y += 1;
             createNewFrog();
             addStartText();
+            console.log(y);
         }
-        else {
+        if (y == rowCount-2 && !amIAWinner) {
             console.log('brawo, wygrałeś!');
+            amIAWinner = true;
         }
     }
-
 
     function drowing() {
         removeOldFrog();
         console.log("Nisetety, żabka utonęła :(((((");
+        collision = true;
     }
 
     function skipToRiver(){
@@ -87,7 +89,6 @@ function initFrog() {
         //jf(kolejne pole jest "niezajęte" przez kłodę) - umrzyj
 
     }
-
 
     $(document).keydown(function (event) {
         event.stopPropagation(); // arrow keys will be usee only for frog navigation -  arrows keydown won't move the site (up and down)

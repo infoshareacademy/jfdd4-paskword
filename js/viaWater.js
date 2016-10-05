@@ -68,6 +68,6 @@ function startMoving() {
 }
 
 function driftWood() {
-    setInterval(startMoving, 1000);
+    woodLoop = setInterval(startMoving, 1000);
 }
 
