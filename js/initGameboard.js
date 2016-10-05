@@ -83,7 +83,7 @@ function drawPattern(rowNum, mirror) {
     } else {
 
         if (mirror) {
-            for (var k = 12; k > 0; k--) {
+            for (k = 12; k > 0; k--) {
                 $('#' + rowNum + '-' + (k-1)).removeClass('showTruck mirror');
                 $('img[alt="truck"]').remove();
             }

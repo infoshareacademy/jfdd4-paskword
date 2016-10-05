@@ -65,6 +65,7 @@ function startMoving() {
         }
 
     });
+    $('img').addClass('img-responsive');
 }
 
 function driftWood() {

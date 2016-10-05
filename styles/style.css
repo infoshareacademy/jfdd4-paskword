@@ -256,7 +256,11 @@ footer .media h4 {
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 #form-submit td {
-  height: 49px; }
+  height: 50px;
+  overflow: hidden; }
+#form-submit #board {
+  width: 100%;
+  max-width: 1200px; }
 
 html, body {
   font-family: "Scope One", sans-serif;
