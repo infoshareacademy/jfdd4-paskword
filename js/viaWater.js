@@ -2,7 +2,7 @@
  * Created by agatakulbicka on 03.10.16.
  */
 
-var numberOfWoods = 4;
+var numberOfWoods = 5;
 var riverRows = 4;
 
 var woodsArray = [];
@@ -43,18 +43,31 @@ function startMoving() {
         removeOldWood(wood.x, wood.y);
     });
     woodsArray.forEach(function (wood) {
-        if (wood.x > 0) {
-            wood.x--;
-            addNewWood(wood.x, wood.y);
+        if (wood.y % 2 == 0) {
+            if (wood.x > 0) {
+                wood.x--;
+                addNewWood(wood.x, wood.y);
+            }
+            else {
+                wood.x = 11;
+                addNewWood(wood.x, wood.y);
+            }
         }
         else {
-            wood.x = 11;
-            addNewWood(wood.x, wood.y);
+            if (wood.x < 11) {
+                wood.x++;
+                addNewWood(wood.x, wood.y);
+            }
+            else {
+                wood.x = 0;
+                addNewWood(wood.x, wood.y);
+            }
         }
+
     });
 }
 
 function driftWood() {
-    setInterval(startMoving, 500);
+    setInterval(startMoving, 1000);
 }
 
