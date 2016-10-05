@@ -11,10 +11,8 @@ for (var j = 0; j < riverRows; j++) {
     var usedX = [];
     for (var i = 0; i < numberOfWoods; i++) {
         var x = randomNumber(0, 11);
-        // console.log('UsedX: ', usedX, x);
         while (usedX.indexOf(x) !== -1) {
             x = randomNumber(0, 11);
-            console.log('Jestem!', x);
         }
 
         usedX.push(x);
@@ -31,7 +29,6 @@ for (var j = 0; j < riverRows; j++) {
 function randomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
-
 
 function removeOldWood(x, y) {
     document.getElementById(y + '-' + x).innerHTML = '';
