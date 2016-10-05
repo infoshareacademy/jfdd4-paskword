@@ -14,10 +14,6 @@ function initFrog() {
     //current location of the frog
     document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
 
-    function createNewFrog() {
-        document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
-    }
-
     function removeOldFrog() {
         document.getElementById(y + '-' + x).innerHTML = '';
     }
@@ -33,7 +29,8 @@ function initFrog() {
         if (x > 0) {
             removeOldFrog();
             x -= 1;
-            createNewFrog();
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
         }
         else {
             croak.play();
@@ -44,7 +41,8 @@ function initFrog() {
         if (y > 0) {
             removeOldFrog();
             y -= 1;
-            createNewFrog();
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
         }
         else {
             croak.play();
@@ -55,7 +53,8 @@ function initFrog() {
         if (x < (columnCount - 1)) {
             removeOldFrog();
             x += 1;
-            createNewFrog();
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
             addStartText();
         }
         else {
@@ -67,11 +66,29 @@ function initFrog() {
         if (y < (rowCount - 2)) {
             removeOldFrog();
             y += 1;
-            createNewFrog();
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
             addStartText();
         }
         else {
             console.log('brawo, wygrałeś!');
+        }
+    }
+
+    function checkDanger(){
+        var elementHasDangerousClass= $('#' + y + '-' + x).hasClass('dangerousWater');
+        var elementIsSafe = $('#' + y + '-' + x).hasClass('.driftingWood');
+        if(elementHasDangerousClass) {
+            removeOldFrog();
+            console.log('game over - żabka dedła');
+        }
+        else if (elementIsSafe)
+        {
+           //frog on a wood
+        console.log('żaba na kłodzie');
+        }
+        else {
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
         }
     }
     
