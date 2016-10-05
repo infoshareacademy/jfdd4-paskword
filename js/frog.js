@@ -1,10 +1,10 @@
 /**
  * Created by agatakulbicka on 29.09.16.
  */
+var croak = new Audio('sounds/frog.mp3');
 
 function initFrog() {
     var score;
-    var croak = new Audio('sounds/frog.mp3');
     var rowCount = $('#board tr').length;
     var columnCount = $('tr td').length / rowCount;
 
@@ -70,11 +70,12 @@ function initFrog() {
             createNewFrog();
             addStartText();
         }
-        else {
+        if (y == rowCount-2 && !amIAWinner) {
             console.log('brawo, wygrałeś!');
+            amIAWinner = true;
         }
     }
-    
+
     $(document).keydown(function (event) {
 
         //arrows and WSAD keydown action

@@ -10,6 +10,8 @@ var cols = 12;
 var speed = 500;
 var collision = false;
 var truckLoop;
+var woodLoop;
+var amIAWinner = false;
 
 $(document).ready(function() {
     $('#form1').on('submit', function(event) {
@@ -122,10 +124,10 @@ function drawPattern(rowNum, mirror) {
     //Collision - frog dead
     if ($('.showTruck').has('img[src="images/small-frog.png"]').length != 0
         && !collision) {
-        console.log("KOLIZJA AAAAAAA");
         collision = true;
-        console.log("przegryw");
+        croak.play();
         clearInterval(truckLoop);
+        clearInterval(woodLoop);
     }
 
     if (rowNum == 1) {
@@ -140,7 +142,7 @@ function drawPattern(rowNum, mirror) {
 }
 
 function initGameboard() {
-    var gameBoard = $('<table>').attr('id', 'board').addClass('table');
+    var gameBoard = $('<table>').attr('id', 'board').addClass('table table-responsive');
     $('#form-submit').append(gameBoard);
 
     for (var y = 0; y < cols; y++) {
