@@ -12,10 +12,10 @@ function initFrog() {
     var y = 0; // number of current row
 
     //current location of the frog
-    document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+    document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
 
     function createNewFrog() {
-        document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+        document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
     }
 
     function removeOldFrog() {

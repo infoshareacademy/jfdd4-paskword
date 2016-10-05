@@ -35,7 +35,7 @@ function removeOldWood(x, y) {
 }
 
 function addNewWood(x, y) {
-    document.getElementById(y + '-' + x).innerHTML = '<img src="images/wood.png">';
+    document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/wood.png">';
 }
 
 function startMoving() {
