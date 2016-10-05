@@ -31,11 +31,11 @@ function randomNumber(min, max) {
 }
 
 function removeOldWood(x, y) {
-    document.getElementById(y + '-' + x).innerHTML = '';
+    $('#' + y + '-' + x).addClass('dangerousWater').removeClass('.driftingWood').html('');
 }
 
 function addNewWood(x, y) {
-    document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/wood.png">';
+    $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('.driftingWood')).html('<img src="images/game-textures/wood.png">');
 }
 
 function startMoving() {
