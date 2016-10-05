@@ -74,42 +74,32 @@ function initFrog() {
             console.log('brawo, wygrałeś!');
         }
     }
-
-
-    function drowing() {
-        removeOldFrog();
-        console.log("Nisetety, żabka utonęła :(((((");
-    }
-
-    function skipToRiver(){
-        //if it's river - die
-        // it's not - live
-        //jf(kolejne pole jest "niezajęte" przez kłodę) - umrzyj
-
-    }
-
-
+    
     $(document).keydown(function (event) {
-        event.stopPropagation(); // arrow keys will be usee only for frog navigation -  arrows keydown won't move the site (up and down)
-        // event.preventDefault();
+
         //arrows and WSAD keydown action
         switch (event.keyCode) {
             case 37:
             case 65:
+                event.preventDefault();
                 left();
                 break;
             case 38:
             case 87:
+                event.preventDefault();
                 up();
                 break;
             case 39:
             case 68:
+                event.preventDefault();
                 right();
                 break;
             case 40:
             case 83:
+                event.preventDefault();
                 down();
                 break;
         }
     });
+
 }
