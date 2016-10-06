@@ -12,7 +12,7 @@ function initFrog() {
     var y = 0; // number of current row
 
     //current location of the frog
-    document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+    document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png" class="img-responsive">';
 
     function removeOldFrog() {
         document.getElementById(y + '-' + x).innerHTML = '';
@@ -92,7 +92,7 @@ function initFrog() {
             document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
         }
     }
-    
+
     $(document).keydown(function (event) {
 
         //arrows and WSAD keydown action
