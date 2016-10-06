@@ -154,15 +154,15 @@ footer .media h4 {
     clear: both; } }
 @media screen and (min-width: 1201px) {
   .func-list {
-    display: flex;
-    flex-direction: row;
     margin: auto; }
     .func-list div {
       transition: all 1s; }
-      .func-list div:hover {
+
+    .func-list div .list1:hover, .func-list div .list2:hover, .func-list div .list3:hover {
         transform: scale(1.2);
         z-index: 1; }
-        .func-list div:hover .text-list {
+
+    .func-list div .list1:hover .text-list, .func-list div .list2:hover .text-list, .func-list div .list3:hover .text-list {
           visibility: visible; }
 
   .text-list {
@@ -265,11 +265,9 @@ footer .media h4 {
     vertical-align: middle;
     text-align: center;
 }
-
 #form-submit .table > tbody > tr > td {
     min-height: 50px;
 }
-
 #form-submit .start-text td {
     font-size: 2vmin;
 }
