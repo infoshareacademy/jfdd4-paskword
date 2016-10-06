@@ -168,7 +168,7 @@ function initGameboard() {
             gameBoard.append($row);
         }
         else {
-            $row.addClass('water');
+            $row.addClass('water').addClass('dangerousWater');
             gameBoard.append($row);
         }
         for (var x = 0; x < rows; x++) {
