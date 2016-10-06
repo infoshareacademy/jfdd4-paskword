@@ -131,8 +131,8 @@ function drawPattern(rowNum, mirror) {
         clearInterval(truckLoop);
         clearInterval(woodLoop);
         $('img[src="images/game-textures/small-frog.png"]')
-        // .toggle('puff', 'slow');
             .toggle('bounce', {times: 5}, 'slow');
+
 
     }
 
