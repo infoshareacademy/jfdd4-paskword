@@ -16,5 +16,35 @@
   .water {
     background: $cyan url('../images/game-textures/water.jpg') repeat;
   }
+
+  .mirror {
+    img {
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+  }
+  td {
+    height: 49px;
+    overflow: hidden;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .table > tbody > tr > td {
+    min-height: 50px;
+  }
+
+  .start-text {
+    td {
+      font-size: 2vmin;
+
+    }
+  }
+
 }
 

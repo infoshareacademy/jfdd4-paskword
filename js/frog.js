@@ -1,10 +1,10 @@
 /**
  * Created by agatakulbicka on 29.09.16.
  */
+var croak = new Audio('sounds/frog.mp3');
 
 function initFrog() {
     var score;
-    var croak = new Audio('sounds/frog.mp3');
     var rowCount = $('#board tr').length;
     var columnCount = $('tr td').length / rowCount;
 
@@ -12,7 +12,7 @@ function initFrog() {
     var y = 0; // number of current row
 
     //current location of the frog
-    document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+    document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png" class="img-responsive">';
 
     function removeOldFrog() {
         document.getElementById(y + '-' + x).innerHTML = '';
@@ -29,7 +29,8 @@ function initFrog() {
         if (x > 0) {
             removeOldFrog();
             x -= 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
         }
         else {
             croak.play();
@@ -40,7 +41,8 @@ function initFrog() {
         if (y > 0) {
             removeOldFrog();
             y -= 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
         }
         else {
             croak.play();
@@ -51,7 +53,8 @@ function initFrog() {
         if (x < (columnCount - 1)) {
             removeOldFrog();
             x += 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
             addStartText();
         }
         else {
@@ -63,35 +66,58 @@ function initFrog() {
         if (y < (rowCount - 2)) {
             removeOldFrog();
             y += 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/small-frog.png">';
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            checkDanger();
             addStartText();
         }
-        else {
+        if (y == rowCount-2 && !amIAWinner) {
             console.log('brawo, wygrałeś!');
+            amIAWinner = true;
+        }
+    }
+
+    function checkDanger(){
+        var elementHasDangerousClass= $('#' + y + '-' + x).hasClass('dangerousWater');
+        var elementIsSafe = $('#' + y + '-' + x).hasClass('.driftingWood');
+        if(elementHasDangerousClass) {
+            removeOldFrog();
+            console.log('game over - żabka dedła');
+        }
+        else if (elementIsSafe)
+        {
+           //frog on a wood
+        console.log('żaba na kłodzie');
+        }
+        else {
+            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
         }
     }
 
     $(document).keydown(function (event) {
-        event.stopPropagation(); // arrow keys will be usee only for frog navigation -  arrows keydown won't move the site (up and down)
-        // event.preventDefault();
+
         //arrows and WSAD keydown action
         switch (event.keyCode) {
             case 37:
             case 65:
+                event.preventDefault();
                 left();
                 break;
             case 38:
             case 87:
+                event.preventDefault();
                 up();
                 break;
             case 39:
             case 68:
+                event.preventDefault();
                 right();
                 break;
             case 40:
             case 83:
+                event.preventDefault();
                 down();
                 break;
         }
     });
+
 }
