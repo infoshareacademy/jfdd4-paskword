@@ -15,13 +15,17 @@
 
   &:hover {
     font-weight: bold;
+    text-decoration: none;
+    color: $white;
   }
 }
 
 .button-submit {
+  display: inline-block;
   background-color: $brown;
-  font-size: 50px;
-  padding: 25px;
+  font-size: 1vw;
+  text-align: center;
+  padding: 35px 25px 25px;
   text-transform: uppercase;
 
   &:hover {
