@@ -272,6 +272,43 @@ footer .media h4 {
     font-size: 2vmin;
 }
 
+/* START: product list */
+.product-list {
+    font-size: 18px;
+    font-family: "Arima Madurai", serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(59, 32, 16, 0.7);
+}
+
+.product-list p {
+    padding: 2% 5% 0 5%;
+    margin: 2% 5% 0 5%;
+    text-align: center;
+}
+
+.product-list ul {
+    margin: 5% 1% 0 5%;
+    list-style-type: none;
+    -moz-column-count: 1;
+    -moz-column-gap: 50px;
+    column-count: 1;
+    column-gap: 120px;
+}
+
+.product-list ul li {
+    list-style-image: url("../images/paw-50.png");
+    margin-bottom: 1%;
+}
+
+@media screen and (min-width: 1201px) {
+    .product-list ul {
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/* END: product list */
 html, body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
@@ -338,20 +375,6 @@ h2 {
   text-shadow: 0 2px 10px #000; }
 
 /*END: main photo + FUTRZAK*/
-/* START: product list */
-.product-list {
-  font-size: 18px;
-  font-family: "Arima Madurai", serif;
-  font-weight: bold;
-  color: #698799;
-  background-color: rgba(69, 87, 99, 0.1);
-  text-align: center;
-  padding: 50px;
-  margin: 10px; }
-  .product-list ul {
-    list-style-type: none; }
-
-/* END: product list */
 /* START: Style sekcji formularz */
 #form-submit {
   text-align: center;
