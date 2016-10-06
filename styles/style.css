@@ -256,11 +256,23 @@ footer .media h4 {
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 #form-submit td {
-  height: 50px;
-  overflow: hidden; }
-#form-submit #board {
-  width: 100%;
-  max-width: 1200px; }
+    height: 49px;
+    overflow: hidden;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#form-submit .table > tbody > tr > td {
+    min-height: 50px;
+}
+
+#form-submit .start-text td {
+    font-size: 2vmin;
+}
 
 html, body {
   font-family: "Scope One", sans-serif;

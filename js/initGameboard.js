@@ -7,7 +7,7 @@
  */
 var rows = 12;
 var cols = 12;
-var speed = 500;
+var speed = 1000;
 var collision = false;
 var truckLoop;
 var woodLoop;
@@ -112,8 +112,9 @@ function drawPattern(rowNum, mirror) {
                 if (lastEl != '') {
                     $row.addClass('showTruck');
                     var truck = lastEl;
-                } else {$row.append(lastEl);}
-
+                } else {
+                    $row.append(lastEl);
+                }
             }
             $('.showTruck').append(truck);
 
@@ -124,10 +125,15 @@ function drawPattern(rowNum, mirror) {
     //Collision - frog dead
     if ($('.showTruck').has('img[src="images/small-frog.png"]').length != 0
         && !collision) {
+        $('img[alt="truck"]').remove();
         collision = true;
         croak.play();
         clearInterval(truckLoop);
         clearInterval(woodLoop);
+        $('img[src="images/small-frog.png"]')
+        // .toggle('puff', 'slow');
+            .toggle('bounce', {times: 5}, 'slow');
+
     }
 
     if (rowNum == 1) {
@@ -142,8 +148,12 @@ function drawPattern(rowNum, mirror) {
 }
 
 function initGameboard() {
+    var divContainer = $('<div>').addClass('container').attr('id', 'cont');
+    $('#form-submit').append(divContainer);
+    var divRow = $('<div>').addClass('row').attr('id', 'divrow');
+    $('#cont').append(divRow);
     var gameBoard = $('<table>').attr('id', 'board').addClass('table table-responsive');
-    $('#form-submit').append(gameBoard);
+    $('#divrow').append(gameBoard);
 
     for (var y = 0; y < cols; y++) {
 
