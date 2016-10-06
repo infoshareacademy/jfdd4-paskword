@@ -123,14 +123,14 @@ function drawPattern(rowNum, mirror) {
     }
 
     //Collision - frog dead
-    if ($('.showTruck').has('img[src="images/small-frog.png"]').length != 0
+    if ($('.showTruck').has('img[src="images/game-textures/small-frog.png"]').length != 0
         && !collision) {
         $('img[alt="truck"]').remove();
         collision = true;
         croak.play();
         clearInterval(truckLoop);
         clearInterval(woodLoop);
-        $('img[src="images/small-frog.png"]')
+        $('img[src="images/game-textures/small-frog.png"]')
         // .toggle('puff', 'slow');
             .toggle('bounce', {times: 5}, 'slow');
 
