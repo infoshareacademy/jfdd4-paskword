@@ -2,6 +2,8 @@
  * Created by agatakulbicka on 03.10.16.
  */
 
+var idCurrentWood;
+
 var numberOfWoods = 5;
 var riverRows = 4;
 
@@ -68,6 +70,6 @@ function startMoving() {
 }
 
 function driftWood() {
-    woodLoop = setInterval(startMoving, 1000);
+    woodLoop = setInterval(startMoving, 3000);
 }
 

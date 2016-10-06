@@ -2,6 +2,7 @@
  * Created by agatakulbicka on 29.09.16.
  */
 var croak = new Audio('sounds/frog.mp3');
+var currentFrogID;
 
 function initFrog() {
     var score;
@@ -29,7 +30,7 @@ function initFrog() {
         if (x > 0) {
             removeOldFrog();
             x -= 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            currentFrogID = document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
             checkDanger();
         }
         else {
@@ -41,7 +42,7 @@ function initFrog() {
         if (y > 0) {
             removeOldFrog();
             y -= 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            currentFrogID = document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
             checkDanger();
         }
         else {
@@ -53,7 +54,7 @@ function initFrog() {
         if (x < (columnCount - 1)) {
             removeOldFrog();
             x += 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            currentFrogID = document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
             checkDanger();
             addStartText();
         }
@@ -66,7 +67,7 @@ function initFrog() {
         if (y < (rowCount - 2)) {
             removeOldFrog();
             y += 1;
-            document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
+            currentFrogID =  document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
             checkDanger();
             addStartText();
         }
@@ -85,8 +86,26 @@ function initFrog() {
         }
         else if (elementIsSafe) {
             //frog on a wood
+            
             removeOldFrog();
-            $('#' + y + '-' + x).html('<img src="images/game-textures/frog-on-wood.png">');
+            $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('.driftingWood')).html('<img src="images/game-textures/frog-on-wood.png">');
+
+            function moveFrogOnWood() {
+                if (y % 2 == 0) {
+                    // $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('.driftingWood')).html('<img src="images/game-textures/wood.png">');
+                    x--;
+                    $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('.driftingWood')).html('<img src="images/game-textures/frog-on-wood.png">');
+                    console.log('dodałam żabę w lewo, x, ', x);
+                }
+                else {
+                    // $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('.driftingWood')).html('<img src="images/game-textures/wood.png">');
+                    x++;
+                    $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('.driftingWood')).html('<img src="images/game-textures/frog-on-wood.png">');
+                    console.log('dodałam żabę w prawo, x, ', x);
+                }
+            }
+
+            setInterval(moveFrogOnWood, 3000);
             console.log('żaba na kłodzie');
         }
         else {
