@@ -70,29 +70,30 @@ function initFrog() {
             checkDanger();
             addStartText();
         }
-        if (y == rowCount-2 && !amIAWinner) {
+        if (y == rowCount - 2 && !amIAWinner) {
             console.log('brawo, wygrałeś!');
             amIAWinner = true;
         }
     }
 
-    function checkDanger(){
-        var elementHasDangerousClass= $('#' + y + '-' + x).hasClass('dangerousWater');
+    function checkDanger() {
+        var elementHasDangerousClass = $('#' + y + '-' + x).hasClass('dangerousWater');
         var elementIsSafe = $('#' + y + '-' + x).hasClass('.driftingWood');
-        if(elementHasDangerousClass) {
+        if (elementHasDangerousClass) {
             removeOldFrog();
             console.log('game over - żabka dedła');
         }
-        else if (elementIsSafe)
-        {
-           //frog on a wood
-        console.log('żaba na kłodzie');
+        else if (elementIsSafe) {
+            //frog on a wood
+            removeOldFrog();
+            $('#' + y + '-' + x).html('<img src="images/game-textures/frog-on-wood.png">');
+            console.log('żaba na kłodzie');
         }
         else {
             document.getElementById(y + '-' + x).innerHTML = '<img src="images/game-textures/small-frog.png">';
         }
     }
-    
+
     $(document).keydown(function (event) {
 
         //arrows and WSAD keydown action
