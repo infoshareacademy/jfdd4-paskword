@@ -19,7 +19,6 @@ $(document).ready(function() {
         $('#form-submit').empty();
         initGameboard();
         initFrog();
-        // driftWood();
         initIntervals();
     });
 });
