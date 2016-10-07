@@ -6,6 +6,7 @@
 @import "nav-style";
 @import "extra-info-style";
 @import "gameboard-style.scss";
+@import "product-list-style.scss";
 
 html, body {
   font-family: $norm-font;
@@ -86,24 +87,6 @@ h2 {
 }
 
 /*END: main photo + FUTRZAK*/
-
-/* START: product list */
-
-.product-list {
-  font-size: 18px;
-  font-family: $head-font;
-  font-weight: bold;
-  color: $grey;
-  background-color: $light;
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  ul {
-    list-style-type: none;
-  }
-}
-
-/* END: product list */
 
 /* START: Style sekcji formularz */
 #form-submit {

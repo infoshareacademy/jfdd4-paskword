@@ -79,23 +79,23 @@
   }
 
 }
-@media screen and (min-width: 1201px)
-{
 
+@media screen and (min-width: 1201px) {
   .func-list {
-    display: flex;
-    flex-direction: row;
     margin: auto;
 
     div {
       transition: all 1s;
 
-      &:hover {
-        transform: scale(1.2);
-        z-index: 1;
+      .list1, .list2, .list3 {
 
-        .text-list {
-          visibility: visible;
+        &:hover {
+          transform: scale(1.2);
+          z-index: 1;
+
+          .text-list {
+            visibility: visible;
+          }
         }
       }
     }
