@@ -4,21 +4,13 @@
 var croak = new Audio('sounds/frog.mp3');
 var positionX = 0; //number of current column
 var positionY = 0; // number of current row
-var frogOnARiver = false;
 
 function initFrog() {
     var rowCount = $('#board tr').length;
     var columnCount = $('tr td').length / rowCount,
         frog = $('<img src="images/game-textures/small-frog.png" class="img-responsive">')[0];
 
-    // console.log(frog);
-
-
-    //current location of the frog
-    // document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png" class="img-responsive">';
-    // document.getElementById(positionY + '-' + positionX).innerHTML = '';
     addNewFrog();
-    // document.getElementById(positionY + '-' + positionX).appendChild(frog);
 
     function addNewFrog() {
         document.getElementById(positionY + '-' + positionX).appendChild(frog);
@@ -27,14 +19,6 @@ function initFrog() {
     function removeOldFrog() {
         // document.getElementById(positionY + '-' + positionX).innerHTML = '';
         document.getElementById(positionY + '-' + positionX).removeChild(frog);
-    }
-
-    function checkFrogGraphics() {
-        if ($('#' + positionY + '-' + positionX).hasClass('driftingWood')){
-            frog.setAttribute('src', 'images/game-textures/frog-on-wood.png');
-        } else {
-            frog.setAttribute('src', 'images/game-textures/small-frog.png');
-        }
     }
 
     function addStartText() {
@@ -49,9 +33,7 @@ function initFrog() {
             removeOldFrog();
             positionX -= 1;
             addNewFrog();
-            checkFrogGraphics();
-            // document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png">';
-            // checkDanger();
+            checkDanger();
         }
         else {
             croak.play();
@@ -63,9 +45,7 @@ function initFrog() {
             removeOldFrog();
             positionY -= 1;
             addNewFrog();
-            checkFrogGraphics();
-            // document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png">';
-            // checkDanger();
+            checkDanger();
         }
         else {
             croak.play();
@@ -77,9 +57,7 @@ function initFrog() {
             removeOldFrog();
             positionX += 1;
             addNewFrog();
-            checkFrogGraphics();
-            // document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png">';
-            // checkDanger();
+            checkDanger();
             addStartText();
         }
         else {
@@ -92,9 +70,7 @@ function initFrog() {
             removeOldFrog();
             positionY += 1;
             addNewFrog();
-            checkFrogGraphics();
-            // document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png">';
-            // checkDanger();
+            checkDanger();
             addStartText();
         }
         if (positionY == rowCount - 2 && !amIAWinner) {
@@ -102,26 +78,24 @@ function initFrog() {
         }
     }
 
-    // function checkDanger() {
-    //     return;
-    //     var elementHasDangerousClass = $('#' + positionY + '-' + positionX).hasClass('dangerousWater');
-    //     var elementIsSafe = $('#' + positionY + '-' + positionX).hasClass('driftingWood');
-    //     if (elementHasDangerousClass) {
-    //         removeOldFrog();
-    //     }
-    //     else if (elementIsSafe) {
-    //         //frog on a wood
-    //         // frog.setAttribute('src', 'images/game-textures/frog-on-wood.png');
-    //
-    //         // removeOldFrog();
-    //         // $('#' + positionY + '-' + positionX).removeClass('dangerousWater').addClass(('driftingWood woodWithFrog')).html('<img src="images/game-textures/frog-on-wood.png">');
-    //     }
-    //
-    //     // else {
-    //     //     addNewFrog();
-    //         // document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png">';
-    //     // }
-    // }
+    function checkDanger() {
+        var elementHasDangerousClass = $('#' + positionY + '-' + positionX).hasClass('dangerousWater');
+        var elementIsSafe = $('#' + positionY + '-' + positionX).hasClass('driftingWood');
+        if (elementHasDangerousClass) {
+            // $('#' + positionY + '-' + positionX).attr
+            removeOldFrog();
+            console.log('game over');
+        }
+        else if (elementIsSafe) {
+
+            $('#' + positionY + '-' + positionX).addClass('frogOnaWood');
+        }
+        //
+        // else {
+        //     addNewFrog();
+        //     document.getElementById(positionY + '-' + positionX).innerHTML = '<img src="images/game-textures/small-frog.png">';
+        // }
+    }
 
     $(document).keydown(function (event) {
 
@@ -149,5 +123,106 @@ function initFrog() {
                 break;
         }
     });
+
+
+    var numberOfWoods = 5;
+    var riverRows = 4;
+
+    var woodsArray = [];
+
+    for (var j = 0; j < riverRows; j++) {
+        var usedX = [];
+        for (var i = 0; i < numberOfWoods; i++) {
+            var x = randomNumber(0, 11);
+            while (usedX.indexOf(x) !== -1) {
+                x = randomNumber(0, 11);
+            }
+
+            usedX.push(x);
+
+            woodsArray.push(
+                {
+                    x: x,
+                    y: 6 + j
+                }
+            );
+        }
+    }
+
+
+    function randomNumber(min, max) {
+        return Math.round(Math.random() * (max - min) + min);
+    }
+
+    function removeOldWood(x, y) {
+        $('#' + y + '-' + x).addClass('dangerousWater').removeClass('driftingWood');
+    }
+
+    function addNewWood(x, y) {
+        $('#' + y + '-' + x).removeClass('dangerousWater').addClass('driftingWood');
+    }
+
+
+    function startMoving() {
+        woodsArray.forEach(function (wood) {
+            removeOldWood(wood.x, wood.y);
+        });
+        woodsArray.forEach(function (wood) {
+                if (wood.y % 2 == 0) {
+                    if (wood.x > 0) {
+                        if (wood.x == positionX && wood.y == positionY) {
+                            positionX--;
+                            addNewFrog();
+
+                            removeOldWood();
+                            wood.x--;
+                            addNewWood(wood.x, wood.y);
+                        }
+                        else {
+                            removeOldWood();
+                            wood.x--;
+                            addNewWood(wood.x, wood.y);
+                        }
+
+                    }
+                    else {
+                        removeOldWood();
+                        wood.x = 11;
+                        addNewWood(wood.x, wood.y);
+                    }
+                }
+                else {
+                    if (wood.x < 11) {
+                        if (wood.x == positionX && wood.y == positionY) {
+                            positionX++;
+                            addNewFrog();
+                            removeOldWood();
+                            wood.x++;
+                            addNewWood(wood.x, wood.y);
+                        }
+                        else {
+
+                            removeOldWood();
+                            wood.x++;
+                            addNewWood(wood.x, wood.y);
+                        }
+                    }
+                    else {
+                        removeOldWood();
+                        wood.x = 0;
+                        addNewWood(wood.x, wood.y);
+                    }
+                }
+            }
+        );
+        $('img').addClass('img-responsive');
+    }
+
+    function driftWood() {
+        // woodLoop =
+        setInterval(startMoving, 3000);
+    }
+
+    driftWood();
 
 }
