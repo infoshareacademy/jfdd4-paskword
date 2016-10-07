@@ -31,6 +31,8 @@ function leftOnWood() {
     if (positionX > 0) {
         positionX -= 1;
         $('#' + positionY + '-' + positionX).addClass('woodWithFrog').html('<img src="images/game-textures/frog-on-wood.png">');
+        $('#' + positionY + '-' + positionX+1).removeClass('woodWithFrog').html('<img src="images/game-textures/wood.png">');
+        console.log('X żaby', positionX+1, 'X kłody', positionX);
     }
     else {
         croak.play();
@@ -42,6 +44,7 @@ function rightOnWood() {
     if (positionX < 11) {
         positionX += 1;
         $('#' + positionY + '-' + positionX).addClass('woodWithFrog').html('<img src="images/game-textures/frog-on-wood.png">');
+        // $('#' + positionY + '-' + positionX-1).addClass('woodWithFrog').html('<img src="images/game-textures/wood.png">');
     }
     else {
         croak.play();
@@ -58,11 +61,9 @@ function removeOldWood(x, y) {
 }
 
 function addNewWood(x, y) {
-    $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('driftingWood')).html('<img src="images/game-textures/wood.png">');
+    $('#' + y + '-' + x).removeClass('dangerousWater').addClass('driftingWood').html('<img src="images/game-textures/wood.png">');
 }
-function addNewWoodWithFrog(x, y) {
-    $('#' + y + '-' + x).removeClass('dangerousWater').addClass(('woodWithFrog')).html('<img src="images/game-textures/frog-on-wood.png">');
-}
+
 
 function startMoving() {
     woodsArray.forEach(function (wood) {
@@ -72,7 +73,7 @@ function startMoving() {
         if (wood.y % 2 == 0) {
             if (wood.x > 0) {
                 if (positionX == wood.x && positionY == wood.y) {
-                    // $('#' + positionY + '-' + positionX).removeClass('woodWithFrog').html('');
+
                     wood.x--;
                     addNewWood(wood.x, wood.y);
                     leftOnWood(positionX, positionY);
@@ -90,7 +91,6 @@ function startMoving() {
         else {
             if (wood.x < 11) {
                 if (positionX == wood.x && positionY == wood.y) {
-                    // $('#' + positionY + '-' + positionX).removeClass('woodWithFrog').html('');
                     wood.x++;
                     addNewWood(wood.x, wood.y);
                     rightOnWood(positionX, positionY);
@@ -103,15 +103,15 @@ function startMoving() {
             else {
                 wood.x = 0;
                 addNewWood(wood.x, wood.y);
+
             }
         }
-
     });
     $('img').addClass('img-responsive');
 }
 
 function driftWood() {
     // woodLoop =
-    setInterval(startMoving, 1000);
+    setInterval(startMoving, 3000);
 }
 
