@@ -376,7 +376,8 @@ h2 {
   padding: 50px;
   margin: 10px;
   background: #fff no-repeat left bottom;
-  background-position-x: 25px; }
+  background-position-x: 25px;
+  font-size: 1vw; }
 
 .email-input {
   font-size: 2vw;
