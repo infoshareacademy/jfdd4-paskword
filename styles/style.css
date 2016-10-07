@@ -62,23 +62,38 @@ footer .media h4 {
   transform: rotate(360deg); }
 
 #mate1 {
-  transition: all ease-in 2s; }
+    transition: transform ease-in 2s;
+}
 
 #mate2 {
-  transition: all 2s ease-in 2s; }
+    transition: transform 2s ease-in 2s;
+}
 
 #mate3 {
-  transition: all 2s ease-in 4s; }
+    transition: transform 2s ease-in 4s;
+}
 
 #mate4 {
-  transition: all 2s ease-in 6s; }
+    transition: transform 2s ease-in 6s;
+}
 
 /*END: style footer*/
 .caption h3 {
   text-align: center; }
 
 .thumbnail {
-  border: none; }
+    border: none;
+    text-align: justify;
+}
+
+.thumbnail img {
+    max-width: 254.5px;
+    max-height: 254.5px;
+}
+
+.thumbnail a > img {
+    padding-bottom: 2%;
+}
 
 /*START func-list*/
 .func-list {
