@@ -49,19 +49,19 @@ footer  .media h4 {
 }
 
 #mate1 {
-  transition: all ease-in 2s;
+  transition: transform ease-in 2s;
 }
 
 #mate2 {
-  transition: all 2s ease-in 2s;
+  transition: transform 2s ease-in 2s;
 }
 
 #mate3 {
-  transition: all 2s ease-in 4s;
+  transition: transform 2s ease-in 4s;
 }
 
 #mate4 {
-  transition: all 2s ease-in 6s;
+  transition: transform 2s ease-in 6s;
 }
 
 
@@ -73,4 +73,16 @@ footer  .media h4 {
 
 .thumbnail {
   border: none;
+  text-align: justify;
+
+  img {
+    max-width: 254.5px;
+    max-height: 254.5px;
+
+  }
+}
+
+.thumbnail a > img {
+  padding-bottom: 2%;
+
 }

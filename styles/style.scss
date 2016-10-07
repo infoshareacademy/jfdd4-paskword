@@ -6,6 +6,7 @@
 @import "nav-style";
 @import "extra-info-style";
 @import "gameboard-style.scss";
+@import "product-list-style.scss";
 
 html, body {
   font-family: $norm-font;
@@ -52,6 +53,11 @@ h2 {
   }
 }
 
+@media screen and (max-width: 500px){
+.main-photo p {
+  font-size: 3vw;
+}}
+
 .padding0{
   padding:0;
 }
@@ -86,24 +92,6 @@ h2 {
 
 /*END: main photo + FUTRZAK*/
 
-/* START: product list */
-
-.product-list {
-  font-size: 18px;
-  font-family: $head-font;
-  font-weight: bold;
-  color: $grey;
-  background-color: $light;
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  ul {
-    list-style-type: none;
-  }
-}
-
-/* END: product list */
-
 /* START: Style sekcji formularz */
 #form-submit {
   text-align: center;
@@ -111,12 +99,19 @@ h2 {
   margin: 10px;
   background: $white no-repeat left bottom;
   background-position-x: 25px;
+  font-size: 1vw;
 }
 
 .email-input {
-  font-size: 20px;
+  font-size: 2vw;
   margin: 20px;
 }
+
+@media screen and (max-width: 500px){
+.email-input {
+  font-size: 3vw;
+  padding: 2% 2%;
+}}
 
 .article-styles {
   color: $brown;
@@ -126,7 +121,7 @@ h2 {
 
 /* Start Carousel Section*/
 .carousel {
-  width: 400px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -151,5 +146,12 @@ h2 {
 }
 .carousel-indicators .active {
   height: 100%;
+  width: 100%;
 }
+
+@media screen and (max-width: 500px){
+  #miniatures{
+display: none;
+
+}}
 /* End Carousel Section*/
