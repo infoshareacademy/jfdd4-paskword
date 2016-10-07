@@ -31,8 +31,8 @@ function leftOnWood() {
     if (positionX > 0) {
         positionX -= 1;
         $('#' + positionY + '-' + positionX).addClass('woodWithFrog').html('<img src="images/game-textures/frog-on-wood.png">');
-        $('#' + positionY + '-' + positionX+1).removeClass('woodWithFrog').html('<img src="images/game-textures/wood.png">');
-        console.log('X żaby', positionX+1, 'X kłody', positionX);
+        // $('#' + positionY + '-' + positionX+1).removeClass('woodWithFrog').html('<img src="images/game-textures/wood.png">');
+        console.log('X żaby', positionX + 1, 'X kłody', positionX);
     }
     else {
         croak.play();
@@ -57,11 +57,12 @@ function randomNumber(min, max) {
 }
 
 function removeOldWood(x, y) {
-    $('#' + y + '-' + x).addClass('dangerousWater').removeClass('driftingWood').html('');
+    $('#' + y + '-' + x).addClass('dangerousWater').removeClass('driftingWood');
 }
 
 function addNewWood(x, y) {
-    $('#' + y + '-' + x).removeClass('dangerousWater').addClass('driftingWood').html('<img src="images/game-textures/wood.png">');
+    // $('#' + y + '-' + x).css('background-image', 'none');
+    $('#' + y + '-' + x).removeClass('dangerousWater').addClass('driftingWood');
 }
 
 
@@ -72,38 +73,26 @@ function startMoving() {
     woodsArray.forEach(function (wood) {
         if (wood.y % 2 == 0) {
             if (wood.x > 0) {
-                if (positionX == wood.x && positionY == wood.y) {
-
-                    wood.x--;
-                    addNewWood(wood.x, wood.y);
-                    leftOnWood(positionX, positionY);
-                }
-                else {
-                    wood.x--;
-                    addNewWood(wood.x, wood.y);
-                }
+                removeOldWood();
+                wood.x--;
+                addNewWood(wood.x, wood.y);
             }
             else {
+                removeOldWood();
                 wood.x = 11;
                 addNewWood(wood.x, wood.y);
             }
         }
         else {
             if (wood.x < 11) {
-                if (positionX == wood.x && positionY == wood.y) {
-                    wood.x++;
-                    addNewWood(wood.x, wood.y);
-                    rightOnWood(positionX, positionY);
-                }
-                else {
-                    wood.x++;
-                    addNewWood(wood.x, wood.y);
-                }
+                removeOldWood();
+                wood.x++;
+                addNewWood(wood.x, wood.y);
             }
             else {
+                removeOldWood();
                 wood.x = 0;
                 addNewWood(wood.x, wood.y);
-
             }
         }
     });

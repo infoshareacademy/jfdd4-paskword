@@ -2,6 +2,7 @@
 
   .start {
     background: navajowhite url('../images/game-textures/sidewalk.jpg') repeat;
+    background-size: contain;
   }
 
   .start-text {
@@ -11,10 +12,17 @@
 
   .street {
     background: #698799 url('../images/game-textures/street.jpg') repeat;
+    background-size: contain;
   }
 
   .water {
     background: $cyan url('../images/game-textures/water.jpg') repeat;
+    background-size: contain;margin-left:0;
+  }
+
+  .driftingWood {
+    background: url('../images/game-textures/wood-water.png') no-repeat;
+    background-size: contain;
   }
 
   .mirror {

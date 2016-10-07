@@ -243,22 +243,14 @@ footer .media h4 {
   margin: 3% 5%; }
 
 #form-submit .start {
-  background: navajowhite url("../images/game-textures/sidewalk.jpg") repeat;
-  background-size: contain; }
+  background: navajowhite url("../images/game-textures/sidewalk.jpg") repeat; }
 #form-submit .start-text {
   color: black;
   background: rgba(255, 255, 255, 0.75); }
 #form-submit .street {
-  background: #698799 url("../images/game-textures/street.jpg") repeat;
-  background-size: contain; }
-#form-submit .water {
-  background: #0bcbcc url("../images/game-textures/water.jpg") repeat;
-  background-size: contain;
-  margin-left: 0; }
-#form-submit .driftingWood {
-  background: url("../images/game-textures/wood-water.png") no-repeat;
-  background-size: contain; }
-#form-submit .mirror img {
+  background: #698799 url("../images/game-textures/street.jpg") repeat; }
+#form-submit w
+.mirror img {
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
