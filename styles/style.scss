@@ -6,6 +6,7 @@
 @import "nav-style";
 @import "extra-info-style";
 @import "gameboard-style.scss";
+@import "product-list-style.scss";
 
 html, body {
   font-family: $norm-font;
@@ -92,31 +93,6 @@ h2 {
 
 /*END: main photo + FUTRZAK*/
 
-/* START: product list */
-
-.product-list {
-  font-size: 1vw;
-  font-family: $head-font;
-  font-weight: bold;
-  color: $grey;
-  background-color: $light;
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-
-
-  ul {
-    list-style-type: none;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .product-list {
-    font-size: 3.5vw;
-}}
-
-/* END: product list */
-
 /* START: Style sekcji formularz */
 #form-submit {
   text-align: center;
@@ -130,7 +106,6 @@ h2 {
 .email-input {
   font-size: 2vw;
   margin: 20px;
-
 }
 
 @media screen and (max-width: 500px){
