@@ -11,24 +11,39 @@
   border: medium #698799;
   text-decoration: none; }
   .button:hover {
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; }
 
 .button-submit {
   background-color: rgba(59, 32, 16, 0.7);
-  font-size: 50px;
-  padding: 25px;
-  text-transform: uppercase; }
+  font-size: 1vw;
+  text-align: center;
+  padding: 2% 2%;
+  margin: 2% 2%; }
   .button-submit:hover {
     background-color: rgba(139, 76, 38, 0.7); }
 
+@media screen and (max-width: 500px) {
+  .button-submit {
+    background-color: rgba(59, 32, 16, 0.7);
+    font-size: 3vw;
+    text-align: center;
+    padding: 2% 2%;
+    margin: 2% 2%; }
+    .button-submit:hover {
+      background-color: rgba(139, 76, 38, 0.7); } }
 .button-info {
-  font-size: 16px;
+  font-size: 2vw;
   padding: 10px 40px;
   margin-bottom: 17vw;
   margin-top: 0px; }
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
+@media screen and (max-width: 500px) {
+  .button-info {
+    font-size: 3vw; } }
 /* START: Footer style */
 footer .media h4 {
   text-align: center;
@@ -256,23 +271,18 @@ footer .media h4 {
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 #form-submit td {
-    height: 49px;
-    overflow: hidden;
-    padding: 0;
-    display: inline-flex;
-    justify-content: center;
-    margin: auto;
-    vertical-align: middle;
-    text-align: center;
-}
-
+  height: 49px;
+  overflow: hidden;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center; }
 #form-submit .table > tbody > tr > td {
-    min-height: 50px;
-}
-
+  min-height: 50px; }
 #form-submit .start-text td {
-    font-size: 2vmin;
-}
+  font-size: 2vmin; }
 
 html, body {
   font-family: "Scope One", sans-serif;
@@ -311,6 +321,9 @@ h2 {
     position: relative;
     margin: inherit; }
 
+@media screen and (max-width: 500px) {
+  .main-photo p {
+    font-size: 3vw; } }
 .padding0 {
   padding: 0; }
 
@@ -342,7 +355,7 @@ h2 {
 /*END: main photo + FUTRZAK*/
 /* START: product list */
 .product-list {
-  font-size: 18px;
+  font-size: 1vw;
   font-family: "Arima Madurai", serif;
   font-weight: bold;
   color: #698799;
@@ -353,6 +366,9 @@ h2 {
   .product-list ul {
     list-style-type: none; }
 
+@media screen and (max-width: 500px) {
+  .product-list {
+    font-size: 3.5vw; } }
 /* END: product list */
 /* START: Style sekcji formularz */
 #form-submit {
@@ -363,16 +379,20 @@ h2 {
   background-position-x: 25px; }
 
 .email-input {
-  font-size: 20px;
+  font-size: 2vw;
   margin: 20px; }
 
+@media screen and (max-width: 500px) {
+  .email-input {
+    font-size: 3vw;
+    padding: 2% 2%; } }
 .article-styles {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
 /* Start Carousel Section*/
 .carousel {
-  width: 400px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -391,8 +411,12 @@ h2 {
     width: 100px; }
 
 .carousel-indicators .active {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
+@media screen and (max-width: 500px) {
+  #miniatures {
+    display: none; } }
 /* End Carousel Section*/
 
 /*# sourceMappingURL=style.css.map */

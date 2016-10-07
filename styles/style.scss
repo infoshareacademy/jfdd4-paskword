@@ -53,6 +53,11 @@ h2 {
   }
 }
 
+@media screen and (max-width: 500px){
+.main-photo p {
+  font-size: 3vw;
+}}
+
 .padding0{
   padding:0;
 }
@@ -90,7 +95,7 @@ h2 {
 /* START: product list */
 
 .product-list {
-  font-size: 18px;
+  font-size: 1vw;
   font-family: $head-font;
   font-weight: bold;
   color: $grey;
@@ -105,6 +110,11 @@ h2 {
   }
 }
 
+@media screen and (max-width: 500px){
+  .product-list {
+    font-size: 3.5vw;
+}}
+
 /* END: product list */
 
 /* START: Style sekcji formularz */
@@ -117,9 +127,16 @@ h2 {
 }
 
 .email-input {
-  font-size: 20px;
+  font-size: 2vw;
   margin: 20px;
+
 }
+
+@media screen and (max-width: 500px){
+.email-input {
+  font-size: 3vw;
+  padding: 2% 2%;
+}}
 
 .article-styles {
   color: $brown;
@@ -129,7 +146,7 @@ h2 {
 
 /* Start Carousel Section*/
 .carousel {
-  width: 400px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -154,5 +171,12 @@ h2 {
 }
 .carousel-indicators .active {
   height: 100%;
+  width: 100%;
 }
+
+@media screen and (max-width: 500px){
+  #miniatures{
+display: none;
+
+}}
 /* End Carousel Section*/
