@@ -17,6 +17,14 @@ $(document).ready(function() {
     $('#form1').on('submit', function(event) {
         event.preventDefault();
         $('#form-submit').empty();
+        $.ajax({
+            type: 'post',
+            url: 'http://jfdd.is-academy.pl/mailer.php',
+            data: $('#form1').serialize(),
+            success: function () {
+                console.log('form was submitted');
+            }
+        });
         initGameboard();
         initFrog();
         initIntervals();
@@ -131,8 +139,6 @@ function drawPattern(rowNum, mirror) {
         clearInterval(woodLoop);
         $('img[src="images/game-textures/small-frog.png"]')
             .toggle('bounce', {times: 5}, 'slow');
-
-
     }
 
     if (rowNum == 1) {
@@ -158,7 +164,7 @@ function initGameboard() {
 
         var $row = $('<tr>');
 
-        if (y == 0 || y == 5 || y == 10 || y == 11) {
+        if (y == 0 || y == 5 || y == 10 ) {
             $row.addClass('start');
             gameBoard.append($row);
         }
@@ -166,19 +172,19 @@ function initGameboard() {
             $row.addClass('street');
             gameBoard.append($row);
         }
+        else if (y == 11) {
+            continue;
+        }
         else {
             $row.addClass('water').addClass('dangerousWater');
             gameBoard.append($row);
         }
-        for (var x = 0; x < rows; x++) {
+        for (var x = 0; x < (rows); x++) {
             if (x == 0 && y == 0) {
                 $row.append($('<td>').attr('id', y + '-' + x).text('START').addClass('col-xs-1 start-text'));
             }
             else if (x == 0 && y == 10) {
                 $row.append($('<td>').attr('id', y + '-' + x).text('META').addClass('col-xs-1 start-text finish'));
-            }
-            else if (x == 0 && y == 11) {
-                $row.append($('<td>').attr('id', y + '-' + x).text('PUNKTY').addClass('col-xs-1 start-text points'));
             }
             else {
                 $row.append($('<td>').attr('id', y + '-' + x).addClass('col-xs-1'));

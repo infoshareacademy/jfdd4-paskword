@@ -8,8 +8,7 @@ $(window).scroll(function() {
         wH = $(window).height(),
         wS = $(this).scrollTop();
     console.debug('wS' + wS);
-    if (wS > (hT + hH - wH - 300)) {
+    if (wS > (hT + hH - wH - 200)) {
         $('#mate1, #mate2, #mate3, #mate4').addClass('rotate');
-        console.log(wS);
-    };
+    }
 });
