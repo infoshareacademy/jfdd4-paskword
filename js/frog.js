@@ -70,14 +70,14 @@ function initFrog() {
     }
 
     function down() {
-        if (positionY < (rowCount - 2)) {
+        if (positionY < (rowCount - 1)) {
             removeOldFrog();
             positionY += 1;
             addNewFrog();
             checkDanger();
             addStartText();
         }
-        if (positionY == rowCount - 2 && !amIAWinner) {
+        if ((positionY == rowCount - 1) && !amIAWinner) {
             amIAWinner = true;
         }
     }
