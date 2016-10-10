@@ -25,9 +25,11 @@ $(document).ready(function() {
                 console.log('form was submitted');
             }
         });
+        addComunicate();
         initGameboard();
         initFrog();
         initIntervals();
+
     });
 });
 
