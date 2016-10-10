@@ -56,5 +56,89 @@
     }
   }
 
+
+
+
+  .GameTitle{
+    color:#4cae4c;
+    font-family: fantasy;
+    padding: 30px 40px 30px;
+    margin: 40px;
+    border: solid 20px;
+    position: relative;
+    text-align: center;
+    border-color: #4cae4c;
+    /*background-color: #3c3c3c;*/
+    border-radius: 15px;
+  }
+
+
+  #CloseInstruction{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #4cae4c;
+    color:white;
+    font-size:20px;
+    padding: 2px 2px 2px;
+
+  }
+
+  .Rule1{
+    color:black;
+    font-size:25px;
+    font-family: fantasy;
+    padding: 30px 40px 30px;
+    margin: 40px;
+    position: relative;
+    text-align: center;
+    font-family: Dialog;
+
+  }
+
+  .GameControl{
+    color:black;
+    font-size:35px;
+    font-family: fantasy;
+  }
+
+  .KeyControls{
+    color:black;
+    font-size:5px;
+    font-family: fantasy;
+    padding: 10px;
+  }
+
+  .DeadComunicate{
+    color:black;
+    font-size:35px;
+    font-family: fantasy;
+
+
+    padding: 30px 40px 30px;
+    margin: 40px;
+    border: solid 20px;
+    position: relative;
+    text-align: center;
+    border-color: #4cae4c;
+    border-radius: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

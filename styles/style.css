@@ -102,6 +102,9 @@ footer .media h4 {
 .thumbnail a > img {
   padding-bottom: 2%; }
 
+#paw {
+  display: inline; }
+
 /*START func-list*/
 .func-list {
   letter-spacing: 4px;
@@ -294,6 +297,54 @@ footer .media h4 {
   min-height: 50px; }
 #form-submit .start-text td {
   font-size: 2vmin; }
+#form-submit .GameTitle {
+  color: #4cae4c;
+  font-family: fantasy;
+  padding: 30px 40px 30px;
+  margin: 40px;
+  border: solid 20px;
+  position: relative;
+  text-align: center;
+  border-color: #4cae4c;
+  /*background-color: #3c3c3c;*/
+  border-radius: 15px; }
+#form-submit #CloseInstruction {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: #4cae4c;
+  color: white;
+  font-size: 20px;
+  padding: 2px 2px 2px; }
+#form-submit .Rule1 {
+  color: black;
+  font-size: 25px;
+  font-family: fantasy;
+  padding: 30px 40px 30px;
+  margin: 40px;
+  position: relative;
+  text-align: center;
+  font-family: Dialog; }
+#form-submit .GameControl {
+  color: black;
+  font-size: 35px;
+  font-family: fantasy; }
+#form-submit .KeyControls {
+  color: black;
+  font-size: 5px;
+  font-family: fantasy;
+  padding: 10px; }
+#form-submit .DeadComunicate {
+  color: black;
+  font-size: 35px;
+  font-family: fantasy;
+  padding: 30px 40px 30px;
+  margin: 40px;
+  border: solid 20px;
+  position: relative;
+  text-align: center;
+  border-color: #4cae4c;
+  border-radius: 15px; }
 
 /* START: product list */
 .product-list {
