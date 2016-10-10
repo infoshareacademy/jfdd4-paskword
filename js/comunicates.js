@@ -28,8 +28,6 @@ function addComunicate() {
     });
 
 }
-// addComunicate();
-//
 
 
 function DeadInfo() {
