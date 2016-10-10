@@ -1,0 +1,43 @@
+@import "variables-styles";
+@import "mixins-styles";
+
+/* START: product list */
+
+.product-list {
+  font-size: 18px;
+  font-family: $head-font;
+  font-weight: bold;
+  color: $white;
+  background-color: $brown;
+
+  p {
+    padding: 2% 5% 0 5%;
+    margin: 2% 5% 0 5%;
+    text-align: center;
+  }
+
+  ul {
+    margin: 5% 1% 0 5%;
+    list-style-type: none;
+    -moz-column-count: 1;
+    -moz-column-gap: 50px;
+    column-count: 1;
+    column-gap: 120px;
+    li {
+      list-style-image: url('../images/paw-50.png');
+      margin-bottom: 1%;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .product-list {
+    ul {
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+  }
+}
+
+/* END: product list */
+

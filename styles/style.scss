@@ -4,6 +4,9 @@
 @import "foo-style";
 @import "funclist-style";
 @import "nav-style";
+@import "extra-info-style";
+@import "gameboard-style.scss";
+@import "product-list-style.scss";
 
 html, body {
   font-family: $norm-font;
@@ -11,6 +14,8 @@ html, body {
   color: $grey;
   margin: 0;
   padding:0;
+  width:100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -27,7 +32,6 @@ h2 {
   font-family: $head-font;
   background: url(../images/happy-pet.jpg) fixed no-repeat center center;
   background-size: cover;
-  font-size: 150px;
   text-align: center;
   display: block;
   position: static;
@@ -40,19 +44,29 @@ h2 {
 
   p {
     color: $white;
-    font-size: 30px;
+    font-size: 1.5vw;
     text-align: center;
     padding-bottom: 200px;
-    padding-top: 2px;
+    padding-top: 20px;
     position: relative;
     margin: inherit;
   }
 }
 
+@media screen and (max-width: 500px){
+.main-photo p {
+  font-size: 3vw;
+}}
+
+.padding0{
+  padding:0;
+}
+
 #main-header {
   text-align: center;
   margin: inherit;
-  padding-top: 15%;
+  padding-top: 6vw;
+  font-size: 9vw;
 }
 
 .motto {
@@ -78,24 +92,6 @@ h2 {
 
 /*END: main photo + FUTRZAK*/
 
-/* START: product list */
-
-.product-list {
-  font-size: 18px;
-  font-family: $head-font;
-  font-weight: bold;
-  color: $grey;
-  background-color: $light;
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-  ul {
-    list-style-type: none;
-  }
-}
-
-/* END: product list */
-
 /* START: Style sekcji formularz */
 #form-submit {
   text-align: center;
@@ -103,12 +99,19 @@ h2 {
   margin: 10px;
   background: $white no-repeat left bottom;
   background-position-x: 25px;
+  font-size: 1vw;
 }
 
 .email-input {
-  font-size: 30px;
+  font-size: 2vw;
   margin: 20px;
 }
+
+@media screen and (max-width: 500px){
+.email-input {
+  font-size: 3vw;
+  padding: 2% 2%;
+}}
 
 .article-styles {
   color: $brown;
@@ -116,8 +119,39 @@ h2 {
 
 /* KONIEC Style sekcji formularz */
 
-@media screen and (min-width: 1201px) {
-  .main-photo {
-    font-size: 220px;
+/* Start Carousel Section*/
+.carousel {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#miniatures{
+  display: inline-block;
+  right: 250px;
+  margin-left: 0px;
+  width: 20%;
+  left: 100%;
+
+
+  img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    height: 54px;
+    left: 0;
+    width: 100px;
+
   }
 }
+.carousel-indicators .active {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px){
+  #miniatures{
+display: none;
+
+}}
+/* End Carousel Section*/

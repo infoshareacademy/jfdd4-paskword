@@ -1,69 +1,91 @@
 @import "variables-styles";
 @import "mixins-styles";
 
-/* START: Footer style*/
-footer {
-  background-color: $brown;
-  width: auto;
-  margin: 1% 1%;
-  padding: 1% 1%;;
+/* START: Footer style */
+
+footer  .media h4 {
+  text-align: center;
   color: $white;
-
-  h1 {
-    color: $white;
-    margin: 2% 40%;
-    text-align: center;
-    border: 10px solid transparent;
-    border-image: url(../images/paw.png) 100% round;
-  }
-
-  p {
-    text-align: center;
-    letter-spacing: 4px;
-    word-spacing: 4px;
-    font-size: larger;
-  }
-
-  div {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-
-  figure {
-    padding: 2%;
-    margin: 2%;
-  }
-
-  figcaption {
-    text-align: center;
-  }
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-  }
-}
-
-.user {
-  height: 96px;
-  width: 96px;
+  letter-spacing: 4px;
+  word-spacing: 4px;
 }
 
 .media {
-  margin: 1% 0;
+  background-color: $brown;
+  margin: 1% 0 0 0;
 
-  img {
-    margin: 5% 5%;
-    padding: 0 15%;
-    transition: all 0.5s ease;
+  h4 {
 
-    &:hover {
-      transform: rotate(-30deg);
+    img {
+      margin: 0;
+      padding: 0;
     }
   }
 }
 
+.media-icons {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+
+  a {
+    padding: 1%;
+  }
+}
+
+.media img {
+  margin: 5% 5%;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: rotate(-30deg);
+  }
+}
+
+.rotate {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#mate1 {
+  transition: transform ease-in 2s;
+}
+
+#mate2 {
+  transition: transform 2s ease-in 2s;
+}
+
+#mate3 {
+  transition: transform 2s ease-in 4s;
+}
+
+#mate4 {
+  transition: transform 2s ease-in 6s;
+}
+
+
 /*END: style footer*/
+
+.caption h3 {
+  text-align: center;
+}
+
+.thumbnail {
+  border: none;
+  text-align: justify;
+
+  img {
+    max-width: 254.5px;
+    max-height: 254.5px;
+
+  }
+}
+
+.thumbnail a > img {
+  padding-bottom: 2%;
+}
+
+#paw {
+  display: inline;
+}

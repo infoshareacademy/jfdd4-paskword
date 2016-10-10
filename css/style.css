@@ -11,39 +11,24 @@
   border: medium #698799;
   text-decoration: none; }
   .button:hover {
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff; }
+    font-weight: bold; }
 
 .button-submit {
   background-color: rgba(59, 32, 16, 0.7);
-  font-size: 1vw;
-  text-align: center;
-  padding: 2% 2%;
-  margin: 2% 2%; }
+  font-size: 50px;
+  padding: 25px;
+  text-transform: uppercase; }
   .button-submit:hover {
     background-color: rgba(139, 76, 38, 0.7); }
 
-@media screen and (max-width: 500px) {
-  .button-submit {
-    background-color: rgba(59, 32, 16, 0.7);
-    font-size: 3vw;
-    text-align: center;
-    padding: 2% 2%;
-    margin: 2% 2%; }
-    .button-submit:hover {
-      background-color: rgba(139, 76, 38, 0.7); } }
 .button-info {
-  font-size: 2vw;
+  font-size: 16px;
   padding: 10px 40px;
   margin-bottom: 17vw;
   margin-top: 0px; }
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
-@media screen and (max-width: 500px) {
-  .button-info {
-    font-size: 3vw; } }
 /* START: Footer style */
 footer .media h4 {
   text-align: center;
@@ -77,30 +62,23 @@ footer .media h4 {
   transform: rotate(360deg); }
 
 #mate1 {
-  transition: transform ease-in 2s; }
+  transition: all ease-in 2s; }
 
 #mate2 {
-  transition: transform 2s ease-in 2s; }
+  transition: all 2s ease-in 2s; }
 
 #mate3 {
-  transition: transform 2s ease-in 4s; }
+  transition: all 2s ease-in 4s; }
 
 #mate4 {
-  transition: transform 2s ease-in 6s; }
+  transition: all 2s ease-in 6s; }
 
 /*END: style footer*/
 .caption h3 {
   text-align: center; }
 
 .thumbnail {
-  border: none;
-  text-align: justify; }
-  .thumbnail img {
-    max-width: 254.5px;
-    max-height: 254.5px; }
-
-.thumbnail a > img {
-  padding-bottom: 2%; }
+  border: none; }
 
 /*START func-list*/
 .func-list {
@@ -176,13 +154,15 @@ footer .media h4 {
     clear: both; } }
 @media screen and (min-width: 1201px) {
   .func-list {
+    display: flex;
+    flex-direction: row;
     margin: auto; }
     .func-list div {
       transition: all 1s; }
-      .func-list div .list1:hover, .func-list div .list2:hover, .func-list div .list3:hover {
+      .func-list div:hover {
         transform: scale(1.2);
         z-index: 1; }
-        .func-list div .list1:hover .text-list, .func-list div .list2:hover .text-list, .func-list div .list3:hover .text-list {
+        .func-list div:hover .text-list {
           visibility: visible; }
 
   .text-list {
@@ -263,21 +243,14 @@ footer .media h4 {
   margin: 3% 5%; }
 
 #form-submit .start {
-  background: navajowhite url("../images/game-textures/sidewalk.jpg") repeat;
-  background-size: contain; }
+  background: navajowhite url("../images/game-textures/sidewalk.jpg") repeat; }
 #form-submit .start-text {
   color: black;
   background: rgba(255, 255, 255, 0.75); }
 #form-submit .street {
-  background: #698799 url("../images/game-textures/street.jpg") repeat;
-  background-size: contain; }
-#form-submit .water {
-  background: #0bcbcc url("../images/game-textures/water.jpg") repeat;
-  background-size: contain; }
-#form-submit .driftingWood {
-  background: url("../images/game-textures/wood-water.png") no-repeat;
-  background-size: contain; }
-#form-submit .mirror img {
+  background: #698799 url("../images/game-textures/street.jpg") repeat; }
+#form-submit w
+.mirror img {
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
@@ -295,33 +268,6 @@ footer .media h4 {
 #form-submit .start-text td {
   font-size: 2vmin; }
 
-/* START: product list */
-.product-list {
-  font-size: 18px;
-  font-family: "Arima Madurai", serif;
-  font-weight: bold;
-  color: #fff;
-  background-color: rgba(59, 32, 16, 0.7); }
-  .product-list p {
-    padding: 2% 5% 0 5%;
-    margin: 2% 5% 0 5%;
-    text-align: center; }
-  .product-list ul {
-    margin: 5% 1% 0 5%;
-    list-style-type: none;
-    -moz-column-count: 1;
-    -moz-column-gap: 50px;
-    column-count: 1;
-    column-gap: 120px; }
-    .product-list ul li {
-      list-style-image: url("../images/paw-50.png");
-      margin-bottom: 1%; }
-
-@media screen and (min-width: 1201px) {
-  .product-list ul {
-    -moz-column-count: 2;
-    column-count: 2; } }
-/* END: product list */
 html, body {
   font-family: "Scope One", sans-serif;
   background-color: #fff;
@@ -359,9 +305,6 @@ h2 {
     position: relative;
     margin: inherit; }
 
-@media screen and (max-width: 500px) {
-  .main-photo p {
-    font-size: 3vw; } }
 .padding0 {
   padding: 0; }
 
@@ -391,30 +334,39 @@ h2 {
   text-shadow: 0 2px 10px #000; }
 
 /*END: main photo + FUTRZAK*/
+/* START: product list */
+.product-list {
+  font-size: 18px;
+  font-family: "Arima Madurai", serif;
+  font-weight: bold;
+  color: #698799;
+  background-color: rgba(69, 87, 99, 0.1);
+  text-align: center;
+  padding: 50px;
+  margin: 10px; }
+  .product-list ul {
+    list-style-type: none; }
+
+/* END: product list */
 /* START: Style sekcji formularz */
 #form-submit {
   text-align: center;
   padding: 50px;
   margin: 10px;
   background: #fff no-repeat left bottom;
-  background-position-x: 25px;
-  font-size: 1vw; }
+  background-position-x: 25px; }
 
 .email-input {
-  font-size: 2vw;
+  font-size: 20px;
   margin: 20px; }
 
-@media screen and (max-width: 500px) {
-  .email-input {
-    font-size: 3vw;
-    padding: 2% 2%; } }
 .article-styles {
   color: rgba(59, 32, 16, 0.7); }
 
 /* KONIEC Style sekcji formularz */
 /* Start Carousel Section*/
 .carousel {
-  max-width: 400px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -433,12 +385,8 @@ h2 {
     width: 100px; }
 
 .carousel-indicators .active {
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
 
-@media screen and (max-width: 500px) {
-  #miniatures {
-    display: none; } }
 /* End Carousel Section*/
 
 /*# sourceMappingURL=style.css.map */

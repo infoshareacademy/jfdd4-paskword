@@ -1,0 +1,60 @@
+@import "variables-styles";
+
+#form-submit {
+
+  .start {
+    background: navajowhite url('../images/game-textures/sidewalk.jpg') repeat;
+    background-size: contain;
+  }
+
+  .start-text {
+    color: black;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .street {
+    background: #698799 url('../images/game-textures/street.jpg') repeat;
+    background-size: contain;
+  }
+
+  .water {
+    background: $cyan url('../images/game-textures/water.jpg') repeat;
+    background-size: contain;
+  }
+
+  .driftingWood {
+    background: url('../images/game-textures/wood-water.png') no-repeat;
+    background-size: contain;
+  }
+
+  .mirror {
+    img {
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+  }
+  td {
+    height: 49px;
+    overflow: hidden;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .table > tbody > tr > td {
+    min-height: 50px;
+  }
+
+  .start-text {
+    td {
+      font-size: 2vmin;
+
+    }
+  }
+
+}
+

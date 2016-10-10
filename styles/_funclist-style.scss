@@ -6,12 +6,10 @@
 .func-list {
   letter-spacing: 4px;
   word-spacing: 4px;
-  width: 100%;
 
   div {
     display: block;
     height: 359px;
-    max-width: 640px;
     margin: 1% auto;
     background-size: cover;
     position: relative;
@@ -68,39 +66,36 @@
 
   .list1 {
     padding-left: 5%;
-    width: 45%;
     float: left;
   }
 
   .list2 {
     padding-right: 5%;
-    width: 45%;
     float: right;
   }
 
   .list3 {
-    width: 100%;
     clear: both;
   }
 
 }
-@media screen and (min-width: 1201px)
-{
 
+@media screen and (min-width: 1201px) {
   .func-list {
-    display: flex;
-    flex-direction: row;
     margin: auto;
 
     div {
       transition: all 1s;
 
-      &:hover {
-        transform: scale(1.2);
-        z-index: 1;
+      .list1, .list2, .list3 {
 
-        .text-list {
-          visibility: visible;
+        &:hover {
+          transform: scale(1.2);
+          z-index: 1;
+
+          .text-list {
+            visibility: visible;
+          }
         }
       }
     }
@@ -111,7 +106,6 @@
   }
 
   .list1 {
-    width: 32%;
 
     &:hover {
       transform-origin: left 2px;
@@ -119,7 +113,6 @@
   }
 
   .list2 {
-    width: 32%;
 
     &:hover {
       transform-origin: center 0;
@@ -127,7 +120,6 @@
   }
 
   .list3 {
-    width: 32%;
 
     &:hover {
       transform-origin: right 2px;

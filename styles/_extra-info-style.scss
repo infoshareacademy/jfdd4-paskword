@@ -1,0 +1,38 @@
+@import "variables-styles";
+@import "mixins-styles";
+
+.extra-info {
+
+  .copyright {
+    background: $brown;
+    color: white;
+    margin: 0 auto;
+  }
+  .terms {
+    color: $brown;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: $cyan;
+    }
+  }
+
+  #showTerms {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #hidden-terms {
+    display: none;
+    text-align: justify;
+    color: black;
+    margin: 3% 5%;
+  }
+}
