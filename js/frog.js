@@ -11,6 +11,7 @@ function initFrog() {
     var positionX = 0; //number of current column
     var positionY = 0; // number of current row
     var rowCount = $('#board tr').length;
+    var woodLoop;
     var columnCount = $('tr td').length / rowCount,
         frog = $('<img src="images/game-textures/small-frog.png" class="img-responsive">')[0];
 
@@ -70,15 +71,16 @@ function initFrog() {
     }
 
     function down() {
-        if (positionY < (rowCount - 2)) {
+        if (positionY < (rowCount - 1)) {
             removeOldFrog();
             positionY += 1;
             addNewFrog();
             checkDanger();
             addStartText();
         }
-        if (positionY == rowCount - 2 && !amIAWinner) {
+        if ((positionY == rowCount - 1) && !amIAWinner) {
             amIAWinner = true;
+            clearInterval(woodLoop);
         }
     }
 
@@ -91,7 +93,7 @@ function initFrog() {
                 height: 0
             }, 800);
             splash.play();
-            console.log('game over');
+            clearInterval(woodLoop);
         }
     }
 
