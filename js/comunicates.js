@@ -31,12 +31,16 @@ function addComunicate() {
 // addComunicate();
 //
 
-//
-// function DeadInfo() {
-//     $('<div>').addClass("DeadComunicate").text('Żabka zginęłą. Spróbuj jeszcze raz.');
-// }
-// DeadInfo();
-//
-// function WinnerInfo() {
-//     $('amIAWinner').addClass("DeadComunicate").text('Żabka zginęłą. Spróbuj jeszcze raz.');
-// }
+
+function DeadInfo() {
+    if(collision ){
+        $('<div>').addClass("DeadComunicate").text('Żabka zginęłą. Spróbuj jeszcze raz.').appendTo('#board');
+    }
+
+}
+
+DeadInfo();
+
+function WinnerInfo() {
+    $('<div>').addClass("DeadComunicate").text('Wygrana!').appendTo('#board');
+}
