@@ -81,6 +81,7 @@ function initFrog() {
         if ((positionY == rowCount - 1) && !amIAWinner) {
             amIAWinner = true;
             clearInterval(woodLoop);
+            clearInterval(truckLoop);
         }
     }
 
@@ -94,6 +95,7 @@ function initFrog() {
             }, 800);
             splash.play();
             clearInterval(woodLoop);
+            clearInterval(truckLoop);
         }
     }
 
