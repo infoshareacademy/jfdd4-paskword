@@ -5,7 +5,9 @@
 function addComunicate() {
 
     $('<div>').addClass("GameTitle").appendTo('#form-submit').attr('id', "GameTitle");
+    $('<div>').attr('id','Frogger').text('FROGGER').appendTo('#GameTitle');
     // $('#form-submit').attr('id', "GameTitle").text('FROGGER');
+
     $('<div>').attr('id', 'HowToPlay').appendTo('#GameTitle');
     $('<p>').addClass('Rule1').text('Gra polega na pokierowaniu żabką od miejsca Startu aż do Mety, w taki sposób by ominać wszelkie przeszkody.' + ' '
         + 'Żabka zginie gdy wpadnie na jakąkolwiek przeszkodę.').appendTo('#GameTitle');
@@ -29,9 +31,9 @@ function addComunicate() {
 // addComunicate();
 //
 
-
+//
 // function DeadInfo() {
-//     $('body').addClass("DeadComunicate").text('Żabka zginęłą. Spróbuj jeszcze raz.');
+//     $('<div>').addClass("DeadComunicate").text('Żabka zginęłą. Spróbuj jeszcze raz.');
 // }
 // DeadInfo();
 //
