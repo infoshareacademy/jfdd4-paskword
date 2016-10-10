@@ -299,7 +299,6 @@ footer .media h4 {
   font-size: 2vmin; }
 #form-submit .GameTitle {
   color: #4cae4c;
-  font-size: 80px;
   font-family: fantasy;
   padding: 30px 40px 30px;
   margin: 40px;
@@ -332,7 +331,7 @@ footer .media h4 {
   font-family: fantasy; }
 #form-submit .KeyControls {
   color: black;
-  font-size: 25px;
+  font-size: 5px;
   font-family: fantasy;
   padding: 10px; }
 #form-submit .DeadComunicate {

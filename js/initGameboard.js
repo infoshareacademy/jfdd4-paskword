@@ -26,9 +26,9 @@ $(document).ready(function() {
             }
         });
         addComunicate();
-        initGameboard();
-        initFrog();
-        initIntervals();
+        // initGameboard();
+        // initFrog();
+        // initIntervals();
 
     });
 });
