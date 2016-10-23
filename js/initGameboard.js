@@ -25,9 +25,11 @@ $(document).ready(function() {
                 console.log('form was submitted');
             }
         });
-        initGameboard();
-        initFrog();
-        initIntervals();
+        addComunicate();
+        // initGameboard();
+        // initFrog();
+        // initIntervals();
+
     });
 });
 
@@ -74,7 +76,23 @@ function makePattern(rowNum) {
     }
 }
 
+function checkIfCollide() {
+    if ($('.showTruck').has('img[src="images/game-textures/small-frog.png"]').length != 0
+        && !collision) {
+        $('img[alt="truck"]').remove();
+        collision = true;
+        croak.play();
+        clearInterval(truckLoop);
+        clearInterval(woodLoop);
+        $('img[src="images/game-textures/small-frog.png"]')
+            .toggle('bounce', {times: 5}, 'slow');
+    }
+}
+
 function drawPattern(rowNum, mirror) {
+
+    checkIfCollide();
+
     var array = [];
     if (rowNum == 1) {
         array =  patternArray ;
@@ -129,17 +147,7 @@ function drawPattern(rowNum, mirror) {
         }
     }
 
-    //Collision - frog dead
-    if ($('.showTruck').has('img[src="images/game-textures/small-frog.png"]').length != 0
-        && !collision) {
-        $('img[alt="truck"]').remove();
-        collision = true;
-        croak.play();
-        clearInterval(truckLoop);
-        clearInterval(woodLoop);
-        $('img[src="images/game-textures/small-frog.png"]')
-            .toggle('bounce', {times: 5}, 'slow');
-    }
+    checkIfCollide();
 
     if (rowNum == 1) {
         patternArray = array;
