@@ -33,24 +33,25 @@
 }
 
 @media screen and (max-width: 500px)
-{.button-submit {
-  background-color: $brown;
-  font-size: 3vw;
-  text-align: center;
-  padding: 2% 2%;
-  margin: 2% 2%;
+{
+  .button-submit {
+    background-color: $brown;
+    font-size: 3vw;
+    text-align: center;
+    padding: 2% 2%;
+    margin: 2% 2%;
 
-  &:hover {
-    background-color: lighten( $brown, 20% );
+    &:hover {
+      background-color: lighten( $brown, 20% );
+    }
   }
-}
 }
 
 .button-info {
   font-size: 2vw;
   padding: 10px 40px;
-  margin-bottom: 17vw;
-  margin-top: 0px;
+  margin-bottom: 10vw;
+  margin-top: 0;
 
   &:hover {
     background-color: $light;

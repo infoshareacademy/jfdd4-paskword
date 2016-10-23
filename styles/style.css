@@ -36,8 +36,8 @@
 .button-info {
   font-size: 2vw;
   padding: 10px 40px;
-  margin-bottom: 17vw;
-  margin-top: 0px; }
+  margin-bottom: 10vw;
+  margin-top: 0; }
   .button-info:hover {
     background-color: rgba(69, 87, 99, 0.1); }
 
@@ -405,8 +405,8 @@ h2 {
     color: #fff;
     font-size: 1.5vw;
     text-align: center;
-    padding-bottom: 200px;
-    padding-top: 20px;
+    padding-bottom: 1%;
+    padding-top: 5%;
     position: relative;
     margin: inherit; }
 
@@ -419,7 +419,7 @@ h2 {
 #main-header {
   text-align: center;
   margin: inherit;
-  padding-top: 6vw;
+  padding-top: 7vw;
   font-size: 9vw; }
 
 .motto {
